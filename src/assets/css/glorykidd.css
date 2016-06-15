@@ -1,0 +1,59 @@
+.callout.glorykidd {
+  background-color: #0B4C5F; 
+}
+  .callout.glorykidd a {
+    color: #116ca8; 
+  }
+    .callout.glorykidd a:hover {
+      color: #0a4063; 
+    }
+.orbit-container-glorykidd {
+  position: relative;
+  margin: 0;
+  padding: 0px 25px;
+  overflow: hidden;
+  list-style: none; 
+  height: 85px;
+}
+.lead {
+  font-size: 125%;
+  line-height: 1.4; 
+  color: #fff;
+  text-align: justify;
+}
+  .lead:first-child:first-letter { 
+    float: left; 
+    color: #D7DF01; 
+    font-size: 70px; 
+    line-height: 50px; 
+    padding-top: 4px; 
+    padding-right: 10px; 
+    padding-left: 3px; 
+    font-family: Georgia;
+  }
+
+  .top-bar, .top-bar ul {
+    background-color: #fff; 
+  }
+  .top-bar, .top-bar li {
+    padding-top: 25px;
+  }
+  .top-bar, .top-bar img {
+    padding-top: 5px;
+  }
+  .top-bar input {
+    width: 200px;
+    margin-right: 1rem; 
+  }
+.callout.glorykiddhome {
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+  border-radius: 10;
+  position: relative;
+  background-color: white; 
+  text-align: justify;
+}
+.callout.glorykiddhome h3 {
+  color: #116ca8;
+}
