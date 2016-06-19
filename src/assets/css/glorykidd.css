@@ -10,10 +10,10 @@
 .orbit-container-glorykidd {
   position: relative;
   margin: 0;
-  padding: 0px 25px;
+  padding: 20px 50px;
   overflow: hidden;
   list-style: none; 
-  height: 85px;
+  height: 120px;
 }
 .lead {
   font-size: 125%;
@@ -31,25 +31,53 @@
     padding-left: 3px; 
     font-family: Georgia;
   }
+.contactcard {
+  height: 135px;
+  width: 100%;
+}
+  .contactcard img { 
+    float: right; 
+    padding-left: 15px; 
+    margin-top: 0px;
+  }
+.lead2 {
+  font-size: 85%;
+  line-height: 1.4; 
+  color: #707578;
+  text-align: justify;
+}
 
   .top-bar, .top-bar ul {
     background-color: #fff; 
   }
   .top-bar, .top-bar li {
-    padding-top: 25px;
+    padding-top: 35px;
   }
   .top-bar, .top-bar img {
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .top-bar input {
     width: 200px;
     margin-right: 1rem; 
   }
+
+  .top-bar2, .top-bar2 ul {
+    background-color: #fff; 
+  }
+  .top-bar2, .top-bar2 li {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 .callout.glorykiddhome {
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(10, 10, 10, 0.25);
-  border-radius: 10;
+  border-radius: 10px;
   position: relative;
   background-color: white; 
   text-align: justify;
@@ -57,3 +85,65 @@
 .callout.glorykiddhome h3 {
   color: #116ca8;
 }
+
+.callout.secondary2 {
+  border: 0px solid rgba(10, 10, 10, 0.25);
+  border-radius: 10px;
+  background-color: #ebebeb; 
+}
+.callout.secondary2 h4 {
+    font-size: 100%;
+    color: #0B4C5F; 
+}
+.menu2-text {
+  font-weight: bold;
+  color: inherit;
+  line-height: 1;
+  padding-top: 5px;
+  font-size: 80%;
+   }
+
+.glorykidd-text {
+  font-weight: bold;
+  color: inherit;
+  line-height: 1;
+  padding: 5px;
+  font-size: 80%;
+   }
+
+.menu2 {
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 80%;
+   }
+  .menu2 > li {
+    display: table-cell;
+    vertical-align: middle; }
+    [data-whatinput="mouse"] .menu2 > li {
+      outline: 0; }
+  .menu2 > li > a {
+    display: block;
+    padding-top: 5px;
+    line-height: 1; }
+      .menu2.expanded {
+    display: table;
+    width: 100%; }
+    .menu2.expanded > li:nth-last-child(2):first-child,
+    .menu2.expanded > li:nth-last-child(2):first-child ~ li {
+      width: 50%; }
+    .menu2.expanded > li:nth-last-child(3):first-child,
+    .menu2.expanded > li:nth-last-child(3):first-child ~ li {
+      width: 33.33333%; }
+    .menu2.expanded > li:nth-last-child(4):first-child,
+    .menu2.expanded > li:nth-last-child(4):first-child ~ li {
+      width: 25%; }
+    .menu2.expanded > li:nth-last-child(5):first-child,
+    .menu2.expanded > li:nth-last-child(5):first-child ~ li {
+      width: 20%; }
+    .menu2.expanded > li:nth-last-child(6):first-child,
+    .menu2.expanded > li:nth-last-child(6):first-child ~ li {
+      width: 16.66667%; }
+    .menu2.expanded > li:first-child:last-child {
+      width: 100%; }
+
+
