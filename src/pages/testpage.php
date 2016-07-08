@@ -1,0 +1,5 @@
+---
+layout: phplayout
+---
+<? phpinfo(); ?>
+<hr>
