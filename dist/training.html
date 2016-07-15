@@ -28,27 +28,22 @@
         <!-- End Top Bar -->
     <div class="callout glorykidd small">
       <div class="row column">
-          <div class="orbit" role="region" aria-label="Slider" data-orbit data-use-m-u-i="true" 
-               data-timer-delay="8000" data-infinite-wrap="true" data-pause-on-hover="false" 
-               data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-              <ul class="orbit-container-glorykidd">
-                <li class="orbit-slide">
+          <div class="bannerscroll orbit-container-glorykidd">
+                <div>
           <p class="lead">We will analyze your existing and future web presence needs and develop a plan to help keep your web presence alive and dynamic. We provide service offerings that can increase traffic to your site, better integration with Social Media, and Search Engine Optimazations.</p>
-                </li>
-                <li class="orbit-slide">
+                </div>
+                <div>
           <p class="lead">Good design doesn’t just include effective graphics and layout. You need to have a website that ranks well on search engines like Google and Bing. My website design services include built-in SEO techniques that help customers find you again and again.</p>
-                </li>
-                <li class="orbit-slide">
+                </div>
+                <div>
           <p class="lead">All our website design services include an additional 10 FREE hours of design and revision beyond the initial layout. This gives you an opportunity to tweak colors, fonts, and images, and fine tune your site so it’s just the way you want it. If you need additional hours, rest easy, as they’re charged at a low hourly rate.</p>
-                </li>
-                <li class="orbit-slide">
+                </div>
+                <div>
           <p class="lead">We will design your website using the state-of-the-art Content Management System (CMS), which is easy to update automatically. Best of all, with custom HTML, CSS, and JavaScript tools, it will look good, enabling you to attract and keep your audience.</p>
-                </li>
-              </ul>
+                </div>
           </div>
       </div>
     </div>
-    
     
 
     
@@ -70,6 +65,23 @@
     </div>
     <br />
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.bannerscroll').slick({
+            dots: false,
+            infinite: true,
+            speed: 700,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            cssEase: 'linear',
+            prevArrow: null,
+            nextArrow: null
+        });
+      });
+    </script>
   </body>
 </html>

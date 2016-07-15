@@ -13,13 +13,30 @@
   </head>
   <body>
     {{> topmenu}}
-    {{> topbanner}}
+    {{> topbanner2}}
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
     {{> footer}}
     <script type="text/javascript" src="{{root}}assets/js/app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.bannerscroll').slick({
+            dots: false,
+            infinite: true,
+            speed: 700,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            cssEase: 'linear',
+            prevArrow: null,
+            nextArrow: null
+        });
+      });
+    </script>
   </body>
 </html>
