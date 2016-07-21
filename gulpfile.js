@@ -71,7 +71,7 @@ gulp.task('copy', function() {
 
 // Copy page templates into finished HTML files
 gulp.task('pages', function() {
-  gulp.src('src/pages/**/*.{html,hbs,handlebars,php}')
+  gulp.src('src/pages/**/*.{html,hbs,handlebars}')
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
@@ -83,10 +83,17 @@ gulp.task('pages', function() {
 });
 
 //Copy php files into dist
-//gulp.task('loadphp', function() {
-//  gulp.src('src/pages/**/*.php')
-//    .pipe(gulp.dest('dist'));
-//});
+gulp.task('copyphp', function() {
+  gulp.src('src/pages/**/*.php')
+    .pipe(panini({
+      root: 'src/pages/',
+      layouts: 'src/layouts/',
+      partials: 'src/partials/',
+      data: 'src/data/',
+      helpers: 'src/helpers/'
+    }))
+    .pipe(gulp.dest('dist'));
+});
 
 gulp.task('pages:reset', function(cb) {
   panini.refresh();
@@ -160,7 +167,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], 'styleguide', done);
+  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], 'copyphp', 'styleguide', done);
 });
 
 // Start a server with LiveReload to preview the site in
@@ -173,7 +180,8 @@ gulp.task('server', ['build'], function() {
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
-  gulp.watch(['src/pages/**/*.{html,php}'], ['pages', browser.reload]);
+  gulp.watch(['src/pages/**/*.html'], ['pages', browser.reload]);
+  gulp.watch(['src/pages/**/*.php'], ['copyphp', browser.reload]);
   gulp.watch(['src/{layouts,partials}/**/*.html'], ['pages:reset', browser.reload]);
   gulp.watch(['src/assets/scss/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['src/assets/js/**/*.js'], ['javascript', browser.reload]);
