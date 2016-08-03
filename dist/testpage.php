@@ -1,13 +1,5 @@
-<? 
-// php template file
-?>
-
-
+---
+layout: phplayout
+---
 <? phpinfo(); ?>
 <hr>
-
-
-<?
-//Footer 
-
-?>

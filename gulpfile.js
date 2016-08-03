@@ -85,13 +85,13 @@ gulp.task('pages', function() {
 //Copy php files into dist
 gulp.task('copyphp', function() {
   gulp.src('src/pages/**/*.php')
-    .pipe(panini({
-      root: 'src/pages/',
-      layouts: 'src/layouts/',
-      partials: 'src/partials/',
-      data: 'src/data/',
-      helpers: 'src/helpers/'
-    }))
+//    .pipe(panini({
+//      root: 'src/pages/',
+//      layouts: 'src/layouts/',
+//      partials: 'src/partials/',
+//      data: 'src/data/',
+//      helpers: 'src/helpers/'
+//    }))
     .pipe(gulp.dest('dist'));
 });
 
