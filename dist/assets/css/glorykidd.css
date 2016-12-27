@@ -221,6 +221,47 @@
   margin-bottom: 1rem;
   text-align: justify;
 }
+
+.thumbnail-small-right {
+  border: solid 4px #fefefe;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  display: inline-block;
+  line-height: 0;
+  max-width: 40%;
+  float: right;
+  transition: box-shadow 200ms ease-out;
+  border-radius: 0;
+  margin-left: 15px;
+  margin-bottom: 5px; }
+  .thumbnail:hover, .thumbnail:focus {
+    box-shadow: 0 0 6px 1px rgba(33, 153, 232, 0.5); }
+
+.callout.reviews {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+  border-radius: 10px;
+  position: relative;
+  background-color: white; 
+  text-align: justify;
+  font-size: 85%;
+}
+.callout.reviews p {
+  font-style: italic;
+}
+.callout.reviews h4 {
+  color: #116ca8;
+  text-align: right;
+  font-size: 90%;
+}
+.callout.reviews h3 {
+  color: #116ca8;
+  text-align: left;
+  /*font-size: 90%;*/
+}
+
 /*  .thumbnailDesc:hover, .thumbnailDesc:focus {
     box-shadow: 0 0 3px 1px rgba(33, 153, 232, 0.5); }*/
 

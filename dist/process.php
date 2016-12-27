@@ -1,3 +1,7 @@
+---
+layout: phplayout
+name: PHP Only Page
+---
 <?php
 
   //form submitted
