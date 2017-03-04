@@ -13,7 +13,19 @@
   padding: 20px 50px;
   overflow: hidden;
   list-style: none; 
-  height: 120px;
+  height: 100px;
+}
+.imagelogo {
+  max-width: 28%;
+  padding-left: 20px; 
+  margin: 0px; 
+  float: left;
+}
+.imagelogo-small {
+  width:100%; 
+  padding-left: 20px; 
+  margin: 0px; 
+  float: left;
 }
 .lead {
   font-size: 125%;
@@ -32,7 +44,7 @@
     font-family: Georgia;
   }
 .contactcard {
-  height: 135px;
+  min-height: 135px;
   width: 100%;
 }
   .contactcard img { 
@@ -261,7 +273,4 @@
   text-align: left;
   /*font-size: 90%;*/
 }
-
-/*  .thumbnailDesc:hover, .thumbnailDesc:focus {
-    box-shadow: 0 0 3px 1px rgba(33, 153, 232, 0.5); }*/
 

@@ -18,7 +18,7 @@ In the Grid you can nest columns down as far as you'd like. Just embed rows insi
 
 ## How to Use
 
-Using this framework is easy. Here's how your code will look when you use a series of <div> tags to create vertical columns.
+Using this framework is easy. Here's how your code will look when you use a series of `<div>` tags to create vertical columns.
 
 ```html
 <div class="row">
@@ -168,7 +168,7 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 # Typography
 
-<p class="lead">The Arlo apps use Morebi Rounded for headings and paragraph text.</p>
+<p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
 
 ---
 
@@ -188,23 +188,23 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
-<h2>Heading Level 1</h2>
+<h2>Heading Level 2</h2>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
-<h3>Heading Level 1</h3>
+<h3>Heading Level 3</h3>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
-<h4>Heading Level 1</h4>
+<h4>Heading Level 4</h4>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
-<h5>Heading Level 1</h5>
+<h5>Heading Level 5</h5>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
-<h6>Heading Level 1</h6>
+<h6>Heading Level 6</h6>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
@@ -304,11 +304,9 @@ Form elements in Foundation are styled based on their type attribute rather than
     <div class="large-6 columns">
       <div class="row collapse">
         <label>Label</label>
-        <div class="small-9 columns">
-          <input type="text" placeholder="placeholder">
-        </div>
-        <div class="small-3 columns">
-          <span class="postfix">.com</span>
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="placeholder">
+          <span class="input-group-label">.com</span>
         </div>
       </div>
     </div>
@@ -342,4 +340,16 @@ Form elements in Foundation are styled based on their type attribute rather than
     </div>
   </div>
 </form>
+```
+
+
+
+# New Section
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic aliquid **expedita!** [Non dicta](zurb.com), autem obcaecati error, id ab voluptate unde culpa nulla.
+
+```html_example
+<a href="#" class="button">Button</a>
+<a href="#" class="button">Button</a>
+<a href="#" class="button">Button</a>
 ```
