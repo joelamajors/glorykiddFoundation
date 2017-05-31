@@ -33,24 +33,6 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   position: relative;
 }
 
-.imagelogo {
-  float: left;
-  margin: 0;
-  max-height: 8em;
-  // max-width: 28%;
-  padding-left: 1em;
-  // 20px;
-}
-
-.imagelogo-small {
-  float: none;
-  margin: 0;
-  // max-width: 14em;
-  // max-height: 8em;
-  padding: 1em;
-  // width: 100%;
-}
-
 .lead {
   color: $white;
   font-size: 125%;
@@ -86,6 +68,7 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   line-height: 1.4;
   text-align: justify;
 }
+
 
 div.top-bar {
   background-color: $white;
@@ -140,6 +123,28 @@ div.top-bar {
     padding-right: 20px;
     padding-top: 0;
   }
+}
+
+.imagelogo {
+  float: left;
+  margin: 0;
+  max-height: 8em;
+  // max-width: 28%;
+  padding-left: 1em;
+  // 20px;
+}
+
+.imagelogo-small {
+  float: none;
+  margin: 0;
+  // max-width: 14em;
+  // max-height: 8em;
+  padding: 1em;
+  // width: 100%;
+}
+
+div.title-bar {
+  background-color: $color-gk-callout;
 }
 
 .callout {
