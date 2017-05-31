@@ -3,18 +3,13 @@
   <div class="title-bar-title">GloryKidd</div>
 </div>
 
-<!-- Start Top Bar -->
-
-<div class="top-bar row" id="glorykidd-menu">
-  <div class="medium-2 columns hide-for-small-only">
-    <img class="imagelogo" src="{{root}}assets/img/glorykiddlogo.png">
-  </div>
-  <div class="medium-10 columns">
-    <ul class="vertical medium-horizontal menu expanded">
-      {{> menu}}
-    </ul>
-  </div>
+<div class="top-bar show-for-small-only" id="glorykidd-menu">
+  <ul class="vertical medium-horizontal menu expanded">
+    {{> menu}}
+  </ul>
 </div>
+
+<!-- Start Top Bar -->
 
 <hr class="show-for-small-only" />
 <div class="row">
@@ -24,4 +19,32 @@
 </div>
 <hr class="show-for-small-only" />
 
+<!-- original menu -->
+<div class="top-bar hide-for-small-only">
+  <div class="medium-2 columns">
+    <img class="imagelogo" src="{{root}}assets/img/glorykiddlogo.png">
+  </div>
+  <div class="medium-10 columns">
+    <ul class="vertical medium-horizontal menu expanded">
+      {{> menu}}
+    </ul>
+  </div>
+</div>
+
+<!-- alternate menu
+
+<div class="row top-bar hide-for-small-only">
+  <div class="medium-2 columns imagelogo">
+    <img class="imagelogo" src="{{root}}assets/img/glorykiddlogo.png">    
+  </div>
+  <div class="medium-10 columns">
+    <ul class="vertical medium-horizontal menu expanded">
+      {{> menu}}
+    </ul>
+    <div class="callout glorykidd small">
+      <p class="lead">Our mission is to use workflow processes and leverage software to create practical IT solutions with the highest standard of excellence to both honor God and provide unparalleled customer service for our clients. Our customer focused service helps clients across the globe react to changing requirements and customer demands with the speed, scalability and flexibility.</p>
+    </div>
+  </div>
+</div>
+ -->
 <!-- End Top Bar -->
