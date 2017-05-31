@@ -1,4 +1,5 @@
-$color-deep-sea-green: #0b4c5f;
+$color-gk-callout: #0078c4;
+// #0b4c5f;
 $color-tory-blue: #116ca8;
 $color-tarawera: #0a4063;
 $white: #fff;
@@ -9,11 +10,10 @@ $color-slightly-offwhite: #fefefe;
 $color-gray-555: #555;
 $color-rolling-stone-gray: #707578;
 $color-gray4: rgba(10, 10, 10, .2);
-$color-dodger-blue4: rgba(33, 153, 232, .5);
-
+$color-thumbnail: rgba(33, 153, 232, .5);
 
 .callout.glorykidd {
-  background-color: $color-deep-sea-green;
+  background-color: $color-gk-callout;
 
   a {
     color: $color-tory-blue;
@@ -87,6 +87,15 @@ $color-dodger-blue4: rgba(33, 153, 232, .5);
   text-align: justify;
 }
 
+div.top-bar {
+  background-color: $white;
+  
+  ul {
+    background-color: $white;
+  }
+
+}
+
 .top-bar {
   background-color: $white;
 
@@ -156,7 +165,7 @@ $color-dodger-blue4: rgba(33, 153, 232, .5);
     border-radius: 10px;
 
     h4 {
-      color: $color-deep-sea-green;
+      color: $color-gk-callout;
       font-size: 100%;
     }
   }
@@ -170,7 +179,7 @@ $color-dodger-blue4: rgba(33, 153, 232, .5);
     text-align: justify;
 
     h4 {
-      color: $color-deep-sea-green;
+      color: $color-gk-callout;
       font-size: 110%;
       line-height: 35px;
       text-align: right;
@@ -191,7 +200,7 @@ $color-dodger-blue4: rgba(33, 153, 232, .5);
     text-align: justify;
 
     h4 {
-      color: $color-deep-sea-green;
+      color: $color-gk-callout;
       font-size: 110%;
       line-height: 35px;
       text-align: right;
@@ -212,7 +221,7 @@ $color-dodger-blue4: rgba(33, 153, 232, .5);
     text-align: justify;
 
     h4 {
-      color: $color-deep-sea-green;
+      color: $color-gk-callout;
       font-size: 110%;
       line-height: 35px;
       text-align: right;
@@ -347,7 +356,7 @@ $color-dodger-blue4: rgba(33, 153, 232, .5);
 .thumbnail {
   &:hover,
   &:focus {
-    box-shadow: 0 0 6px 1px $color-dodger-blue4;
+    box-shadow: 0 0 6px 1px $color-thumbnail;
   }
 }
 
