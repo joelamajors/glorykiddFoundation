@@ -14,6 +14,7 @@ $color-thumbnail: rgba(33, 153, 232, .5);
 
 .callout.glorykidd {
   background-color: $color-gk-callout;
+  // font-size: .75em;
 
   a {
     color: $color-tory-blue;
@@ -126,21 +127,18 @@ div.top-bar {
 }
 
 .imagelogo {
-  float: left;
+  // float: left;
   margin: 0;
   max-height: 8em;
-  // max-width: 28%;
-  padding-left: 1em;
-  // 20px;
+  // padding-left: 1em;
+  vertical-align: middle;
 }
 
 .imagelogo-small {
   float: none;
   margin: 0;
-  // max-width: 14em;
-  // max-height: 8em;
   padding: 1em;
-  // width: 100%;
+  vertical-align: middle;
 }
 
 div.title-bar {
