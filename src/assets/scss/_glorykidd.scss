@@ -1,3 +1,4 @@
+// global stuff
 $color-gk-callout: #0078c4;
 // #0b4c5f;
 $color-tory-blue: #116ca8;
@@ -12,18 +13,6 @@ $color-rolling-stone-gray: #707578;
 $color-gray4: rgba(10, 10, 10, .2);
 $color-thumbnail: rgba(33, 153, 232, .5);
 
-.callout.glorykidd {
-  background-color: $color-gk-callout;
-  // font-size: .75em;
-
-  a {
-    color: $color-tory-blue;
-
-    &:hover {
-      color: $color-tarawera;
-    }
-  }
-}
 
 .orbit-container-glorykidd {
   height: 100px;
@@ -63,6 +52,7 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   }
 }
 
+// lead bar
 .lead2 {
   color: $color-rolling-stone-gray;
   font-size: 85%;
@@ -70,14 +60,13 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   text-align: justify;
 }
 
-
+// menu and topbar
 div.top-bar {
   background-color: $white;
   
   ul {
     background-color: $white;
   }
-
 }
 
 .top-bar {
@@ -126,6 +115,94 @@ div.top-bar {
   }
 }
 
+.menu2 {
+  font-size: 80%;
+  list-style-type: none;
+  margin-bottom: 10px;
+  > li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.menu2-text {
+  color: inherit;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 5px;
+  // text-align: center;
+}
+
+
+[data-whatinput="mouse"] .menu2 > li {
+  outline: 0;
+}
+
+.menu2 {
+  > li > a {
+    display: block;
+    padding-top: 5px;
+    line-height: 1;
+  }
+
+  &.expanded {
+    display: table;
+    width: 100%;
+
+    > li {
+
+      &:nth-last-child(2):first-child {
+        width: 50%;
+
+        ~ li {
+          width: 50%;
+        }
+      }
+
+      &:nth-last-child(3):first-child {
+        width: 33.33333%;
+
+        ~ li {
+          width: 33.33333%;
+        }
+      }
+
+      &:nth-last-child(4):first-child {
+        width: 25%;
+
+        ~ li {
+          width: 25%;
+        }
+      }
+
+      &:nth-last-child(5):first-child {
+        width: 20%;
+
+        ~ li {
+          width: 20%;
+        }
+      }
+
+      &:nth-last-child(6):first-child {
+        width: 16.66667%;
+
+        ~ li {
+          width: 16.66667%;
+        }
+      }
+
+      &:first-child:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+div.title-bar {
+  background-color: $color-gk-callout;
+}
+
 .imagelogo {
   // float: left;
   margin: 0;
@@ -141,10 +218,7 @@ div.top-bar {
   vertical-align: middle;
 }
 
-div.title-bar {
-  background-color: $color-gk-callout;
-}
-
+// callout and general?
 .callout {
   &.glorykiddhome {
     background-color: $white;
@@ -241,15 +315,6 @@ div.title-bar {
   }
 }
 
-.menu2-text {
-  color: inherit;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  padding-top: 5px;
-  // text-align: center;
-}
-
 .glorykidd-text {
   color: inherit;
   font-size: 80%;
@@ -258,80 +323,49 @@ div.title-bar {
   padding: 5px;
 }
 
-.menu2 {
-  font-size: 80%;
-  list-style-type: none;
-  margin-bottom: 10px;
-  > li {
-    display: table-cell;
-    vertical-align: middle;
+.callout.reviews {
+  background-color: $white;
+  border: 1px solid $color-marshland-gray;
+  border-radius: 10px;
+  font-size: 85%;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: relative;
+  text-align: justify;
+
+  p {
+    font-style: italic;
+  }
+
+  h4 {
+    color: $color-tory-blue;
+    font-size: 90%;
+    text-align: right;
+  }
+
+  h3 {
+    color: $color-tory-blue;
+    text-align: left;
+   // font-size: 90%;
   }
 }
 
-[data-whatinput="mouse"] .menu2 > li {
-  outline: 0;
-}
+.callout.glorykidd {
+  background-color: $color-gk-callout;
+  // font-size: .75em;
 
-.menu2 {
-  > li > a {
-    display: block;
-    padding-top: 5px;
-    line-height: 1;
-  }
+  a {
+    color: $color-tory-blue;
 
-  &.expanded {
-    display: table;
-    width: 100%;
-
-    > li {
-
-      &:nth-last-child(2):first-child {
-        width: 50%;
-
-        ~ li {
-          width: 50%;
-        }
-      }
-
-      &:nth-last-child(3):first-child {
-        width: 33.33333%;
-
-        ~ li {
-          width: 33.33333%;
-        }
-      }
-
-      &:nth-last-child(4):first-child {
-        width: 25%;
-
-        ~ li {
-          width: 25%;
-        }
-      }
-
-      &:nth-last-child(5):first-child {
-        width: 20%;
-
-        ~ li {
-          width: 20%;
-        }
-      }
-
-      &:nth-last-child(6):first-child {
-        width: 16.66667%;
-
-        ~ li {
-          width: 16.66667%;
-        }
-      }
-
-      &:first-child:last-child {
-        width: 100%;
-      }
+    &:hover {
+      color: $color-tarawera;
     }
   }
 }
 
+// THUMBNAILS
 .thumbnailDesc {
   // border: solid 4px $color-slightly-offwhite;
   // box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
@@ -364,36 +398,7 @@ div.title-bar {
   }
 }
 
-.callout.reviews {
-  background-color: $white;
-  border: 1px solid $color-marshland-gray;
-  border-radius: 10px;
-  font-size: 85%;
-  margin: 0 0 1rem;
-  padding: 1rem;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  position: relative;
-  text-align: justify;
-
-  p {
-    font-style: italic;
-  }
-
-  h4 {
-    color: $color-tory-blue;
-    font-size: 90%;
-    text-align: right;
-  }
-
-  h3 {
-    color: $color-tory-blue;
-    text-align: left;
-   // font-size: 90%;
-  }
-}
-
+// FOOTER 
 .glorykidd-footer {
   text-align: center;
 }
-
