@@ -3,33 +3,22 @@
   <div class="title-bar-title">GloryKidd</div>
 </div>
 
-<div class="top-bar show-for-small-only" id="glorykidd-menu">
+<div class="top-bar row" id="glorykidd-menu">
+ <!-- show-for-small-only -->
+  <hr />
+  <ul class="vertical medium-horizontal menu expanded">
+    {{> menu}}
+  </ul>
+  <hr />
+</div>
+
+<!-- <div class="row top-bar hide-for-small-only">
   <ul class="vertical medium-horizontal menu expanded">
     {{> menu}}
   </ul>
 </div>
+ -->
 
-<!-- Start Top Bar -->
-
-<hr class="show-for-small-only" />
-<div class="row">
-  <div class="columns small-9 small-centered">
-      <img class="imagelogo-small show-for-small-only" src="{{root}}assets/img/glorykiddlogo.png">
-  </div>
-</div>
-<hr class="show-for-small-only" />
-
-<!-- original menu -->
-<div class="row top-bar hide-for-small-only">
-  <div class="medium-2 columns">
-    <img class="imagelogo" src="{{root}}assets/img/glorykiddlogo.png">
-  </div>
-  <div class="medium-10 columns">
-    <ul class="vertical medium-horizontal menu expanded">
-      {{> menu}}
-    </ul>
-  </div>
-</div>
 
 <!-- alternate menu -->
 
