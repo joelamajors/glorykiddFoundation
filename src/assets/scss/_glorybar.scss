@@ -1,0 +1,65 @@
+.glorybar {
+  background-color: $color-gk-callout;
+}
+
+.imagelogo {
+  // float: left;
+  background-color: $white;
+  // border-radius: 6em;
+  // display: flex;
+  max-height: 10em;
+  padding: -1em;
+  // vertical-align: middle;
+}
+
+.imagelogo-beta {
+  // background-color: $white;
+  // max-height: 10em;
+  // border-radius: 6em;
+  padding: 0;
+}
+
+.imagelogo-small {
+  float: none;
+  margin: 0;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+.lead {
+  color: $white;
+  font-size: 1em;
+  // line-height: 1em;
+  padding: .25em 0 2em 1em;
+  text-align: justify;
+
+  &:first-child:first-letter {
+    color: $color-chartreuse-yellow;
+    float: left;
+    font-family: Georgia;
+    font-size: 4em;
+    line-height: .5em;
+    padding-left: .05em;
+    padding-right: .05em;
+    padding-top: .1em;
+  }
+}
+
+.orbit-container-glorykidd {
+  // height: 100px;
+  padding: 1em;
+  // position: relative;
+  background-color: $color-gk-callout;
+  list-style: none;
+  margin: 0;
+  // padding-right: 1em;
+  // overflow: hidden;
+  
+}
+
+// .lead2 {
+//   color: $color-rolling-stone-gray;
+//   font-size: 85%;
+//   line-height: 1.4;
+//   text-align: justify;
+// }

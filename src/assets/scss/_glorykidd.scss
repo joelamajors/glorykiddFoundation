@@ -24,46 +24,8 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   }
 }
 
-// lead bar
-.orbit-container-glorykidd {
-  // height: 100px;
-  list-style: none;
-  margin: 0;
-  overflow: hidden;
-  // padding-bottom: 1em;
-  // position: relative;
 
-}
 
-.lead {
-  color: $white;
-  font-size: 1em;
-  line-height: 1em;
-  padding: .25em 0 1em;
-  text-align: justify;
-
-  &:first-child:first-letter {
-    color: $color-chartreuse-yellow;
-    float: left;
-    font-family: Georgia;
-    font-size: 4em;
-    line-height: .5em;
-    padding-left: .05em;
-    padding-right: .025em;
-    padding-top: .1em;
-  }
-}
-
-.lead2 {
-  color: $color-rolling-stone-gray;
-  font-size: 85%;
-  line-height: 1.4;
-  text-align: justify;
-}
-
-.glorybar {
-  background-color: $color-gk-callout;
-}
 
 
 // menu and topbar
@@ -121,29 +83,6 @@ div.top-bar {
   }
 }
 
-.menu2 {
-  font-size: 80%;
-  list-style-type: none;
-  margin-bottom: 10px;
-  > li {
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
-
-.menu2-text {
-  color: inherit;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  padding-top: 5px;
-  // text-align: center;
-}
-
-
-[data-whatinput="mouse"] .menu2 > li {
-  outline: 0;
-}
 
 .menu2 {
   > li > a {
@@ -205,23 +144,36 @@ div.top-bar {
   }
 }
 
+.menu2 {
+  font-size: 80%;
+  list-style-type: none;
+  margin-bottom: 10px;
+  > li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.menu2-text {
+  color: inherit;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 5px;
+  // text-align: center;
+}
+
+
+[data-whatinput="mouse"] .menu2 > li {
+  outline: 0;
+}
+
+
 div.title-bar {
   background-color: $color-gk-callout;
 }
 
-.imagelogo {
-  float: left;
-  background-color: $white;
-  padding: 1em;
-  vertical-align: 50%;
-}
 
-.imagelogo-small {
-  float: none;
-  margin: 0;
-  padding: 1em;
-  vertical-align: middle;
-}
 
 // callout and general?
 .callout {
