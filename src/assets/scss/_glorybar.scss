@@ -1,25 +1,34 @@
 .glorybar {
-  background-color: $color-gk-callout;
+  background: $color-gk-callout;
+}
+
+.glorybar-beta {
+  display: table-cell;
+}
+
+.circle {
+  background: $white;
+  border-radius: 0 50% 50% 0;
+  height: 100%;
+  padding-top: 1em;
+  position: relative;
+  // vertical-align: bottom;
+  // width: 100%;
 }
 
 .imagelogo {
-  // float: left;
-  background-color: $white;
   // border-radius: 6em;
-  // display: flex;
-  max-height: 10em;
-  padding: -1em;
+  display: flex;
+  // float: right;
+  max-height: 12em;
+  padding-top: .15%;
+  position: relative;
   // vertical-align: middle;
 }
 
-.imagelogo-beta {
-  // background-color: $white;
-  // max-height: 10em;
-  // border-radius: 6em;
-  padding: 0;
-}
-
 .imagelogo-small {
+  // border-color: $color-gk-callout;
+  // border-radius: 50%;
   float: none;
   margin: 0;
   padding: 1em;
@@ -33,7 +42,7 @@
   padding: .25em 0 2em 1em;
   text-align: justify;
 
-  &:first-child:first-letter {
+  &:first-child::first-letter {
     color: $color-chartreuse-yellow;
     float: left;
     font-family: Georgia;
@@ -46,14 +55,13 @@
 }
 
 .orbit-container-glorykidd {
+  // background-color: $color-gk-callout;
   // height: 100px;
-  
-  // position: relative;
-  background-color: $color-gk-callout;
   list-style: none;
   margin: 0;
   padding: 1em;
   // padding-right: 1em;
+  // position: relative;
   // overflow: hidden;
 }
 
