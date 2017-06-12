@@ -1,8 +1,5 @@
 .glorybar {
   background: $color-gk-callout;
-}
-
-.glorybar-beta {
   display: table-cell;
 }
 
@@ -12,23 +9,16 @@
   height: 100%;
   padding-top: 1em;
   position: relative;
-  // vertical-align: bottom;
-  // width: 100%;
 }
 
 .imagelogo {
-  // border-radius: 6em;
   display: flex;
-  // float: right;
   max-height: 12em;
   padding-top: .15%;
   position: relative;
-  // vertical-align: middle;
 }
 
 .imagelogo-small {
-  // border-color: $color-gk-callout;
-  // border-radius: 50%;
   float: none;
   margin: 0;
   padding: 1em;
@@ -38,7 +28,6 @@
 .lead {
   color: $white;
   font-size: 1em;
-  // line-height: 1em;
   padding: .25em 0 2em 1em;
   text-align: justify;
 
@@ -55,14 +44,9 @@
 }
 
 .orbit-container-glorykidd {
-  // background-color: $color-gk-callout;
-  // height: 100px;
   list-style: none;
   margin: 0;
   padding: 1em;
-  // padding-right: 1em;
-  // position: relative;
-  // overflow: hidden;
 }
 
 .lead2 {
