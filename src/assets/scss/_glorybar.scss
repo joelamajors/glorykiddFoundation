@@ -7,15 +7,17 @@
   background: $white;
   border-radius: 0 0 50%;
   height: 100%;
-  padding-top: 1em;
+  // padding-top: 1em;
   position: relative;
 }
 
 .imagelogo {
   display: flex;
-  max-height: 12em;
+  max-height: 14em;
   padding-top: .15%;
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .imagelogo-small {
@@ -25,10 +27,11 @@
   vertical-align: middle;
 }
 
-.lead {
+.glorybar-lead {
   color: $white;
   font-size: 1em;
-  padding: .25em 0 2em 1em;
+  padding: .25em 0 0 .25em;
+  // padding: .25em 0 2em 1em;
   text-align: justify;
 
   &:first-child::first-letter {
