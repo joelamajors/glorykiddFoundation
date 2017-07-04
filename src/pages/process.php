@@ -31,10 +31,10 @@ name: PHP Only Page
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: postmaster@glorykidd.com";
     mail($to,$subject,$txt,$headers);
-    echo "<script type='text/javascript'>window.location='/thankyou'</script>";
+    echo "<script type='text/javascript'>window.location='/thankyou.html'</script>";
   } else {
     // Failed Request
-    echo "<script type='text/javascript'>window.location='/contact'</script>";
+    echo "<script type='text/javascript'>window.location='/contact.html'</script>";
   }
 
 ?>
