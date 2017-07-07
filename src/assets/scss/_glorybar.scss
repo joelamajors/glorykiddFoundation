@@ -7,7 +7,6 @@
   background: $white;
   border-radius: 0 0 50%;
   height: 100%;
-  // padding-top: 1em;
   position: relative;
 }
 
@@ -31,7 +30,6 @@
   color: $white;
   font-size: 1em;
   padding: .25em 0 0 .25em;
-  // padding: .25em 0 2em 1em;
   text-align: justify;
 
   &:first-child::first-letter {
@@ -49,7 +47,7 @@
 .orbit-container-glorykidd {
   list-style: none;
   margin: 0;
-  padding: 1em;
+  padding-top: 1em;
 }
 
 .lead2 {

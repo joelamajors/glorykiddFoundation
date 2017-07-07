@@ -1,6 +1,5 @@
 // global stuff
 $color-gk-callout: #0078c4;
-// #0b4c5f;
 $color-tory-blue: #116ca8;
 $color-tarawera: #0a4063;
 $white: #fff;
@@ -27,7 +26,7 @@ $color-thumbnail: rgba(33, 153, 232, .5);
 // menu and topbar
 div.top-bar {
   background-color: $white;
-  
+
   ul {
     background-color: $white;
   }
@@ -35,20 +34,12 @@ div.top-bar {
 
 .top-bar {
   background-color: $white;
+  padding-bottom: 10px;
+  padding-top: 35px;
 
   ul {
     background-color: $white;
   }
-
-  padding-top: 35px;
-
-  li {
-    // padding-top: 35px;
-  }
-
-  padding-bottom: 10px;
-
-  padding-top: 10px;
 
   img {
     padding-bottom: 10px;
@@ -63,14 +54,13 @@ div.top-bar {
 
 .top-bar2 {
   background-color: $white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
 
   ul {
     background-color: $white;
   }
-
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 0;
 
   li {
     padding-left: 20px;
@@ -83,8 +73,8 @@ div.top-bar {
 .menu2 {
   > li > a {
     display: block;
-    padding-top: 5px;
     line-height: 1;
+    padding-top: 5px;
   }
 
   &.expanded {
@@ -144,6 +134,7 @@ div.top-bar {
   font-size: 80%;
   list-style-type: none;
   margin-bottom: 10px;
+
   > li {
     display: table-cell;
     vertical-align: middle;
@@ -156,7 +147,6 @@ div.top-bar {
   font-weight: bold;
   line-height: 1;
   padding-top: 5px;
-  // text-align: center;
 }
 
 
@@ -169,10 +159,49 @@ div.title-bar {
   background-color: $color-gk-callout;
 }
 
-
-
 // callout and general?
 .callout {
+
+  &.glorykidd {
+    background-color: $color-gk-callout;
+
+    a {
+      color: $color-tory-blue;
+
+      &:hover {
+        color: $color-tarawera;
+      }
+    }
+  }
+
+  &.reviews {
+    background-color: $white;
+    border: 1px solid $color-marshland-gray;
+    border-radius: 10px;
+    font-size: 85%;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    text-align: justify;
+
+    p {
+      font-style: italic;
+    }
+
+    h4 {
+      color: $color-tory-blue;
+      font-size: 90%;
+      text-align: right;
+    }
+
+    h3 {
+      color: $color-tory-blue;
+      text-align: left;
+    }
+  }
+
   &.glorykiddhome {
     background-color: $white;
     border: 1px solid $color-marshland-gray;
@@ -276,53 +305,8 @@ div.title-bar {
   padding: 5px;
 }
 
-.callout.reviews {
-  background-color: $white;
-  border: 1px solid $color-marshland-gray;
-  border-radius: 10px;
-  font-size: 85%;
-  margin: 0 0 1rem;
-  padding: 1rem;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  position: relative;
-  text-align: justify;
-
-  p {
-    font-style: italic;
-  }
-
-  h4 {
-    color: $color-tory-blue;
-    font-size: 90%;
-    text-align: right;
-  }
-
-  h3 {
-    color: $color-tory-blue;
-    text-align: left;
-   // font-size: 90%;
-  }
-}
-
-.callout.glorykidd {
-  background-color: $color-gk-callout;
-  // font-size: .75em;
-
-  a {
-    color: $color-tory-blue;
-
-    &:hover {
-      color: $color-tarawera;
-    }
-  }
-}
-
 // THUMBNAILS
-.thumbnailDesc {
-  // border: solid 4px $color-slightly-offwhite;
-  // box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
-  // line-height: 0;
+.thumbnail-desc {
   border-radius: 0;
   display: inline-block;
   margin-bottom: 1rem;
@@ -351,7 +335,7 @@ div.title-bar {
   }
 }
 
-// FOOTER 
+// FOOTER
 .glorykidd-footer {
   text-align: center;
 }
