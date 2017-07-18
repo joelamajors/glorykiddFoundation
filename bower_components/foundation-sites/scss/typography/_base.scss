@@ -12,7 +12,7 @@
 //   - Paragraphs <p>
 //   - Bold/italics <b> <strong> <i> <em>
 //   - Small text <small>
-//   - Headings <h1>—<h6>
+//   - Headings <h1>-<h6>
 //   - Anchors <a>
 //   - Dividers <hr>
 //   - Lists <ul> <ol> <dl>
@@ -469,10 +469,10 @@ $abbr-underline: 1px dotted $black !default;
   }
 
   // Abbreviations
-  abbr {
+  abbr, abbr[title] {
     border-bottom: $abbr-underline;
-    color: $body-font-color;
     cursor: help;
+    text-decoration: none;
   }
 
   // Figures
