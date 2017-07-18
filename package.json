@@ -9,6 +9,12 @@
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
+  "dependencies": {
+    "foundation-sites": "~6.4.1",
+    "jquery": ">=3.0.0",
+    "what-input": "^4.1.3",
+    "motion-ui": "~1.2.2"
+  },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.7.2",
