@@ -1,18 +1,18 @@
-$menu-hover-lines-transition: all .35s ease;
+$menu-hover-lines-transition: all 0.35s ease;
 $menu-hover-lines-border-width: 3px;
 
 .menu-hover-lines {
-  font-weight: 500;
-  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
   transition: $menu-hover-lines-transition;
 
   li a {
-    color: rgba($body-font-color, .5);
-    margin-left: 1rem;
-    padding: .75rem 0;
+    padding: 0.75rem 0;
+    color: rgba($body-font-color, 0.5);
     position: relative;
+    margin-left: 1rem;
   }
 
   li:first-child a {
@@ -23,20 +23,19 @@ $menu-hover-lines-border-width: 3px;
     background-color: transparent;
   }
 
-  a::after,
-  a::before {
-    background-color: $color-gk-callout;
-    content: '';
+  a:before,
+  a::after {
     height: $menu-hover-lines-border-width;
-    opacity: 65%;
     position: absolute;
+    content: '';
     transition: $menu-hover-lines-transition;
+    background-color: $primary-color;
     width: 0;
   }
 
   a::before {
-    left: 0;
     top: 0;
+    left: 0;
   }
 
   a::after {
@@ -44,7 +43,7 @@ $menu-hover-lines-border-width: 3px;
     right: 0;
   }
 
-  a::hover,
+  a:hover,
   li.active > a {
     color: $body-font-color;
     transition: $menu-hover-lines-transition;
