@@ -1,0 +1,24 @@
+$highlight: $color-tarawera;
+// $highlight: #1d92cf;
+$linkcolor: $color-gk-callout;
+
+.community-links {
+  font-weight: bold;
+  margin-bottom: 1em;
+
+  a {
+    color: $linkcolor;
+    font-size: 1.2em;
+  }
+
+  .fa {
+    font-size: 2em;
+    padding-right: .8em;
+  }
+
+  @include breakpoint (small only) {
+    padding: 0;
+
+  }
+
+}
