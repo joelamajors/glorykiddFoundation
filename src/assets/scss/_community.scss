@@ -16,6 +16,12 @@ $linkcolor: $color-gk-callout;
     padding-right: .8em;
   }
 
+  .bbb-logo {
+    fill: $linkcolor;
+    font-size: 1.2em;
+    max-height: 2em;
+  }
+
   @include breakpoint (small only) {
     padding: 0;
 
