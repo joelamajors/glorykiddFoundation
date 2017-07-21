@@ -14490,7 +14490,6 @@ window.$ = _jquery2.default;
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-
 (0, _jquery2.default)(document).foundation();
 
 /***/ }),

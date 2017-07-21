@@ -1,30 +1,22 @@
-$highlight: $color-tarawera;
-// $highlight: #1d92cf;
-$linkcolor: $color-gk-callout;
+
+.bbb-a-plus {
+  margin-bottom: 1em;
+  max-height: 4em;
+}
 
 .community-links {
-  font-weight: bold;
   margin-bottom: 1em;
 
   a {
-    color: $linkcolor;
     font-size: 1.2em;
+
+    :hover {
+      color: $color-glorykidd-gold;
+    }
   }
 
   .fa {
     font-size: 2em;
-    padding-right: .8em;
-  }
-
-  .bbb-logo {
-    fill: $linkcolor;
-    font-size: 1.2em;
-    max-height: 2em;
-  }
-
-  @include breakpoint (small only) {
-    padding: 0;
-
   }
 
 }
