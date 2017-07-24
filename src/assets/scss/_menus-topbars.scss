@@ -1,0 +1,135 @@
+// menu and topbar
+div.top-bar {
+  background-color: $white;
+
+  ul {
+    background-color: $white;
+  }
+}
+
+.top-bar {
+  background-color: $white;
+  padding-bottom: 10px;
+  padding-top: 35px;
+
+  ul {
+    background-color: $white;
+  }
+
+  img {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  input {
+    margin-right: 1rem;
+    width: 200px;
+  }
+}
+
+.top-bar2 {
+  background-color: $white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+
+  ul {
+    background-color: $white;
+  }
+
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+  }
+}
+
+
+.menu2 {
+  > li > a {
+    display: block;
+    line-height: 1;
+    padding-top: 5px;
+  }
+
+  &.expanded {
+    display: table;
+    width: 100%;
+
+    > li {
+
+      &:nth-last-child(2):first-child {
+        width: 50%;
+
+        ~ li {
+          width: 50%;
+        }
+      }
+
+      &:nth-last-child(3):first-child {
+        width: 33.33333%;
+
+        ~ li {
+          width: 33.33333%;
+        }
+      }
+
+      &:nth-last-child(4):first-child {
+        width: 25%;
+
+        ~ li {
+          width: 25%;
+        }
+      }
+
+      &:nth-last-child(5):first-child {
+        width: 20%;
+
+        ~ li {
+          width: 20%;
+        }
+      }
+
+      &:nth-last-child(6):first-child {
+        width: 16.66667%;
+
+        ~ li {
+          width: 16.66667%;
+        }
+      }
+
+      &:first-child:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.menu2 {
+  font-size: 80%;
+  list-style-type: none;
+  margin-bottom: 10px;
+
+  > li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.menu2-text {
+  color: inherit;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 5px;
+}
+
+
+[data-whatinput="mouse"] .menu2 > li {
+  outline: 0;
+}
+
+
+div.title-bar {
+  background-color: $color-gk-callout;
+}

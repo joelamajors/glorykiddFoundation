@@ -8,7 +8,7 @@ This is the official ZURB Template for use with [Foundation for Sites](http://fo
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
-- JavaScript concatenation
+- JavaScript module bundling with webpack
 - Built-in BrowserSync server
 - For production builds:
   - CSS compression
@@ -40,6 +40,12 @@ foundation new --framework sites --template zurb
 
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
+Now `cd` to your project name and to start your project run 
+
+```bash
+foundation watch
+```
+
 ### Manual Setup
 
 To manually set up the template, first download it with Git:
@@ -63,3 +69,4 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `npm run build`.
+# duckcreek-client

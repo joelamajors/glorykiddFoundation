@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GloryKidd Technologies LLC</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
-    <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />-->
+    <link rel="stylesheet" href="assets/css/app.css">
+
     <!-- Facebook Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -28,15 +28,17 @@
         });
       };
     </script>
+
   </head>
   <body>
+
     <div class="title-bar" data-responsive-toggle="glorykidd-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">GloryKidd</div>
     </div>
     
     <div class="top-bar row" id="glorykidd-menu">
-      <ul class="vertical medium-horizontal menu expanded menu-hover-lines">
+      <ul class="columns vertical medium-horizontal menu expanded menu-hover-lines">
         <li>
           <a href="/">Home</a>
         </li>
@@ -66,7 +68,6 @@
         </li>
       </ul>
     </div>
-
     
     <div class="show-for-small-only">
       <hr />
@@ -85,7 +86,7 @@
           <img class="imagelogo" src="assets/img/glorykidd-logo.svg">
         </div>
     
-        <div class="columns medium-9 orbit-container-glorykidd" data-equalizer-watch>
+        <div class="columns medium-9 glorybanner" data-equalizer-watch>
           <div>
             <p class="glorybar-lead lead">Our mission is to use workflow processes and leverage software to create practical IT solutions with the highest standard of excellence to both honor God and provide unparalleled customer service for our clients. Our customer focused service helps clients across the globe react to changing requirements and customer demands with the speed, scalability and flexibility.</p>
           </div>
@@ -96,6 +97,21 @@
     
     <br />
     
+    <!-- adapted for xy grid
+    <div class="grid-container">
+      <div class="show-for-small-only">
+        <div class="grid-x">
+          <div class="cell auto">
+              <img class="imagelogo-small" src="assets/img/glorykiddlogo.png">
+          </div>
+        </div>
+      </div>
+    
+      <div class="grid-x hide-for-small-only glorybar" data-equalizer data-equalize-on="medium">
+      
+        <div class="cell medium-3 circle" data-equalizer-watch>
+          <img class="imagelogo" src="assets/img/glorykidd-logo.svg">
+        </div>
     
     <div class="row">
       <div class="medium-7 columns">
@@ -200,7 +216,9 @@
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3289935.js"></script>
     <!-- End of HubSpot Embed Code -->
+    
     <script async type="text/javascript" src="assets/js/app.js"></script>
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -209,5 +227,6 @@
       ga('create', 'UA-18831849-3', 'auto');
       ga('send', 'pageview');
     </script>
+
   </body>
 </html>
