@@ -1,0 +1,21 @@
+.bbb-a-plus {
+  margin-bottom: 1em;
+  max-height: 4em;
+}
+
+.community-links {
+  margin-bottom: 1em;
+
+  a {
+    font-size: 1.2em;
+
+    :hover {
+      color: $color-glorykidd-gold;
+    }
+  }
+
+  .fa {
+    font-size: 2em;
+  }
+
+}

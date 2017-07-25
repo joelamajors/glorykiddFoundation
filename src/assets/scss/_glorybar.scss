@@ -1,6 +1,6 @@
 .glorybar {
   background: $color-gk-callout;
-  display: table-cell;
+  // display: table-cell;
 }
 
 .circle {
@@ -16,21 +16,20 @@
   padding-top: .15%;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  // transform: translateY(-50%);
 }
 
 .imagelogo-small {
   float: none;
   margin: 0;
-  // max-width: 20em;
-  padding: 1em;
+  padding: 2em 4em 1em;
   vertical-align: middle;
 }
 
 .glorybar-lead {
   color: $white;
   font-size: 1em;
-  padding: .25em 1em 1em .25em;
+  // padding: .25em;
   text-align: justify;
 
   &:first-child::first-letter {

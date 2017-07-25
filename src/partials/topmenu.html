@@ -1,10 +1,14 @@
-<div class="title-bar" data-responsive-toggle="glorykidd-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">GloryKidd</div>
-</div>
+<div class="grid-container">
 
-<div class="top-bar row" id="glorykidd-menu">
-  <ul class="columns vertical medium-horizontal menu expanded menu-hover-lines">
-    {{> menu}}
-  </ul>
+  <div class="title-bar grid-x" data-responsive-toggle="glorykidd-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">GloryKidd</div>
+  </div>
+
+  <div class="top-bar grid-x" id="glorykidd-menu">
+    <ul class="cell auto vertical medium-horizontal menu expanded menu-hover-lines">
+      {{> menu}}
+    </ul>
+  </div>
+
 </div>

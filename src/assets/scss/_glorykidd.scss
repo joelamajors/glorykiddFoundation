@@ -4,6 +4,7 @@ $color-tory-blue: #116ca8;
 $color-tarawera: #0a4063;
 $white: #fff;
 $color-chartreuse-yellow: #d7df01;
+$color-glorykidd-gold: #fba637;
 $color-gallery-gray: #ebebeb;
 $color-marshland-gray: rgba(10, 10, 10, .25);
 $color-slightly-offwhite: #fefefe;
@@ -11,6 +12,10 @@ $color-gray-555: #555;
 $color-rolling-stone-gray: #707578;
 $color-gray4: rgba(10, 10, 10, .2);
 $color-thumbnail: rgba(33, 153, 232, .5);
+
+.glorygrid {
+  justify-content: center;
+}
 
 .contactcard {
   min-height: 135px;
@@ -23,180 +28,12 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   }
 }
 
-// callout and general?
-.callout {
-
-  &.glorykidd {
-    background-color: $color-gk-callout;
-
-    a {
-      color: $color-tory-blue;
-
-      &:hover {
-        color: $color-tarawera;
-      }
-    }
-  }
-
-  &.reviews {
-    background-color: $white;
-    border: 1px solid $color-marshland-gray;
-    border-radius: 10px;
-    font-size: 85%;
-    margin: 0 0 1rem;
-    padding: 1rem;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    position: relative;
-    text-align: justify;
-
-    p {
-      font-style: italic;
-    }
-
-    h4 {
-      color: $color-tory-blue;
-      font-size: 90%;
-      text-align: right;
-    }
-
-    h3 {
-      color: $color-tory-blue;
-      text-align: left;
-    }
-  }
-
-  &.glorykiddhome {
-    background-color: $white;
-    border: 1px solid $color-marshland-gray;
-    border-radius: 10px;
-    margin: 0 0 1rem;
-    padding: 1rem;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    position: relative;
-    text-align: justify;
-
-    h3 {
-      color: $color-tory-blue;
-    }
-  }
-
-  &.secondary2 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-
-    h4 {
-      color: $color-gk-callout;
-      font-size: 100%;
-    }
-  }
-
-  &.webprimary {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-    color: $color-gray-555;
-    height: 400px;
-    text-align: justify;
-
-    h4 {
-      color: $color-gk-callout;
-      font-size: 110%;
-      line-height: 35px;
-      text-align: right;
-    }
-
-    img {
-      float: left;
-      height: 35px;
-    }
-  }
-
-  &.webprimary2 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-    color: $color-gray-555;
-    height: 270px;
-    text-align: justify;
-
-    h4 {
-      color: $color-gk-callout;
-      font-size: 110%;
-      line-height: 35px;
-      text-align: right;
-    }
-
-    img {
-      float: left;
-      height: 35px;
-    }
-  }
-
-  &.webprimary3 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-    color: $color-gray-555;
-    height: 820px;
-    text-align: justify;
-
-    h4 {
-      color: $color-gk-callout;
-      font-size: 110%;
-      line-height: 35px;
-      text-align: right;
-    }
-  }
-
-  &.webprimary4 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-    color: $color-gray-555;
-    font-size: 90%;
-    text-align: justify;
-  }
-}
-
 .glorykidd-text {
   color: inherit;
   font-size: 80%;
   font-weight: bold;
   line-height: 1;
   padding: 5px;
-}
-
-// THUMBNAILS
-.thumbnail-desc {
-  border-radius: 0;
-  display: inline-block;
-  margin-bottom: 1rem;
-  max-width: 100%;
-  text-align: justify;
-  transition: box-shadow 200ms ease-out;
-}
-
-.thumbnail-small-right {
-  border: solid 4px $color-slightly-offwhite;
-  border-radius: 0;
-  box-shadow: 0 0 0 1px $color-gray4;
-  display: inline-block;
-  float: right;
-  line-height: 0;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  max-width: 40%;
-  transition: box-shadow 200ms ease-out;
-}
-
-.thumbnail {
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 6px 1px $color-thumbnail;
-  }
 }
 
 // FOOTER

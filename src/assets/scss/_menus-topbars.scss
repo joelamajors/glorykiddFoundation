@@ -46,74 +46,74 @@ div.top-bar {
 
 
 .menu2 {
-  > li > a {
-    display: block;
-    line-height: 1;
-    padding-top: 5px;
-  }
+  // > li > a {
+  //   display: block;
+  //   line-height: 1;
+  //   padding-top: 5px;
+  // }
 
-  &.expanded {
-    display: table;
-    width: 100%;
+  // &.expanded {
+  //   display: table;
+  //   width: 100%;
 
-    > li {
+  //   > li {
 
-      &:nth-last-child(2):first-child {
-        width: 50%;
+  //     &:nth-last-child(2):first-child {
+  //       width: 50%;
 
-        ~ li {
-          width: 50%;
-        }
-      }
+  //       ~ li {
+  //         width: 50%;
+  //       }
+  //     }
 
-      &:nth-last-child(3):first-child {
-        width: 33.33333%;
+  //     &:nth-last-child(3):first-child {
+  //       width: 33.33333%;
 
-        ~ li {
-          width: 33.33333%;
-        }
-      }
+  //       ~ li {
+  //         width: 33.33333%;
+  //       }
+  //     }
 
-      &:nth-last-child(4):first-child {
-        width: 25%;
+  //     &:nth-last-child(4):first-child {
+  //       width: 25%;
 
-        ~ li {
-          width: 25%;
-        }
-      }
+  //       ~ li {
+  //         width: 25%;
+  //       }
+  //     }
 
-      &:nth-last-child(5):first-child {
-        width: 20%;
+  //     &:nth-last-child(5):first-child {
+  //       width: 20%;
 
-        ~ li {
-          width: 20%;
-        }
-      }
+  //       ~ li {
+  //         width: 20%;
+  //       }
+  //     }
 
-      &:nth-last-child(6):first-child {
-        width: 16.66667%;
+  //     &:nth-last-child(6):first-child {
+  //       width: 16.66667%;
 
-        ~ li {
-          width: 16.66667%;
-        }
-      }
+  //       ~ li {
+  //         width: 16.66667%;
+  //       }
+  //     }
 
-      &:first-child:last-child {
-        width: 100%;
-      }
-    }
-  }
+  //     &:first-child:last-child {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
 
 .menu2 {
   font-size: 80%;
-  list-style-type: none;
+  // list-style-type: none;
   margin-bottom: 10px;
 
-  > li {
-    display: table-cell;
-    vertical-align: middle;
-  }
+  // > li {
+  //   display: table-cell;
+  //   vertical-align: middle;
+  // }
 }
 
 .menu2-text {

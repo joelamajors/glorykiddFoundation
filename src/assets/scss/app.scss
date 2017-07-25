@@ -6,12 +6,15 @@
 @import 'glorykidd';
 @import 'glorybar';
 @import 'menus-topbars';
+@import 'community';
+@import 'portfolio-cells';
+@import 'callouts';
 
 @include foundation-global-styles;
-@include foundation-grid;
+// @include foundation-grid;
 // @include foundation-flex-grid;
 //
-// @include foundation-xy-grid-classes;
+@include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
