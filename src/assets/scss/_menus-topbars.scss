@@ -7,13 +7,8 @@ div.top-bar {
 }
 
 .top-bar {
-  background-color: $color-slightly-offwhite;
   padding-bottom: 10px;
   padding-top: 35px;
-
-  ul {
-    background-color: $color-slightly-offwhite;
-  }
 
   img {
     padding-bottom: 10px;
@@ -30,7 +25,6 @@ div.top-bar {
   background-color: $color-slightly-offwhite;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 0;
 
   ul {
     background-color: $color-slightly-offwhite;
@@ -62,6 +56,6 @@ div.top-bar {
 }
 
 
-div.title-bar {
+.title-bar {
   background-color: $color-gk-callout;
 }

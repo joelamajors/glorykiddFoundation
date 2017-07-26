@@ -12,34 +12,6 @@
     }
   }
 
-  &.reviews {
-    background-color: $white;
-    border: 1px solid $color-marshland-gray;
-    border-radius: 10px;
-    font-size: 85%;
-    margin: 0 0 1rem;
-    padding: 1rem;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    position: relative;
-    text-align: justify;
-
-    p {
-      font-style: italic;
-    }
-
-    h4 {
-      color: $color-tory-blue;
-      font-size: 90%;
-      text-align: right;
-    }
-
-    h3 {
-      color: $color-tory-blue;
-      text-align: left;
-    }
-  }
-
   &.glorykiddhome {
     background-color: $white;
     border: 1px solid $color-marshland-gray;
@@ -56,6 +28,25 @@
     }
   }
 
+  &.reviews {
+    @extend .glorykiddhome;
+    font-size: 85%;
+
+    p {
+      font-style: italic;
+    }
+
+    h4 {
+      color: $color-tory-blue;
+      font-size: 90%;
+      text-align: right;
+    }
+
+    h3 {
+      text-align: left;
+    }
+  }
+
   &.secondary2 {
     background-color: $color-gallery-gray;
     border: 0 solid $color-marshland-gray;
@@ -68,15 +59,12 @@
   }
 
   &.webprimary {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
+    @extend .secondary2;
+
     color: $color-gray-555;
-    // height: 400px;
     text-align: justify;
 
     h4 {
-      color: $color-gk-callout;
       font-size: 110%;
       line-height: 35px;
       text-align: right;
@@ -89,40 +77,11 @@
   }
 
   &.webprimary2 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-    color: $color-gray-555;
-    // height: 270px;
-    text-align: justify;
-
-    h4 {
-      color: $color-gk-callout;
-      font-size: 110%;
-      line-height: 35px;
-      text-align: right;
-    }
-
-    img {
-      float: left;
-      height: 35px;
-    }
+    @extend .webprimary;
   }
 
   &.webprimary3 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-    color: $color-gray-555;
-    // height: 820px;
-    text-align: justify;
-
-    h4 {
-      color: $color-gk-callout;
-      font-size: 110%;
-      line-height: 35px;
-      text-align: right;
-    }
+   @extend .webprimary;
   }
 
   &.webprimary4 {
