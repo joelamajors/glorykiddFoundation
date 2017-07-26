@@ -1,4 +1,7 @@
 // global stuff
+// 
+// glorykidd.scss
+// 
 $color-gk-callout: #0078c4;
 $color-tory-blue: #116ca8;
 $color-tarawera: #0a4063;
@@ -41,6 +44,9 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   text-align: center;
 }
 
+// 
+// callouts.scss
+// 
 .callout {
 
   &.glorykidd {
@@ -52,34 +58,6 @@ $color-thumbnail: rgba(33, 153, 232, .5);
       &:hover {
         color: $color-tarawera;
       }
-    }
-  }
-
-  &.reviews {
-    background-color: $white;
-    border: 1px solid $color-marshland-gray;
-    border-radius: 10px;
-    font-size: 85%;
-    margin: 0 0 1rem;
-    padding: 1rem;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    position: relative;
-    text-align: justify;
-
-    p {
-      font-style: italic;
-    }
-
-    h4 {
-      color: $color-tory-blue;
-      font-size: 90%;
-      text-align: right;
-    }
-
-    h3 {
-      color: $color-tory-blue;
-      text-align: left;
     }
   }
 
@@ -99,6 +77,37 @@ $color-thumbnail: rgba(33, 153, 232, .5);
     }
   }
 
+  &.reviews {
+    @extend .glorykiddhome;
+    font-size: 85%;
+    // background-color: $white;
+    // border: 1px solid $color-marshland-gray;
+    // border-radius: 10px;
+    
+    // margin: 0 0 1rem;
+    // padding: 1rem;
+    // padding-bottom: 15px;
+    // padding-top: 15px;
+    // position: relative;
+    // text-align: justify;
+
+    p {
+      font-style: italic;
+    }
+
+    h4 {
+      color: $color-tory-blue;
+      font-size: 90%;
+      text-align: right;
+    }
+
+    h3 {
+      text-align: left;
+    }
+  }
+
+  
+
   &.secondary2 {
     background-color: $color-gallery-gray;
     border: 0 solid $color-marshland-gray;
@@ -111,11 +120,8 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   }
 
   &.webprimary {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
+    @extend .secondary2;
     color: $color-gray-555;
-    // height: 400px;
     text-align: justify;
 
     h4 {
@@ -132,11 +138,8 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   }
 
   &.webprimary2 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
+    @extend .webprimary;
     color: $color-gray-555;
-    // height: 270px;
     text-align: justify;
 
     h4 {
@@ -153,11 +156,8 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   }
 
   &.webprimary3 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
+    @extend .secondary2;
     color: $color-gray-555;
-    // height: 820px;
     text-align: justify;
 
     h4 {
@@ -169,12 +169,210 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   }
 
   &.webprimary4 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
+    @extend .secondary2;
     color: $color-gray-555;
     font-size: 90%;
     text-align: justify;
   }
 }
 
+// 
+// glorybar.scss
+// 
+.glorybar {
+  background: $color-gk-callout;
+  // display: table-cell;
+}
+
+.circle {
+  background: $white;
+  border-radius: 0 0 50%;
+  height: 100%;
+  position: relative;
+}
+
+.imagelogo {
+  display: flex;
+  max-height: 14em;
+  padding-top: .15%;
+  position: relative;
+  top: 50%;
+}
+
+.imagelogo-small {
+  float: none;
+  margin: 0;
+  padding: 2em 4em 1em;
+  vertical-align: middle;
+}
+
+.glorybar-lead {
+  color: $white;
+  font-size: 1em;
+  text-align: justify;
+
+  &:first-child::first-letter {
+    color: $color-chartreuse-yellow;
+    float: left;
+    font-family: Georgia;
+    font-size: 4em;
+    line-height: .5em;
+    padding-left: .05em;
+    padding-right: .05em;
+    padding-top: .1em;
+  }
+}
+
+.glorybanner {
+  list-style: none;
+  margin: 0;
+  padding-top: 1em;
+}
+
+.lead2 {
+  color: $color-rolling-stone-gray;
+  font-size: 85%;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+// 
+// community.scss
+// 
+.bbb-a-plus {
+  margin-bottom: 1em;
+  max-height: 4em;
+}
+
+.community-links {
+  margin-bottom: 1em;
+
+  a {
+    font-size: 1.2em;
+
+    :hover {
+      color: $color-glorykidd-gold;
+    }
+  }
+
+  .fa {
+    font-size: 2em;
+  }
+
+}
+
+//
+// menus-topbars.scss
+// 
+// menu and topbar
+
+// div.top-bar {
+//   background-color: $color-slightly-offwhite;
+
+//   ul {
+//     background-color: $color-slightly-offwhite;
+//   }
+// }
+
+.top-bar {
+  background-color: $color-slightly-offwhite;
+  padding-bottom: 10px;
+  padding-top: 35px;
+
+  ul {
+    background-color: $color-slightly-offwhite;
+  }
+
+  img {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  input {
+    margin-right: 1rem;
+    width: 200px;
+  }
+}
+
+.top-bar2 {
+  background-color: $color-slightly-offwhite;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+
+  ul {
+    background-color: $color-slightly-offwhite;
+  }
+
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+  }
+}
+
+.menu2 {
+  font-size: 80%;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.menu2-text {
+  color: inherit;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 5px;
+}
+
+[data-whatinput="mouse"] .menu2 > li {
+  outline: 0;
+}
+
+.title-bar {
+  // div {
+    background-color: $color-gk-callout;
+  }
+// }
+
+// 
+// portfolio-cells.scss
+// 
+.portfolio-cells {
+  color: $black;
+
+  h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.thumbnail-desc {
+  border-radius: 0;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  max-width: 100%;
+  text-align: justify;
+  transition: box-shadow 200ms ease-out;
+}
+
+.thumbnail-small-right {
+  border: solid 4px $color-slightly-offwhite;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px $color-gray4;
+  display: inline-block;
+  float: right;
+  line-height: 0;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  max-width: 40%;
+  transition: box-shadow 200ms ease-out;
+}
+
+.thumbnail {
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 6px 1px $color-thumbnail;
+  }
+}
