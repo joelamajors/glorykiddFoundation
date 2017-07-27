@@ -1,5 +1,6 @@
-.glorykidd-home-container {
-  // background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
+body {
+  // background-color: $black;
+  background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
 }
 
 .gloryblur {
@@ -14,4 +15,5 @@
 
 .glory-gradient {
   background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
+  height: 5em;
 }

@@ -3,12 +3,6 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import 'glorykidd';
-@import 'glorybar';
-@import 'menus-topbars';
-@import 'community';
-@import 'portfolio-cards';
-@import 'callouts';
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -59,3 +53,10 @@
 @include motion-ui-animations;
 
 @import 'components/building-blocks/menu-hover-lines';
+
+@import 'glorykidd';
+@import 'glorybar';
+@import 'menus-topbars';
+@import 'community';
+@import 'portfolio-cards';
+@import 'callouts';
