@@ -1,58 +1,17 @@
-.glorybar {
-  background: $color-gk-callout;
-  // display: table-cell;
+.glorykidd-home-container {
+  // background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
 }
 
-.circle {
-  background: $white;
-  border-radius: 0 0 50%;
-  height: 100%;
-  position: relative;
+.gloryblur {
+  filter: blur(60px);
 }
 
-.imagelogo {
-  display: flex;
-  max-height: 14em;
-  padding-top: .15%;
-  position: relative;
-  top: 50%;
-  // transform: translateY(-50%);
+.glorykidd-logo {
+  // background: $white;
+  // border-radius: 50%;
+  max-height: 30em;
 }
 
-.imagelogo-small {
-  float: none;
-  margin: 0;
-  padding: 2em 4em 1em;
-  vertical-align: middle;
-}
-
-.glorybar-lead {
-  color: $white;
-  font-size: 1em;
-  // padding: .25em;
-  text-align: justify;
-
-  &:first-child::first-letter {
-    color: $color-chartreuse-yellow;
-    float: left;
-    font-family: Georgia;
-    font-size: 4em;
-    line-height: .5em;
-    padding-left: .05em;
-    padding-right: .05em;
-    padding-top: .1em;
-  }
-}
-
-.glorybanner {
-  list-style: none;
-  margin: 0;
-  padding-top: 1em;
-}
-
-.lead2 {
-  color: $color-rolling-stone-gray;
-  font-size: 85%;
-  line-height: 1.4;
-  text-align: justify;
+.glory-gradient {
+  background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
 }
