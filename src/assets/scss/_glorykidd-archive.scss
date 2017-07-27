@@ -181,7 +181,6 @@ $color-thumbnail: rgba(33, 153, 232, .5);
 // 
 .glorybar {
   background: $color-gk-callout;
-  // display: table-cell;
 }
 
 .circle {
@@ -265,14 +264,13 @@ $color-thumbnail: rgba(33, 153, 232, .5);
 // menus-topbars.scss
 // 
 // menu and topbar
+div.top-bar {
+  background-color: $color-slightly-offwhite;
 
-// div.top-bar {
-//   background-color: $color-slightly-offwhite;
-
-//   ul {
-//     background-color: $color-slightly-offwhite;
-//   }
-// }
+  ul {
+    background-color: $color-slightly-offwhite;
+  }
+}
 
 .top-bar {
   background-color: $color-slightly-offwhite;
@@ -329,16 +327,14 @@ $color-thumbnail: rgba(33, 153, 232, .5);
   outline: 0;
 }
 
-.title-bar {
-  // div {
-    background-color: $color-gk-callout;
-  }
-// }
+div.title-bar {
+  background-color: $color-gk-callout;
+}
 
 // 
-// portfolio-cells.scss
+// portfolio-cards.scss
 // 
-.portfolio-cells {
+.portfolio-cards {
   color: $black;
 
   h5 {

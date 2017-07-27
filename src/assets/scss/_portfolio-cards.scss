@@ -1,9 +1,13 @@
-.portfolio-cells {
+.portfolio-cards {
   color: $black;
 
   h5 {
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  img {
+    align-items: center;
   }
 }
 
