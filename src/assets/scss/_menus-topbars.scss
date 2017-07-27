@@ -1,42 +1,3 @@
-div.top-bar {
-  background-color: $color-slightly-offwhite;
-
-  ul {
-    background-color: $color-slightly-offwhite;
-  }
-}
-
-.top-bar {
-  padding-bottom: 10px;
-  padding-top: 35px;
-
-  img {
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-
-  input {
-    margin-right: 1rem;
-    width: 200px;
-  }
-}
-
-.top-bar2 {
-  background-color: $color-slightly-offwhite;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  ul {
-    background-color: $color-slightly-offwhite;
-  }
-
-  li {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0;
-  }
-}
-
 .menu2 {
   font-size: 80%;
   margin-bottom: 10px;
@@ -54,6 +15,41 @@ div.top-bar {
   outline: 0;
 }
 
-div.title-bar {
+.title-bar {
   background-color: $color-gk-callout;
+}
+
+.top-bar {
+  background-color: $color-slightly-offwhite;
+  padding-bottom: 10px;
+
+  img {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  input {
+    margin-right: 1rem;
+    width: 200px;
+  }
+
+  ul {
+    background-color: $color-slightly-offwhite;
+  }
+}
+
+.top-bar2 {
+  background-color: $color-slightly-offwhite;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  ul {
+    background-color: $color-slightly-offwhite;
+  }
+
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+  }
 }
