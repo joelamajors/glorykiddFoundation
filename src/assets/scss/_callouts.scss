@@ -102,3 +102,14 @@
     text-align: justify;
   }
 }
+
+.contactcard {
+  min-height: 135px;
+  width: 100%;
+
+  img {
+    float: right;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}

@@ -13,31 +13,8 @@ $color-gray-555: #555;
 $color-rolling-stone-gray: #707578;
 $color-gray4: rgba(10, 10, 10, .2);
 $color-thumbnail: rgba(33, 153, 232, .5);
+$footer-color: rgba(255, 255, 255, .8);
 
 .glorygrid {
   justify-content: center;
-}
-
-.contactcard {
-  min-height: 135px;
-  width: 100%;
-
-  img {
-    float: right;
-    margin-top: 0;
-    padding-left: 15px;
-  }
-}
-
-.glorykidd-text {
-  color: inherit;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  padding: 5px;
-}
-
-// FOOTER
-.glorykidd-footer {
-  text-align: center;
 }
