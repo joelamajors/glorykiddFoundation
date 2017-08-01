@@ -1,3 +1,6 @@
+$glory-gradient: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
+$glorykidd-gold-trans: $color-glorykidd-gold;
+
 .glorybar {
   color: $white;
 }
@@ -11,8 +14,26 @@
 }
 
 .glory-gradient {
-  background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
+  background: $glory-gradient;
   height: 5em;
 }
 
+.glorybar-callouts {
+  align-self: center;
+  color: $black;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
 
+  h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.glorybar-button {
+  border-color: $color-glorykidd-gold;
+  border-radius: .5em;
+  border-style: solid;
+  padding: .5em .5em 0;
+}
