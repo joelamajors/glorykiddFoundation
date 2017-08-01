@@ -1,107 +1,107 @@
-.callout {
+// .callout {
 
-  &.glorykidd {
-    background-color: $color-gk-callout;
+//   &.glorykidd {
+//     background-color: $color-gk-callout;
 
-    a {
-      color: $color-tory-blue;
+//     a {
+//       color: $color-tory-blue;
 
-      &:hover {
-        color: $color-tarawera;
-      }
-    }
-  }
+//       &:hover {
+//         color: $color-tarawera;
+//       }
+//     }
+//   }
 
-  &.glorykiddhome {
-    background-color: $white;
-    border: 1px solid $color-marshland-gray;
-    border-radius: 10px;
-    margin: 0 0 1rem;
-    padding: 1rem;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    position: relative;
-    text-align: justify;
+//   &.glorykiddhome {
+//     background-color: $white;
+//     border: 1px solid $color-marshland-gray;
+//     border-radius: 10px;
+//     margin: 0 0 1rem;
+//     padding: 1rem;
+//     padding-bottom: 15px;
+//     padding-top: 15px;
+//     position: relative;
+//     text-align: justify;
 
-    h3 {
-      color: $color-gk-callout;
-    }
-  }
+//     h3 {
+//       color: $color-gk-callout;
+//     }
+//   }
 
-  &.reviews {
-    @extend .glorykiddhome;
-    font-size: 85%;
+//   &.reviews {
+//     @extend .glorykiddhome;
+//     font-size: 85%;
 
-    p {
-      font-style: italic;
-    }
+//     p {
+//       font-style: italic;
+//     }
 
-    h4 {
-      color: $color-gk-callout;
-      font-size: 90%;
-      text-align: right;
-    }
+//     h4 {
+//       color: $color-gk-callout;
+//       font-size: 90%;
+//       text-align: right;
+//     }
 
-    h3 {
-      text-align: left;
-    }
-  }
+//     h3 {
+//       text-align: left;
+//     }
+//   }
 
-  &.secondary2 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
+//   &.secondary2 {
+//     background-color: $color-gallery-gray;
+//     border: 0 solid $color-marshland-gray;
+//     border-radius: 10px;
 
-    h4 {
-      color: $color-gk-callout;
-      font-size: 100%;
-    }
-  }
+//     h4 {
+//       color: $color-gk-callout;
+//       font-size: 100%;
+//     }
+//   }
 
-  &.webprimary {
-    @extend .secondary2;
+//   &.webprimary {
+//     @extend .secondary2;
 
-    color: $color-gray-555;
-    text-align: justify;
+//     color: $color-gray-555;
+//     text-align: justify;
 
-    h4 {
-      font-size: 110%;
-      line-height: 35px;
-      text-align: right;
-    }
+//     h4 {
+//       font-size: 110%;
+//       line-height: 35px;
+//       text-align: right;
+//     }
 
-    img {
-      float: left;
-      height: 35px;
-    }
-  }
+//     img {
+//       float: left;
+//       height: 35px;
+//     }
+//   }
 
-  &.webprimary2 {
-    @extend .webprimary;
-  }
+//   &.webprimary2 {
+//     @extend .webprimary;
+//   }
 
-  &.webprimary3 {
-    @extend .secondary2;
+//   &.webprimary3 {
+//     @extend .secondary2;
 
-    color: $color-gray-555;
-    text-align: justify;
+//     color: $color-gray-555;
+//     text-align: justify;
 
-    h4 {
-      font-size: 110%;
-      line-height: 35px;
-      text-align: right;
-    }
-  }
+//     h4 {
+//       font-size: 110%;
+//       line-height: 35px;
+//       text-align: right;
+//     }
+//   }
 
-  &.webprimary4 {
-    background-color: $color-gallery-gray;
-    border: 0 solid $color-marshland-gray;
-    border-radius: 10px;
-    color: $color-gray-555;
-    font-size: 90%;
-    text-align: justify;
-  }
-}
+//   &.webprimary4 {
+//     background-color: $color-gallery-gray;
+//     border: 0 solid $color-marshland-gray;
+//     border-radius: 10px;
+//     color: $color-gray-555;
+//     font-size: 90%;
+//     text-align: justify;
+//   }
+// }
 
 .contactcard {
   min-height: 135px;

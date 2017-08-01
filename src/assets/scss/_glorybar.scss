@@ -1,5 +1,5 @@
-body {
-  background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
+.glorybar {
+  color: $white;
 }
 
 .gloryblur {
@@ -13,4 +13,9 @@ body {
 .glory-gradient {
   background: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
   height: 5em;
+}
+
+.glorybar-callouts {
+  align-self: center;
+  text-justify: center;
 }

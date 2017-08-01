@@ -1,18 +1,20 @@
 $menu-hover-lines-transition: all 0.35s ease;
 $menu-hover-lines-border-width: 3px;
+// $color-gk-callout
+// $color-glorykidd-gold
 
 .menu-hover-lines {
-  text-align: center;
-  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
   transition: $menu-hover-lines-transition;
 
   li a {
-    padding: 0.75rem 0;
-    color: rgba($body-font-color, 0.5);
-    position: relative;
+    color: rgba($body-font-color, .5);
     margin-left: 1rem;
+    padding: .75rem 0;
+    position: relative;
   }
 
   li.active > a {
@@ -21,17 +23,19 @@ $menu-hover-lines-border-width: 3px;
 
   a:before,
   a::after {
+    background-color: $primary-color;
+    // background-color: $color-glorykidd-gold;
+    // background-color: $color-gk-callout;
+    content: '';
     height: $menu-hover-lines-border-width;
     position: absolute;
-    content: '';
     transition: $menu-hover-lines-transition;
-    background-color: $primary-color;
     width: 0;
   }
 
   a::before {
-    top: 0;
     left: 0;
+    top: 0;
   }
 
   a::after {
@@ -42,6 +46,8 @@ $menu-hover-lines-border-width: 3px;
   a:hover,
   li.active > a {
     color: $body-font-color;
+    // color: $color-glorykidd-gold;
+    // color: $color-gk-callout;    
     transition: $menu-hover-lines-transition;
   }
 
