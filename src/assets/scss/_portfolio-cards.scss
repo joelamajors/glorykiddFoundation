@@ -1,5 +1,6 @@
 .portfolio-cards {
   color: $black;
+  margin-bottom: 2em;
 
   h5 {
     font-weight: bold;
@@ -9,6 +10,12 @@
   img {
     align-items: center;
   }
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+
 }
 
 .thumbnail-desc {
@@ -35,8 +42,5 @@
 }
 
 .thumbnail {
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 6px 1px $color-thumbnail;
-  }
+  margin-top: 1em;
 }
