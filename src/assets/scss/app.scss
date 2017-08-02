@@ -52,6 +52,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'components/building-blocks/menu-hover-lines';
+
 @import 'glorykidd';
 @import 'glorybar';
 @import 'menus-topbars';
@@ -60,5 +62,4 @@
 @import 'callouts';
 @import 'footer';
 @import 'meet-the-team';
-
-@import 'components/building-blocks/menu-hover-lines';
+@import 'glorykidd-index';

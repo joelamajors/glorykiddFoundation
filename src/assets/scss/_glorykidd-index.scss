@@ -1,0 +1,28 @@
+.gk-index-logo {
+  max-height: 30em;
+}
+
+.glory-gradient {
+  background: $glory-gradient;
+  height: 5em;
+}
+
+.gk-index-callouts {
+  align-self: center;
+  color: $black;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+
+  h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.gk-index-button {
+  border-color: $color-glorykidd-gold;
+  border-radius: .5em;
+  border-style: solid;
+  padding: .5em .5em 0;
+}
