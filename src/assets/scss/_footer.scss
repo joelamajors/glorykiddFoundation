@@ -1,8 +1,11 @@
 .glorykidd-footer {
-  // background-color: $white;
   background-color: $footer-color;
   border-radius: 1em;
+  bottom: 0;
+  left: 0;
   padding: .5em;
+  position: absolute;
+  right: 0;
 }
 
 .glorykidd-text {
