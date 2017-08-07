@@ -40,6 +40,10 @@
   padding: 1.5em;
   position: relative;
 
+  a {
+    color: $black;
+  }
+
   h2 {
     font-weight: bold;
     text-transform: uppercase;
@@ -61,4 +65,5 @@
 
 .solution-containers {
   padding: 1em;
+  align-content: center;
 }
