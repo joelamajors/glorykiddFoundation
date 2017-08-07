@@ -1,11 +1,11 @@
 .gk-index-logo {
-  margin: 2em;
+  margin: 1em;
   max-height: 30em;
 }
 
 .glory-gradient {
   background: $glory-gradient;
-  height: 5em;
+  height: 1em;
 }
 
 .gk-index-callouts {
@@ -57,4 +57,8 @@
     background-color: $color-rolling-stone-gray;
   }
 
+}
+
+.solution-containers {
+  padding: 1em;
 }
