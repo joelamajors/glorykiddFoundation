@@ -12,8 +12,8 @@
 .web-callout-card {
 
   h4 {
-    text-align: center;
     color: $color-tarawera;
+    text-align: center;
   }
 
   img {
@@ -24,4 +24,24 @@
   p {
     color: $black;
   }
+}
+
+.web-services-tabs {
+  justify-content: center;
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
+  img {
+    margin-right: .5em;
+    max-height: 4em;
+  }
+
+  h4 {
+    color: $color-tarawera;
+    text-align: center;
+  }
+
 }
