@@ -10,6 +10,7 @@
 }
 
 .web-callout-card {
+  margin-top: .5em;
 
   h4 {
     color: $color-tarawera;
@@ -41,16 +42,19 @@
 
 .web-services-grid {
   background-color: $color-gallery-gray;
+  border-radius: .5em;
+  justify-content: center;
 }
 
 .web-services-callout {
   border-color: $color-gk-callout;
   border-radius: .5em;
   border-style: solid;
-  margin-top: .5em;
+  margin: .5em;
 
   img {
     max-height: 4em;
+    margin-bottom: .25em;
   }
 
   h4 {
