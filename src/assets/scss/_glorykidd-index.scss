@@ -1,3 +1,7 @@
+$software-container-color: $color-marshland-gray;
+$web-container-color: $color-gray-555;
+$agile-container-color: $color-rolling-stone-gray;
+
 .gk-index-logo {
   margin: 1em;
   max-height: 30em;
@@ -51,20 +55,34 @@
   }
 
   &.software-container {
-    background-color: $color-marshland-gray;
+    background-color: $software-container-color;
   }
 
   &.web-container {
-    background-color: $color-gray-555;
+    background-color: $web-container-color;
   }
 
   &.agile-container {
-    background-color: $color-rolling-stone-gray;
+    background-color: $agile-container-color;
   }
 
 }
 
 .solution-containers {
-  padding: 1em;
   align-content: center;
+  padding: 1em;
+}
+
+.top-of-page {
+  bottom: 0;
+  right: 0;
+  text-align: center;
+
+  i {
+    background: $white;
+    border-radius: 50%;
+    color: $software-container-color;
+    font-size: 4em;
+    width: 1em;
+  }
 }
