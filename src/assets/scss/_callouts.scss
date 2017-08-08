@@ -27,10 +27,9 @@
 }
 
 .web-services-tabs {
-  justify-content: center;
-
   a {
     color: $black;
+    font-size: 1.5em;
     text-decoration: none;
   }
 
@@ -38,10 +37,28 @@
     margin-right: .5em;
     max-height: 4em;
   }
+}
+
+.web-services-grid {
+  background-color: $color-gallery-gray;
+}
+
+.web-services-callout {
+  border-color: $color-gk-callout;
+  border-radius: .5em;
+  border-style: solid;
+  margin-top: .5em;
+
+  img {
+    max-height: 4em;
+  }
 
   h4 {
-    color: $color-tarawera;
     text-align: center;
+  }
+
+  p {
+    padding: .25em;
   }
 
 }
