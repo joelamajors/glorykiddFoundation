@@ -43,7 +43,7 @@ $agile-container-color: $color-gray-555;
   border-radius: 1em;
   margin: .5em;
   padding: 1.5em;
-  position: relative;
+  // position: relative;
 
   a {
     color: $black;
@@ -68,19 +68,13 @@ $agile-container-color: $color-gray-555;
 
 }
 
-.index-container-size {
-  height: 80vh;
-}
-
 .solution-containers {
   align-content: center;
   padding: 1em;
 }
 
 .top-of-page {
-  height: 10vh;
   text-align: center;
-  transform: rotate(90deg);
 
   i {
     background: $white;
