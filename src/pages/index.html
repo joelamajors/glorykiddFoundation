@@ -4,81 +4,79 @@ name: index-only-layout
 ---
 <div class="grid-container" id="top">
 
-    <div class="grid-x glorygrid">
-      <div class="cell small-8 medium-4">
-        <img class="gk-index-logo" alt="GloryKidd Logo" src="{{root}}assets/img/gk-logo-square.svg">
-      </div>
+  <div class="grid-x glorygrid">
+    <div class="cell small-8 medium-4">
+      <img class="gk-index-logo" alt="GloryKidd Logo" src="{{root}}assets/img/gk-logo-square.svg">
     </div>
-
-    <div class="grid-x align-spaced" data-magellan data-options="animationEasing: swing; animationDuration: 1000;">
-
-      <a href="#custom-software-solutions" class="cell small-11 medium-6 gk-index-callouts small-order-1 medium-order-3">
-        <div class="gk-index-button">
-          <h2>Software Solutions</h2>
-        </div>
-        <h3>Make your digital strategy</h3>
-      </a>
-      
-      <a href="#web-services" class="cell small-11 medium-5 gk-index-callouts small-order-2 medium-order-2">
-        <div class="gk-index-button">
-          <h2>Web Services</h2>
-        </div>
-        <h3>More than a website</h3>
-      </a>
-
-      <a href="#agile-training" class="cell small-11 medium-5 gk-index-callouts small-order-3 medium-order-1">
-        <div class="gk-index-button">
-          <h2>Agile Training</h2>
-        </div>
-        <h3>Raise your team</h3>
-      </a>
-
-    </div>
-
   </div>
 
-<div class="expand glory-gradient"></div>
-  
-  <div class="grid-container">
+  <div class="grid-x align-spaced" data-magellan data-options="animationEasing: swing; animationDuration: 1000;">
+
+    <a href="#custom-software-solutions" class="cell small-11 medium-6 gk-index-callouts small-order-1 medium-order-3">
+      <div class="gk-index-button">
+        <h2>Software Solutions</h2>
+      </div>
+      <h3>Make your digital strategy</h3>
+    </a>
     
-    <div id="custom-software-solutions" class="solution-containers">
-      <div class="grid-x grid-margin-x fullscreen index-containers software-container">
-        <a href="{{root}}software-solutions.html" class="cell small-11">
-          <h2>Custom Software Solutions</h2>
-          <h4>Make your digital strategy</h4>
-          <p>GloryKidd Technologies develops exciting and engaging high-performance software applications for a variety of clients. Our award-winning service helps clients across the globe react to changing market conditions and customer demands with the speed, scale and flexibility required to maximize returns.</p>
-        </a>
-        <div class="grid-x top-of-page">
-          <a class="" href="#top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
-        </div>
+    <a href="#web-services" class="cell small-11 medium-5 gk-index-callouts small-order-2 medium-order-2">
+      <div class="gk-index-button">
+        <h2>Web Services</h2>
       </div>
-    </div>
+      <h3>More than a website</h3>
+    </a>
 
-    <div id="web-services" class="solution-containers">
-      <div class="grid-x grid-margin-x fullscreen index-containers web-container">
-        <a href="{{root}}web-services.html" class="cell small-11">
-          <h2>Web Services</h2>
-          <h4>More than a website</h4>
-          <p>Every website should be as unique as the owner. We can help you develop the online presence you need to build your business the way you want.</p>
-        </a>
-        <div class="grid-x top-of-page">
-          <a class="" href="#top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
-        </div>
+    <a href="#agile-training" class="cell small-11 medium-5 gk-index-callouts small-order-3 medium-order-1">
+      <div class="gk-index-button">
+        <h2>Agile Training</h2>
       </div>
-    </div>
-
-    <div id="agile-training" class="solution-containers">
-      <div class="grid-x grid-margin-x fullscreen index-containers agile-container">
-        <a href="{{root}}agile-training.html" class="cell small-11">
-          <h2>Agile Training</h2>
-          <h4>Raise your team</h4>
-          <p>Lorem Fugiat incididunt voluptate eu dolore aliquip non laboris non fugiat velit velit elit sunt voluptate aute ut minim eu dolore laborum incididunt quis tempor in ut anim consectetur labore in ut irure labore dolor velit dolore reprehenderit velit voluptate deserunt culpa laboris ad mollit laboris nostrud mollit aute</p>
-        </a>
-        <div class="grid-x top-of-page">
-          <a class="" href="#top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
+      <h3>Raise your team</h3>
+    </a>
 
   </div>
+
+</div>
+
+<!-- <div class="expand glory-gradient"></div> -->
+  
+<div class="grid-container">
+  
+  <div id="custom-software-solutions" class="solution-containers">
+    <div class="grid-x grid-margin-x fullscreen index-containers software-container">
+      <a href="{{root}}software-solutions.html" >
+      <div class="cell small-10">
+        <h2>Custom Software Solutions</h2>
+        <h4>Make your digital strategy</h4>
+        <p>GloryKidd Technologies develops exciting and engaging high-performance software applications for a variety of clients. Our award-winning service helps clients across the globe react to changing market conditions and customer demands with the speed, scale and flexibility required to maximize returns.</p>
+      </div>
+      <div class="cell small-2">
+        words
+      </div>
+      </a>
+      {{> top-of-page}}
+    </div>
+  </div>
+
+  <div id="web-services" class="solution-containers">
+    <div class="grid-x grid-margin-x fullscreen index-containers web-container">
+      <a href="{{root}}web-services.html" class="cell small-11">
+        <h2>Web Services</h2>
+        <h4>More than a website</h4>
+        <p>Every website should be as unique as the owner. We can help you develop the online presence you need to build your business the way you want.</p>
+      </a>
+      {{> top-of-page}}
+    </div>
+  </div>
+
+  <div id="agile-training" class="solution-containers">
+    <div class="grid-x grid-margin-x fullscreen index-containers agile-container">
+      <a href="{{root}}agile-training.html" class="cell small-11">
+        <h2>Agile Training</h2>
+        <h4>Raise your team</h4>
+        <p>Lorem Fugiat incididunt voluptate eu dolore aliquip non laboris non fugiat velit velit elit sunt voluptate aute ut minim eu dolore laborum incididunt quis tempor in ut anim consectetur labore in ut irure labore dolor velit dolore reprehenderit velit voluptate deserunt culpa laboris ad mollit laboris nostrud mollit aute</p>
+      </a>
+      {{> top-of-page}}
+    </div>
+  </div>
+
 </div>

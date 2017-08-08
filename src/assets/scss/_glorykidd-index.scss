@@ -1,6 +1,6 @@
 $software-container-color: $color-marshland-gray;
-$web-container-color: $color-gray-555;
-$agile-container-color: $color-rolling-stone-gray;
+$web-container-color: $color-rolling-stone-gray;
+$agile-container-color: $color-gray-555;
 
 .gk-index-logo {
   margin: 1em;
@@ -68,15 +68,19 @@ $agile-container-color: $color-rolling-stone-gray;
 
 }
 
+.index-container-size {
+  height: 80vh;
+}
+
 .solution-containers {
   align-content: center;
   padding: 1em;
 }
 
 .top-of-page {
-  bottom: 0;
-  right: 0;
+  height: 10vh;
   text-align: center;
+  transform: rotate(90deg);
 
   i {
     background: $white;
