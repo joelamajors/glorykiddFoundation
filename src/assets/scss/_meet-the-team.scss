@@ -1,9 +1,9 @@
 .contact-card {
   background-color: $white;
-  border-color: $color-rolling-stone-gray;
+  border: 1px solid $color-rolling-stone-gray;
   border-radius: .25em;
-  border-style: solid;
-  border-width: 1px;
+  // border-style: solid;
+  // border-width: 1px;
   margin-bottom: 1em;
   min-height: 135px;
   width: 100%;
@@ -14,29 +14,20 @@
     padding-left: 15px;
   }
 
-  p {
-    background-color: $color-rolling-stone-gray;
-  }
-
 }
 
 .contact-card-title {
   padding: .5em;
 
-  h4 {
-    font-weight: light;
-  }
-
-  h5 {
-    font-weight: lighter;
-  }
+  // h5 {
+  //   color: $color-rolling-stone-gray;
+  // }
 }
 
 .contact-card-blurb {
-  background-color: $color-gallery-gray;
+  padding: .5em;
 }
 
-.contact-card-headshot {
-  border-style: solid;
-  border-width: 1px;
+.meet-team {
+  background-color: $color-gallery-gray;  
 }
