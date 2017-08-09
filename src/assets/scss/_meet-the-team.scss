@@ -1,8 +1,42 @@
-.meet-team {
+.contact-card {
+  background-color: $white;
+  border-color: $color-rolling-stone-gray;
+  border-radius: .25em;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 1em;
+  min-height: 135px;
+  width: 100%;
+
+  img {
+    float: right;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+
+  p {
+    background-color: $color-rolling-stone-gray;
+  }
+
+}
+
+.contact-card-title {
+  padding: .5em;
+
+  h4 {
+    font-weight: light;
+  }
+
+  h5 {
+    font-weight: lighter;
+  }
+}
+
+.contact-card-blurb {
   background-color: $color-gallery-gray;
 }
 
-.meet-team-lead {
-  background-color: $color-rolling-stone-gray;
-
+.contact-card-headshot {
+  border-style: solid;
+  border-width: 1px;
 }
