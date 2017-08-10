@@ -1,16 +1,28 @@
 $software-container-color: $color-marshland-gray;
 $web-container-color: $color-rolling-stone-gray;
-$agile-container-color: $color-gray-555;
+$consulting-container-color: $color-gray-555;
+
+.glory-gradient {
+  background: $glory-gradient;
+  height: 1em;
+}
+
+.gk-index-button {
+  border-color: $color-glorykidd-gold;
+  border-radius: .5em;
+  border-style: solid;
+  padding: .5em .5em 0;
+}
+
+.gk-index-grid {
+  padding-bottom: 4em;
+  padding-top: 3em;
+}
 
 .gk-index-logo {
   margin: 1em;
   max-height: 30em;
   padding-bottom: 1em;
-}
-
-.glory-gradient {
-  background: $glory-gradient;
-  height: 1em;
 }
 
 .gk-index-callouts {
@@ -31,19 +43,11 @@ $agile-container-color: $color-gray-555;
 
 }
 
-.gk-index-button {
-  border-color: $color-glorykidd-gold;
-  border-radius: .5em;
-  border-style: solid;
-  padding: .5em .5em 0;
-}
-
 .index-containers {
   align-content: center;
   border-radius: 1em;
   margin: .5em;
-  padding: 1.5em;
-  // position: relative;
+  padding: .5em;
 
   a {
     color: $black;
@@ -62,18 +66,81 @@ $agile-container-color: $color-gray-555;
     background-color: $web-container-color;
   }
 
-  &.agile-container {
-    background-color: $agile-container-color;
+  &.consulting-container {
+    background-color: $consulting-container-color;
   }
 
 }
 
-.solution-containers {
-  align-content: center;
-  padding: 1em;
+
+.index-containers-title {
+  background-color: $color-gk-callout;
+
+  &.software {
+    color: $black;
+  }
+
+  &.web {
+    color: $black;
+  }
+
+  &.consulting {
+    color: $black;
+  }
+
 }
 
-.top-of-page {
+.index-containers-subtitle {
+  background-color: $color-tory-blue;
+
+  &.software {
+    color: $black;
+  }
+
+  &.web {
+    color: $black;
+  }
+
+  &.consulting {
+    color: $black;
+  }
+
+}
+
+.index-containers-blurb {
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 1em;
+  padding: .5em;
+
+  &.software {
+    color: $black;
+  }
+
+  &.web {
+    color: $black;
+  }
+
+  &.consulting {
+    color: $black;
+  }
+
+}
+
+.index-inside-containers {
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 1em;
+  padding: .5em;
+}
+
+.solution-containers {
+  align-content: center;
+  padding: .25em;
+}
+
+.top-of-page-fa {
+  position: relative;
   text-align: center;
 
   i {
@@ -81,6 +148,7 @@ $agile-container-color: $color-gray-555;
     border-radius: 50%;
     color: $software-container-color;
     font-size: 4em;
+    margin-top: .25em;
     width: 1em;
   }
 }
