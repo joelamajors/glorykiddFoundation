@@ -47,6 +47,17 @@
 
 }
 
+.reviews-blurb {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.reviews-quotation-marks {
+  color: $color-marshland-gray;
+  height: 2em;
+  opacity: .2;
+}
+
 .thumbnail-desc {
   border-radius: 0;
   display: inline-block;
