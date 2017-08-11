@@ -14,6 +14,9 @@
 }
 
 .contact-card-title {
+  background-color: $color-gk-callout;
+  color: $white;
+  margin: .5em 0;
   padding: .5em;
 }
 
@@ -21,6 +24,15 @@
   padding: .5em;
 }
 
+.contact-form-container {
+  padding-top: 2em;
+}
+
+.contact-form-title {
+  font-size: 2em;
+}
+
 .meet-team {
   background-color: $color-gallery-gray;
 }
+

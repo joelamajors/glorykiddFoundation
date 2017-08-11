@@ -83,36 +83,39 @@
 </div>
 
 <div class="grid-container grid-container-padded" id="contact">
-  <form class="glorygrid grid-x grid-margin-x" action="process.php" method="POST" >
-    <div class="cell small-11 medium-6">
-      <div class="grid-x">
-        <label>Your Name</label>
-        <input name="ContactName" type="text" placeholder="Enter Your Name" />
+  <div class="contact-form-container">
+    <form class="glorygrid grid-x grid-margin-x" action="process.php" method="POST" >
+    <h3 class="contact-form-title">Contact Us</h3>
+      <div class="cell small-11 medium-6">
+        <div class="grid-x">
+          <label>Your Name</label>
+          <input name="ContactName" type="text" placeholder="Enter Your Name" />
+        </div>
+        <div class="grid-x">
+          <label>Phone Number</label>
+          <input name="ContactPhone" type="text" placeholder="Contact Number" />
+        </div>
+        <div class="grid-x">
+          <label>Email Address</label>
+          <input name="ContactEmail" type="text" placeholder="Contact Email" />
+        </div>
+        <div class="grid-x">
+          <label>How Can we Help?</label>
+          <textarea name="ContactMessage" rows="5" placeholder="Description of the Project"></textarea>
+        </div>
       </div>
-      <div class="grid-x">
-        <label>Phone Number</label>
-        <input name="ContactPhone" type="text" placeholder="Contact Number" />
+          
+      <div class="small-11 medium-6 cell callout reviews">
+        <div class="">
+          <p>GloryKidd Technologies offers a wide range of services including: Custom Software Engineering, Web Design & Hosting, Network Infrastructure, Server and Desktop Support and Maintenance.<br />Schedule a consultation: <a href="http://www.meetme.so/glorykiddtech" target="_blank">Appointment Calendar</a><br />Phone: <a href="tel:+1-502-709-9110">+1 (502) 709-9110</a></p>
+          <div class="g-recaptcha" id="html_element"></div>
+          <p><br /><button type="submit" class="success button">Send Email</button></p>
+          <p>For complete details about what information we collect and how we use this information, please refer to our <a href="/privacy.html">Privacy Policy</a></p>
+        </div>
       </div>
-      <div class="grid-x">
-        <label>Email Address</label>
-        <input name="ContactEmail" type="text" placeholder="Contact Email" />
-      </div>
-      <div class="grid-x">
-        <label>How Can we Help?</label>
-        <textarea name="ContactMessage" rows="5" placeholder="Description of the Project"></textarea>
-      </div>
-    </div>
-        
-    <div class="small-11 medium-6 cell callout reviews">
-      <div class="">
-        <p>GloryKidd Technologies offers a wide range of services including: Custom Software Engineering, Web Design & Hosting, Network Infrastructure, Server and Desktop Support and Maintenance.<br />Schedule a consultation: <a href="http://www.meetme.so/glorykiddtech" target="_blank">Appointment Calendar</a><br />Phone: <a href="tel:+1-502-709-9110">+1 (502) 709-9110</a></p>
-        <div class="g-recaptcha" id="html_element"></div>
-        <p><br /><button type="submit" class="success button">Send Email</button></p>
-        <p>For complete details about what information we collect and how we use this information, please refer to our <a href="/privacy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-
-  </form>
+    
+    </form>
+  </div>
 </div>
 
 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
