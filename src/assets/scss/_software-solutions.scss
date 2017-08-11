@@ -1,0 +1,17 @@
+.development-container {
+  background-image: url('../../assets/img/software-responsive/programming-640.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid $color-gk-callout;
+  padding-top: 1em;
+}
+
+.software-responsive-images-callout {
+  background-color: $glorykidd-gold-trans;
+  z-index: -1;
+}
+
+.software-responsive-images {
+  background-color: $color-glorykidd-gold;
+  padding: 1em;
+}
