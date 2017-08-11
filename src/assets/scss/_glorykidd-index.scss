@@ -52,12 +52,7 @@ $consulting-container-color: $color-gray-555;
   a {
     color: $black;
   }
-
-  h2 {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
+  
   &.software-container {
     background-color: $software-container-color;
   }
@@ -75,35 +70,47 @@ $consulting-container-color: $color-gray-555;
 
 .index-containers-title {
   background-color: $color-gk-callout;
+  color: $white;
+  font-size: 3em;
+  font-weight: bolder;
+  line-height: 1;
+  padding-bottom: .1em;
+  padding-left: .1em;
+  text-transform: lowercase;
 
-  &.software {
-    color: $black;
-  }
+  // &.software {
+  // }
 
-  &.web {
-    color: $black;
-  }
+  // &.web {
+  //   color: $white;
+  // }
 
-  &.consulting {
-    color: $black;
-  }
+  // &.consulting {
+  //   color: $white;
+  // }
 
 }
 
 .index-containers-subtitle {
-  background-color: $color-tory-blue;
+  // background-color: $color-tory-blue;
+  color: $black;
+  font-size: 1.25em;
+  font-weight: bolder;
+  line-height: 1;
+  padding-left: .5em;
+  text-transform: uppercase;
 
-  &.software {
-    color: $black;
-  }
+  // &.software {
+  //   color: $black;
+  // }
 
-  &.web {
-    color: $black;
-  }
+  // &.web {
+  //   color: $black;
+  // }
 
-  &.consulting {
-    color: $black;
-  }
+  // &.consulting {
+  //   color: $black;
+  // }
 
 }
 
@@ -111,19 +118,22 @@ $consulting-container-color: $color-gray-555;
   background-color: $white;
   border: 1px solid $black;
   border-radius: 1em;
+  // font-size: 1.1em;
+  // line-height: 2em;
   padding: .5em;
+  // width: 80%;
 
-  &.software {
-    color: $black;
-  }
+  // &.software {
+  //   color: $black;
+  // }
 
-  &.web {
-    color: $black;
-  }
+  // &.web {
+  //   color: $black;
+  // }
 
-  &.consulting {
-    color: $black;
-  }
+  // &.consulting {
+  //   color: $black;
+  // }
 
 }
 
