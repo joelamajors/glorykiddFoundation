@@ -1,14 +1,3 @@
-.consulting-container {
-  background-image: url('../../assets/img/professional-services-cycle.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 1em;
-}
-
-.consulting-services-callouts {
-  background-color: $color-slightly-offwhite-translucent;
-}
-
 .software-callout {
   border-color: $black;
   border-radius: .5em;
@@ -30,12 +19,6 @@
   }
 
 }
-
-.consulting-callout {
-  @extend .software-callout;
-  background-color: $color-slightly-offwhite-translucent;
-}
-
 
 .web-callout-card {
   margin-top: .5em;
