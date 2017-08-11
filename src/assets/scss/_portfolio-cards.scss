@@ -2,6 +2,7 @@
   background-color: $color-marshland-gray;
   color: $black;
   margin-bottom: 2em;
+  opacity: .8;
   padding-left: 1em;
   padding-right: 1em;
 
@@ -17,7 +18,20 @@
   &:hover,
   &:focus {
     color: $black;
+    opacity: 1;
   }
+
+}
+
+.portfolio-cards-thumb {
+  margin-top: 1em;
+  // opacity: .8;
+  padding-bottom: 1em;
+
+  // &:hover,
+  // &:focus {
+  //   opacity: 1;
+  // }
 
 }
 
@@ -63,7 +77,4 @@
   transition: box-shadow 200ms ease-out;
 }
 
-.portfolio-cards-thumb {
-  margin-top: 1em;
-  padding-bottom: 1em;
-}
+
