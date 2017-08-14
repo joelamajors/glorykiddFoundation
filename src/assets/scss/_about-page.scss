@@ -1,0 +1,37 @@
+.contact-form-container {
+  padding-top: 2em;
+}
+
+.contact-form-title {
+  font-size: 2em;
+}
+
+.meet-team-container {
+  background-color: $color-gallery-gray;
+}
+
+.meet-team-contact-card {
+  background-color: $white;
+  border: 1px solid $color-rolling-stone-gray;
+  border-radius: .25em;
+  margin-bottom: 1em;
+  min-height: 135px;
+  width: 100%;
+
+  img {
+    float: right;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}
+
+.meet-team-contact-card-blurb {
+  padding: .5em;
+}
+
+.meet-team-contact-card-title {
+  background-color: $color-gk-callout;
+  color: $white;
+  margin: .5em 0;
+  padding: .5em;
+}

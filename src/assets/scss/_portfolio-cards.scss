@@ -22,12 +22,7 @@
   }
 }
 
-.portfolio-cards-thumb {
-  margin-top: 1em;
-  padding-bottom: 1em;
-}
-
-.portfolio-grid {
+.portfolio-cards-grid {
   background-color: $white;
   border-bottom: 1px solid $color-gray4;
   border-top: 1px solid $color-gray4;
@@ -37,23 +32,9 @@
   padding-top: 1em;
 }
 
-.reviews {
-  font-size: 85%;
-
-  h5 {
-    font-style: italic;
-  }
-}
-
-.reviews-blurb {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.reviews-quotation-marks {
-  color: $color-marshland-gray;
-  height: 2em;
-  opacity: .2;
+.portfolio-cards-thumb {
+  margin-top: 1em;
+  padding-bottom: 1em;
 }
 
 .thumbnail-desc {

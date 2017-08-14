@@ -18,6 +18,11 @@ $glorykidd-gold-trans: $color-glorykidd-gold;
 $glory-gradient: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
 $color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
 
+.glory-gradient {
+  background: $glory-gradient;
+  height: 1em;
+}
+
 .glorygrid {
   justify-content: center;
 }

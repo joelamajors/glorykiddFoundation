@@ -1,4 +1,26 @@
-.development-container {
+.software-callout {
+  border-color: $black;
+  border-radius: .5em;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em;
+
+  img {
+    margin-bottom: .25em;
+    max-height: 4em;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    padding: .25em;
+  }
+
+}
+
+.software-development-container {
   background-image: url('../../assets/img/software-responsive/programming-640.jpg');
   background-repeat: no-repeat;
   background-size: cover;
