@@ -1,0 +1,40 @@
+.consulting-callout {
+  border: 1px solid $black;
+  border-radius: .5em;
+  margin: 1em;
+
+  img {
+    margin-bottom: .25em;
+    max-height: 4em;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    padding: .25em;
+  }
+}
+
+.consulting-services-callouts {
+  border-color: $black;
+  border-radius: .5em;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em;
+
+  img {
+    margin-bottom: .25em;
+    max-height: 4em;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    padding: .25em;
+  }
+
+}
