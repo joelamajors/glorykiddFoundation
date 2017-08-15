@@ -16,7 +16,15 @@ $color-thumbnail: rgba(33, 153, 232, .5);
 $footer-color: rgba(255, 255, 255, .8);
 $glorykidd-gold-trans: $color-glorykidd-gold;
 $glory-gradient: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
+$gk-gradient: linear-gradient(to right, $color-glorykidd-gold, $color-gk-callout);
+$gk-gradient-angle-body: linear-gradient(35deg, $color-glorykidd-gold, $color-gk-callout 35%, $white 150%);
+$gk-gradient-angle: linear-gradient(50deg, $color-glorykidd-gold, $color-gk-callout 15%, $white 175%);
+$gk-gradient-reverse: linear-gradient(to left, $color-glorykidd-gold, $color-gk-callout);
 $color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
+
+.body-gradient {
+  background: $gk-gradient-angle-body;
+}
 
 .glory-gradient {
   background: $glory-gradient;

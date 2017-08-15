@@ -1,22 +1,26 @@
+.title-bar {
+  background-color: transparent;
+  border-radius: 0 0 2em 2em;
+
+  li {
+    font-size: 1em;
+  }
+}
+
 .top-bar {
-  background-color: $color-slightly-offwhite;
+  background-color: transparent;
   padding-bottom: 10px;
 
   ul {
-    background-color: $color-slightly-offwhite;
+    background-color: transparent;
   }
 
-  img {
-    padding-bottom: 10px;
-    padding-top: 10px;
+  li {
+    font-size: 1em;
   }
 
   input {
     margin-right: 1rem;
     width: 200px;
   }
-}
-
-.title-bar {
-  background-color: $color-slightly-offwhite;
 }

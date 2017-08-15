@@ -3,10 +3,22 @@ $web-container-color: $color-rolling-stone-gray;
 $consulting-container-color: $color-gray-555;
 
 .gk-index-button {
-  border-color: $color-glorykidd-gold;
+  background-color: $color-gk-callout;
   border-radius: .5em;
-  border-style: solid;
-  padding: .5em .5em 0;
+  height: 5em;
+  padding: .5em;
+}
+
+.gk-index-button-title {
+  color: $white;
+  font-size: 2em;
+  font-weight: bold;
+  // height: 3em;
+  line-height: 1;
+  position: relative;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .gk-index-grid {
@@ -27,11 +39,6 @@ $consulting-container-color: $color-gray-555;
   text-align: center;
   text-decoration: none;
 
-  h2 {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
   &:hover {
     color: $black;
   }
@@ -39,6 +46,7 @@ $consulting-container-color: $color-gray-555;
 
 .index-containers {
   align-content: center;
+  // background: $gk-gradient-angle;
   border-radius: 1em;
   margin: .5em;
   padding: .5em;
@@ -47,21 +55,20 @@ $consulting-container-color: $color-gray-555;
     color: $black;
   }
 
-  &.software-container {
-    background-color: $software-container-color;
-  }
+  // &.software-container {
+  //   background-color: $software-container-color;
+  // }
 
-  &.web-container {
-    background-color: $web-container-color;
-  }
+  // &.web-container {
+  //   background-color: $web-container-color;
+  // }
 
-  &.consulting-container {
-    background-color: $consulting-container-color;
-  }
+  // &.consulting-container {
+  //   background-color: $consulting-container-color;
+  // }
 }
 
 .index-containers-title {
-  background-color: $color-gk-callout;
   border-radius: .1em;
   color: $white;
   font-size: 3em;

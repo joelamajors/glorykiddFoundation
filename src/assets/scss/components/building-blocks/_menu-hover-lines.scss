@@ -1,7 +1,5 @@
-$menu-hover-lines-transition: all 0.35s ease;
+$menu-hover-lines-transition: all .35s ease;
 $menu-hover-lines-border-width: 3px;
-// $color-gk-callout
-// $color-glorykidd-gold
 
 .menu-hover-lines {
   font-weight: 500;
@@ -24,8 +22,6 @@ $menu-hover-lines-border-width: 3px;
   a:before,
   a::after {
     background-color: $primary-color;
-    // background-color: $color-glorykidd-gold;
-    // background-color: $color-gk-callout;
     content: '';
     height: $menu-hover-lines-border-width;
     position: absolute;
@@ -46,8 +42,6 @@ $menu-hover-lines-border-width: 3px;
   a:hover,
   li.active > a {
     color: $body-font-color;
-    // color: $color-glorykidd-gold;
-    // color: $color-gk-callout;    
     transition: $menu-hover-lines-transition;
   }
 
