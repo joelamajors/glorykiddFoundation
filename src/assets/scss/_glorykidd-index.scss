@@ -2,6 +2,11 @@ $software-container-color: $color-marshland-gray;
 $web-container-color: $color-rolling-stone-gray;
 $consulting-container-color: $color-gray-555;
 
+.gk-index-white-gradient {
+  background: $white-gk-gradient;
+  min-height: 2em;
+}
+
 .gk-index-button {
   background-color: $color-gk-callout;
   border-radius: .5em;
@@ -13,12 +18,17 @@ $consulting-container-color: $color-gray-555;
   color: $white;
   font-size: 2em;
   font-weight: bold;
-  // height: 3em;
   line-height: 1;
   position: relative;
   text-transform: uppercase;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.gk-index-button-subtitle {
+  font-size: 1.5em;
+  line-height: 1;
+  padding-top: .5em;
 }
 
 .gk-index-grid {
@@ -27,15 +37,14 @@ $consulting-container-color: $color-gray-555;
 }
 
 .gk-index-logo {
-  margin: 1em;
+  margin: 2em 1em 0;
   max-height: 30em;
-  padding-bottom: 1em;
 }
 
 .gk-index-callouts {
   align-self: center;
   color: $black;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   text-align: center;
   text-decoration: none;
 
@@ -46,7 +55,6 @@ $consulting-container-color: $color-gray-555;
 
 .index-containers {
   align-content: center;
-  // background: $gk-gradient-angle;
   border-radius: 1em;
   margin: .5em;
   padding: .5em;
@@ -54,18 +62,10 @@ $consulting-container-color: $color-gray-555;
   a {
     color: $black;
   }
+}
 
-  // &.software-container {
-  //   background-color: $software-container-color;
-  // }
-
-  // &.web-container {
-  //   background-color: $web-container-color;
-  // }
-
-  // &.consulting-container {
-  //   background-color: $consulting-container-color;
-  // }
+.index-header-container {
+  background-color: $white;
 }
 
 .index-containers-title {
