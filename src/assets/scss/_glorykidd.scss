@@ -23,14 +23,19 @@ $gk-gradient-reverse: linear-gradient(to left, $color-glorykidd-gold, $color-gk-
 $white-gk-gradient: linear-gradient(to bottom, $color-slightly-offwhite, rgba(255, 255, 255, 0) 85%);
 $color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
 
+body {
+  background: $gk-gradient-angle-body;
+  background-size: 100% 100%;
+}
+
 .body-gradient {
   background: $gk-gradient-angle-body;
   background-size: 100% 100%;
 }
 
-body {
-  background: $gk-gradient-angle-body;
-  background-size: 100% 100%;
+.fullscreen {
+  height: 90vh;
+  max-height: 1600px;
 }
 
 .glory-gradient {
@@ -42,16 +47,10 @@ body {
   justify-content: center;
 }
 
-.fullscreen {
-  height: 90vh;
-  max-height: 1600px;
-}
-
-.services-page-headers {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 3em;
-  font-weight: lighter;
-  text-align: center;
+.gk-cta-button {
+  background-color: $color-glorykidd-gold;
+  color: $color-gray-555;
+  text-transform: uppercase;
 }
 
 .horizontal-bar {
@@ -63,4 +62,11 @@ body {
   h3 {
     margin-bottom: 1em;
   }
+}
+
+.services-page-headers {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
 }

@@ -16,6 +16,13 @@
   }
 }
 
+.web-plans-price {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  padding: 1em;
+  text-align: center;
+}
+
 .web-services-tabs {
   a {
     color: $black;
@@ -30,8 +37,6 @@
 }
 
 .web-services-grid {
-  background-color: $color-gallery-gray;
-  border-radius: .5em;
   justify-content: center;
 }
 
@@ -55,3 +60,4 @@
   }
 
 }
+
