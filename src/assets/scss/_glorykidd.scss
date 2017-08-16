@@ -28,6 +28,11 @@ $color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
   background-size: 100% 100%;
 }
 
+body {
+  background: $gk-gradient-angle-body;
+  background-size: 100% 100%;
+}
+
 .glory-gradient {
   background: $glory-gradient;
   height: 1em;
@@ -43,6 +48,7 @@ $color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
 }
 
 .services-page-headers {
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 3em;
   font-weight: lighter;
   text-align: center;
