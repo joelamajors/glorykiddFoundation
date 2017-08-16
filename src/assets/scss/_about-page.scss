@@ -1,11 +1,54 @@
-$meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -50%, $color-gk-callout 15%, $white 175%);
+$meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-gk-callout 15%, $white 135%);
+
+.contact-calendar-phone {
+  background-color: $white;
+
+  a {
+    color: $black;
+  }
+}
 
 .contact-form-container {
   padding-top: 2em;
 }
 
+.contact-form-paper-plane {
+  height: 2em;
+}
+
+
 .contact-form-title {
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 2em;
+}
+
+.contact-form-privacy-policy {
+  background-color: $color-marshland-gray;
+  color: $white;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  opacity: .8;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    opacity: 1;
+  }
+}
+
+.contact-calendar-fa {
+  color: $black;
+  font-size: 2em;
+  height: 2em;
+}
+
+.contact-phone-fa {
+  color: $black;
+  font-size: 2em;
+  height: 2em;
 }
 
 .meet-team-container-title {
@@ -33,14 +76,14 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -50%, $color-g
 
 .meet-team-contact-card-title {
   background: $meet-teem-gradient;
-  color: $white;
   border-radius: .5em .5em 0 0;
+  color: $white;
   padding: .5em;
 }
 
 .mission-statement-container {
-  margin-top: 2em;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .mission-statement-title {
