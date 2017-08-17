@@ -22,6 +22,11 @@
   }
 }
 
+.portfolio-cards-opaque {
+  @extend .portfolio-cards;
+  opacity: 1;
+}
+
 .portfolio-cards-title {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5em;
