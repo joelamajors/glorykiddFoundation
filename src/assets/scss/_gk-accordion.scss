@@ -9,62 +9,92 @@ $accordion-content-background: $color-gray4;
 // $accordion-content-color: $body-font-color;
 // $accordion-content-padding: 1rem;
 
-
+.accordion,
+.accordion-content,
+.accordion-item,
+.accordion-title,
+.tabs-content,
+.tabs-panel,
 .tabs-title {
+  background-color: transparent;
+  border: 0;
+
+  &.is-active {
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0;
+  }
+}
+
+.tabs {
+  background-color: transparent;
+  border: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.accordion-title,
+.tabs-title {
+  padding: 0;
   text-align: center;
-}
 
-.tabs-content {
-  margin-bottom: 1.5em;
+  &.is-active {
+    padding: 0;
+  }
 }
-
-// .tabs {
-//   height: 1.5em;
-// }
 
 .varitech-tab {
-  background-color: $color-varitech-red;
 
-  a {
-    color: $white;
+  img {
+    max-height: 20em;
   }
 
   > a {
     &:focus,
+    &:hover,
     &[aria-selected='true'] {
-      background-color: $white;
+      background-color: transparent;
+      border: 0;
+      box-shadow: 0;
       color: $color-varitech-red;
     }
   }
 }
 
 .ajbd-tab {
-  background-color: $color-gk-callout;
 
-  a {
-    color: $white;
+  img {
+    max-height: 20em;
   }
 
   > a {
     &:focus,
+    &:hover,
     &[aria-selected='true'] {
-      background-color: $white;
+      background-color: transparent;
+      border: 0;
+      box-shadow: 0;
       color: $color-gk-callout;
     }
   }
 }
 
 .turley-tab {
-  background-color: $black;
 
-  a {
-    color: $white;
+  img {
+    max-height: 20em;
   }
 
   > a {
     &:focus,
+    &:hover,
     &[aria-selected='true'] {
-      background-color: $white;
+      background-color: transparent;
+      border: 0;
+      box-shadow: 0;
       color: $black;
     }
   }
