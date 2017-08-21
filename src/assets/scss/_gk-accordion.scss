@@ -1,13 +1,5 @@
-// $accordion-background: $color-gray4;
-// $accordion-plusminus: true;
 $accordion-title-font-size: rem-calc(14);
-// $accordion-item-color: $primary-color;
-// $accordion-item-background-hover: $light-gray;
-// $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $color-gray4;
-// $accordion-content-border: 1px solid $light-gray;
-// $accordion-content-color: $body-font-color;
-// $accordion-content-padding: 1rem;
 
 .accordion,
 .accordion-content,
@@ -24,6 +16,10 @@ $accordion-content-background: $color-gray4;
     border: 0;
     box-shadow: 0;
   }
+}
+
+.accordion-title::before {
+  content: none;
 }
 
 .tabs {
@@ -46,48 +42,10 @@ $accordion-content-background: $color-gray4;
   }
 }
 
-.varitech-tab {
-
-  img {
-    max-height: 20em;
-  }
-
-  > a {
-    &:focus,
-    &:hover,
-    &[aria-selected='true'] {
-      background-color: transparent;
-      border: 0;
-      box-shadow: 0;
-      color: $color-varitech-red;
-    }
-  }
-}
-
-.ajbd-tab {
-
-  img {
-    max-height: 20em;
-  }
-
-  > a {
-    &:focus,
-    &:hover,
-    &[aria-selected='true'] {
-      background-color: transparent;
-      border: 0;
-      box-shadow: 0;
-      color: $color-gk-callout;
-    }
-  }
-}
-
+.varitech-tab,
+.ajbd-tab,
 .turley-tab {
 
-  img {
-    max-height: 20em;
-  }
-
   > a {
     &:focus,
     &:hover,
@@ -95,7 +53,13 @@ $accordion-content-background: $color-gray4;
       background-color: transparent;
       border: 0;
       box-shadow: 0;
-      color: $black;
     }
   }
+
+  @include breakpoint(small) {
+    img {
+      max-height: 20em;
+    }
+  }
+
 }

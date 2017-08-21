@@ -45,6 +45,28 @@
   padding-bottom: 1em;
 }
 
+.portfolio-down-arrow {
+  margin-top: -1em;
+
+  i {
+    color: $white;
+    font-size: 3em;
+    width: 1em;
+  }
+
+}
+
+.portfolio-grid-button {
+  margin-top: 2em;
+}
+
+.portfolio-tabs-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.5em;
+  padding-top: .25em;
+  text-align: center;
+}
+
 .thumbnail-desc {
   border-radius: 0;
   display: inline-block;
