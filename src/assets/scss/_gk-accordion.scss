@@ -1,6 +1,5 @@
 .accordion,
 .accordion-content,
-.accordion-item,
 .tabs-content,
 .tabs-panel {
   background-color: transparent;
@@ -13,22 +12,24 @@
   }
 }
 
+.accordion-title::before {
+  content: none;
+}
+
 .accordion-title,
 .tabs-title {
-  // background-color: $color-marshland-gray;
   border: 0;
+  margin-left: .25em;
+  margin-right: .25em;
   padding: 0;
   text-align: center;
 
   &.is-active {
     border: 0;
     box-shadow: 0;
+    opacity: 1;
     padding: 0;
   }
-}
-
-.accordion-title::before {
-  content: none;
 }
 
 .tabs {
@@ -41,7 +42,61 @@
   }
 }
 
+.tabs-panel {
+  h4 {
+    padding-top: .5em;
+  }
+}
+
 .tabs-reviews {
   background-color: $white;
   margin-bottom: 2em;
+}
+
+.tabs-title,
+.accordion-title {
+  background-color: $color-marshland-gray;
+  color: $black;
+  margin-bottom: 2em;
+  opacity: .8;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  p {
+    color: $black;
+  }
+
+  > a {
+    &:focus,
+    &:hover,
+    &[aria-selected='true'] {
+      background-color: transparent;
+      opacity: 1;
+      outline-color: none;
+      outline-style: none;
+      outline-width: 0;
+    }
+  }
+
+  @include breakpoint(small only) { 
+    img {
+      max-height: 20em;
+    }
+  }
+}
+
+.accordion-item {
+  background-color: transparent;
+
+ > a {
+    &:focus,
+    &:hover,
+    &[aria-selected='true'] {
+      background-color: $color-marshland-gray;
+      opacity: 1;
+      outline-color: none;
+      outline-style: none;
+      outline-width: 0;
+    }
+  }
 }

@@ -23,8 +23,18 @@
 }
 
 .portfolio-cards-opaque {
-  @extend .portfolio-cards;
-  opacity: 1;
+  background-color: $color-marshland-gray;
+  color: $black;
+  opacity: .8;
+  margin-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    opacity: 1;
+  }
 }
 
 .portfolio-cards-title {
@@ -46,8 +56,8 @@
 }
 
 .portfolio-down-arrow {
-  vertical-align: bottom;
   text-align: center;
+  vertical-align: bottom;
 
   i {
     color: $white;
@@ -65,26 +75,6 @@
   font-size: 2.5em;
   padding-top: .25em;
   text-align: center;
-}
-
-.tabs-title {
-  > a {
-    &:focus,
-    &:hover,
-    &[aria-selected='true'] {
-      background-color: transparent;
-      outline-color: none;
-      outline-style: none;
-      outline-width: 0;
-    }
-  }
-
-  @include breakpoint(small only) { 
-    img {
-      max-height: 20em;
-    }
-  }
-
 }
 
 .thumbnail-desc {
