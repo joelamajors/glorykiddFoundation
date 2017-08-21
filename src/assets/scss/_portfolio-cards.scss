@@ -46,14 +46,14 @@
 }
 
 .portfolio-down-arrow {
-  margin-top: -1em;
+  vertical-align: bottom;
+  text-align: center;
 
   i {
     color: $white;
     font-size: 3em;
     width: 1em;
   }
-
 }
 
 .portfolio-grid-button {
@@ -65,6 +65,26 @@
   font-size: 2.5em;
   padding-top: .25em;
   text-align: center;
+}
+
+.tabs-title {
+  > a {
+    &:focus,
+    &:hover,
+    &[aria-selected='true'] {
+      background-color: transparent;
+      outline-color: none;
+      outline-style: none;
+      outline-width: 0;
+    }
+  }
+
+  @include breakpoint(small only) { 
+    img {
+      max-height: 20em;
+    }
+  }
+
 }
 
 .thumbnail-desc {

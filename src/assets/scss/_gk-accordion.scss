@@ -1,13 +1,8 @@
-$accordion-title-font-size: rem-calc(14);
-$accordion-content-background: $color-gray4;
-
 .accordion,
 .accordion-content,
 .accordion-item,
-.accordion-title,
 .tabs-content,
-.tabs-panel,
-.tabs-title {
+.tabs-panel {
   background-color: transparent;
   border: 0;
 
@@ -15,6 +10,20 @@ $accordion-content-background: $color-gray4;
     background-color: transparent;
     border: 0;
     box-shadow: 0;
+  }
+}
+
+.accordion-title,
+.tabs-title {
+  // background-color: $color-marshland-gray;
+  border: 0;
+  padding: 0;
+  text-align: center;
+
+  &.is-active {
+    border: 0;
+    box-shadow: 0;
+    padding: 0;
   }
 }
 
@@ -32,34 +41,7 @@ $accordion-content-background: $color-gray4;
   }
 }
 
-.accordion-title,
-.tabs-title {
-  padding: 0;
-  text-align: center;
-
-  &.is-active {
-    padding: 0;
-  }
-}
-
-.varitech-tab,
-.ajbd-tab,
-.turley-tab {
-
-  > a {
-    &:focus,
-    &:hover,
-    &[aria-selected='true'] {
-      background-color: transparent;
-      border: 0;
-      box-shadow: 0;
-    }
-  }
-
-  @include breakpoint(small) {
-    img {
-      max-height: 20em;
-    }
-  }
-
+.tabs-reviews {
+  background-color: $white;
+  margin-bottom: 2em;
 }
