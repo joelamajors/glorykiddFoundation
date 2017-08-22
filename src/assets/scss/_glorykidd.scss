@@ -16,7 +16,7 @@ $color-thumbnail: rgba(33, 153, 232, .5);
 $footer-color: rgba(255, 255, 255, .8);
 $glorykidd-gold-trans: $color-glorykidd-gold;
 $color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
-$color-varitech-red: #DA2727;
+$color-varitech-red: #da2727;
 
 $glory-gradient: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
 $gk-gradient: linear-gradient(to right, $color-glorykidd-gold, $color-gk-callout);
@@ -50,7 +50,8 @@ body {
 
 .gk-cta-button {
   background-color: $color-glorykidd-gold;
-  color: $color-gray-555;
+  color: $white;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
