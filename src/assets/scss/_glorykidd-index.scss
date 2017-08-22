@@ -51,16 +51,15 @@ $consulting-container-color: $color-gray-555;
 .index-containers {
   align-content: center;
   border-radius: 1em;
+  display: table;
   margin: .5em;
   padding: .5em;
-
-  a {
-    color: $black;
-  }
+  vertical-align: middle;
 }
 
-.index-header-container {
-  background-color: $white;
+.index-containers-grid {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .index-containers-title {
@@ -87,18 +86,13 @@ $consulting-container-color: $color-gray-555;
   background-color: $white;
   border: 1px solid $black;
   border-radius: 1em;
-  padding: .5em;
-}
-
-.index-inside-containers {
-  background-color: $white;
-  border: 1px solid $black;
-  border-radius: 1em;
+  color: $black;
   padding: .5em;
 }
 
 .solution-containers {
   align-content: center;
+  display: block;
   padding: .25em;
 }
 
