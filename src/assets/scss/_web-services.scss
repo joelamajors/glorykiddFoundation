@@ -1,4 +1,5 @@
 .web-callout-index {
+  margin-top: 3em;
   padding-top: 2em;
 }
 
@@ -40,15 +41,10 @@
   }
 }
 
-.web-services-grid {
-  justify-content: center;
-}
-
 .web-services-callout {
-  border-color: $color-gk-callout;
+  border: 1px solid $color-gk-callout;
   border-radius: .5em;
-  border-style: solid;
-  margin: 1em;
+  // margin: 1em;
 
   img {
     margin-bottom: .25em;
@@ -62,5 +58,4 @@
   p {
     padding: .25em;
   }
-
 }

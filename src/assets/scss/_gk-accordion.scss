@@ -1,6 +1,6 @@
 .accordion,
 .accordion-content,
-.tabs-content,
+.accordion-item,
 .tabs-panel {
   background-color: transparent;
   border: 0;
@@ -12,58 +12,27 @@
   }
 }
 
-.accordion-title::before {
-  content: none;
-}
-
-.accordion-title,
 .tabs-title {
+  background-color: $color-marshland-gray;
   border: 0;
+  color: $black;
+  display: content-block;
+  margin-bottom: 2em;
   margin-left: .25em;
   margin-right: .25em;
-  padding: 0;
+  opacity: .6;
+  padding: 1em;
   text-align: center;
+
+  p {
+    color: $black;
+  }
 
   &.is-active {
     border: 0;
     box-shadow: 0;
     opacity: 1;
     padding: 0;
-  }
-}
-
-.tabs {
-  background-color: transparent;
-  border: 0;
-
-  li {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.tabs-panel {
-  h4 {
-    padding-top: .5em;
-  }
-}
-
-.tabs-reviews {
-  background-color: $white;
-  margin-bottom: 2em;
-}
-
-.tabs-title,
-.accordion-title {
-  background-color: $color-marshland-gray;
-  color: $black;
-  margin-bottom: 2em;
-  opacity: .8;
-  padding-left: 1em;
-  padding-right: 1em;
-
-  p {
-    color: $black;
   }
 
   > a {
@@ -77,18 +46,23 @@
       outline-width: 0;
     }
   }
+}
 
-  @include breakpoint(small only) { 
-    img {
-      max-height: 20em;
-    }
+.accordion-title {
+  @extend .tabs-title;
+
+  margin-bottom: 0;
+  margin-top: 2em;
+  opacity: 1;
+
+  &::before {
+    content: none;
   }
+
 }
 
 .accordion-item {
-  background-color: transparent;
-
- > a {
+  > a {
     &:focus,
     &:hover,
     &[aria-selected='true'] {
@@ -98,5 +72,28 @@
       outline-style: none;
       outline-width: 0;
     }
+  }
+}
+
+.tabs {
+  background-color: transparent;
+  border: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.tabs-content,
+.tabs-reviews {
+  background-color: $white;
+}
+
+.tabs-panel {
+  transition: opacity 1s ease-in-out;
+
+  h4 {
+    padding-top: .5em;
   }
 }
