@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 31);
+/******/ 	return __webpack_require__(__webpack_require__.s = 30);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9900,7 +9900,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 	return jQuery;
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)(module)))
 
 /***/ }),
 /* 1 */
@@ -10770,7 +10770,7 @@ function OverlapArea(element, parent, lrOnly, tbOnly, ignoreBottom) {
  * @returns {Object} - nested object of integer pixel values
  * TODO - if element is window, return only those values.
  */
-function GetDimensions(elem, test) {
+function GetDimensions(elem) {
   elem = elem.length ? elem[0] : elem;
 
   if (elem === window || elem === document) {
@@ -11379,189 +11379,6 @@ exports.Accordion = Accordion;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.SmoothScroll = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _foundationUtil = __webpack_require__(1);
-
-var _foundation = __webpack_require__(2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/**
- * SmoothScroll module.
- * @module foundation.smooth-scroll
- */
-var SmoothScroll = function (_Plugin) {
-    _inherits(SmoothScroll, _Plugin);
-
-    function SmoothScroll() {
-        _classCallCheck(this, SmoothScroll);
-
-        return _possibleConstructorReturn(this, (SmoothScroll.__proto__ || Object.getPrototypeOf(SmoothScroll)).apply(this, arguments));
-    }
-
-    _createClass(SmoothScroll, [{
-        key: '_setup',
-
-        /**
-         * Creates a new instance of SmoothScroll.
-         * @class
-         * @name SmoothScroll
-         * @fires SmoothScroll#init
-         * @param {Object} element - jQuery object to add the trigger to.
-         * @param {Object} options - Overrides to the default plugin settings.
-         */
-        value: function _setup(element, options) {
-            this.$element = element;
-            this.options = _jquery2.default.extend({}, SmoothScroll.defaults, this.$element.data(), options);
-            this.className = 'SmoothScroll'; // ie9 back compat
-
-            this._init();
-        }
-
-        /**
-         * Initialize the SmoothScroll plugin
-         * @private
-         */
-
-    }, {
-        key: '_init',
-        value: function _init() {
-            var id = this.$element[0].id || (0, _foundationUtil.GetYoDigits)(6, 'smooth-scroll');
-            var _this = this;
-            this.$element.attr({
-                'id': id
-            });
-
-            this._events();
-        }
-
-        /**
-         * Initializes events for SmoothScroll.
-         * @private
-         */
-
-    }, {
-        key: '_events',
-        value: function _events() {
-            var _this = this;
-
-            // click handler function.
-            var handleLinkClick = function handleLinkClick(e) {
-                // exit function if the event source isn't coming from an anchor with href attribute starts with '#'
-                if (!(0, _jquery2.default)(this).is('a[href^="#"]')) {
-                    return false;
-                }
-
-                var arrival = this.getAttribute('href');
-
-                _this._inTransition = true;
-
-                SmoothScroll.scrollToLoc(arrival, _this.options, function () {
-                    _this._inTransition = false;
-                });
-
-                e.preventDefault();
-            };
-
-            this.$element.on('click.zf.smoothScroll', handleLinkClick);
-            this.$element.on('click.zf.smoothScroll', 'a[href^="#"]', handleLinkClick);
-        }
-
-        /**
-         * Function to scroll to a given location on the page.
-         * @param {String} loc - A properly formatted jQuery id selector. Example: '#foo'
-         * @param {Object} options - The options to use.
-         * @param {Function} callback - The callback function.
-         * @static
-         * @function
-         */
-
-    }], [{
-        key: 'scrollToLoc',
-        value: function scrollToLoc(loc) {
-            var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : SmoothScroll.defaults;
-            var callback = arguments[2];
-
-            // Do nothing if target does not exist to prevent errors
-            if (!(0, _jquery2.default)(loc).length) {
-                return false;
-            }
-
-            var scrollPos = Math.round((0, _jquery2.default)(loc).offset().top - options.threshold / 2 - options.offset);
-
-            (0, _jquery2.default)('html, body').stop(true).animate({ scrollTop: scrollPos }, options.animationDuration, options.animationEasing, function () {
-                if (callback && typeof callback == "function") {
-                    callback();
-                }
-            });
-        }
-    }]);
-
-    return SmoothScroll;
-}(_foundation.Plugin);
-
-/**
- * Default settings for plugin.
- */
-
-
-SmoothScroll.defaults = {
-    /**
-     * Amount of time, in ms, the animated scrolling should take between locations.
-     * @option
-     * @type {number}
-     * @default 500
-     */
-    animationDuration: 500,
-    /**
-     * Animation style to use when scrolling between locations. Can be `'swing'` or `'linear'`.
-     * @option
-     * @type {string}
-     * @default 'linear'
-     * @see {@link https://api.jquery.com/animate|Jquery animate}
-     */
-    animationEasing: 'linear',
-    /**
-     * Number of pixels to use as a marker for location changes.
-     * @option
-     * @type {number}
-     * @default 50
-     */
-    threshold: 50,
-    /**
-     * Number of pixels to offset the scroll of the page on item click if using a sticky nav bar.
-     * @option
-     * @type {number}
-     * @default 0
-     */
-    offset: 0
-};
-
-exports.SmoothScroll = SmoothScroll;
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.Tabs = undefined;
@@ -12109,7 +11926,7 @@ Tabs.defaults = {
 exports.Tabs = Tabs;
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12395,7 +12212,7 @@ Triggers.init = function ($, Foundation) {
 exports.Triggers = Triggers;
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12425,7 +12242,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12435,11 +12252,11 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _whatInput = __webpack_require__(29);
+var _whatInput = __webpack_require__(28);
 
 var _whatInput2 = _interopRequireDefault(_whatInput);
 
-__webpack_require__(30);
+__webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12453,7 +12270,7 @@ window.$ = _jquery2.default;
 (0, _jquery2.default)(document).foundation();
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12509,7 +12326,7 @@ var Abide = function (_Plugin) {
       var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
       this.$element = element;
-      this.options = _jquery2.default.extend({}, Abide.defaults, this.$element.data(), options);
+      this.options = _jquery2.default.extend(true, {}, Abide.defaults, this.$element.data(), options);
 
       this.className = 'Abide'; // ie9 back compat
       this._init();
@@ -13123,7 +12940,7 @@ Abide.defaults = {
 exports.Abide = Abide;
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13188,8 +13005,6 @@ var AccordionMenu = function (_Plugin) {
       this.options = _jquery2.default.extend({}, AccordionMenu.defaults, this.$element.data(), options);
       this.className = 'AccordionMenu'; // ie9 back compat
 
-      _foundationUtil2.Nest.Feather(this.$element, 'accordion');
-
       this._init();
 
       _foundationUtil.Keyboard.register('AccordionMenu', {
@@ -13211,6 +13026,8 @@ var AccordionMenu = function (_Plugin) {
   }, {
     key: '_init',
     value: function _init() {
+      _foundationUtil2.Nest.Feather(this.$element, 'accordion');
+
       var _this = this;
 
       this.$element.find('[data-submenu]').not('.is-active').slideUp(0); //.find('a').css('padding-left', '1rem');
@@ -13515,7 +13332,7 @@ AccordionMenu.defaults = {
 exports.AccordionMenu = AccordionMenu;
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13538,7 +13355,7 @@ var _foundationUtil2 = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var FOUNDATION_VERSION = '6.4.1';
+var FOUNDATION_VERSION = '6.4.3';
 
 // Global Foundation object
 // This is attached to the window, or used as a module for AMD/Browserify
@@ -13880,7 +13697,7 @@ function hyphenate(str) {
 exports.Foundation = Foundation;
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13947,8 +13764,6 @@ var Drilldown = function (_Plugin) {
       this.options = _jquery2.default.extend({}, Drilldown.defaults, this.$element.data(), options);
       this.className = 'Drilldown'; // ie9 back compat
 
-      _foundationUtil2.Nest.Feather(this.$element, 'drilldown');
-
       this._init();
 
       _foundationUtil.Keyboard.register('Drilldown', {
@@ -13972,6 +13787,8 @@ var Drilldown = function (_Plugin) {
   }, {
     key: '_init',
     value: function _init() {
+      _foundationUtil2.Nest.Feather(this.$element, 'drilldown');
+
       if (this.options.autoApplyClass) {
         this.$element.addClass('drilldown');
       }
@@ -14010,7 +13827,7 @@ var Drilldown = function (_Plugin) {
         var $link = (0, _jquery2.default)(this);
         var $sub = $link.parent();
         if (_this.options.parentLink) {
-          $link.clone().prependTo($sub.children('[data-submenu]')).wrap('<li class="is-submenu-parent-item is-submenu-item is-drilldown-submenu-item" role="menu-item"></li>');
+          $link.clone().prependTo($sub.children('[data-submenu]')).wrap('<li class="is-submenu-parent-item is-submenu-item is-drilldown-submenu-item" role="menuitem"></li>');
         }
         $link.data('savedHref', $link.attr('href')).removeAttr('href').attr('tabindex', 0);
         $link.children('[data-submenu]').attr({
@@ -14496,7 +14313,7 @@ Drilldown.defaults = {
 exports.Drilldown = Drilldown;
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14564,7 +14381,6 @@ var DropdownMenu = function (_Plugin) {
       this.options = _jquery2.default.extend({}, DropdownMenu.defaults, this.$element.data(), options);
       this.className = 'DropdownMenu'; // ie9 back compat
 
-      _foundationUtil2.Nest.Feather(this.$element, 'dropdown');
       this._init();
 
       _foundationUtil.Keyboard.register('DropdownMenu', {
@@ -14587,6 +14403,8 @@ var DropdownMenu = function (_Plugin) {
   }, {
     key: '_init',
     value: function _init() {
+      _foundationUtil2.Nest.Feather(this.$element, 'dropdown');
+
       var subs = this.$element.find('li.is-dropdown-submenu-parent');
       this.$element.children('.is-dropdown-submenu-parent').children('.is-dropdown-submenu').addClass('first-sub');
 
@@ -14718,10 +14536,8 @@ var DropdownMenu = function (_Plugin) {
         });
 
         var nextSibling = function nextSibling() {
-          if (!$element.is(':last-child')) {
-            $nextElement.children('a:first').focus();
-            e.preventDefault();
-          }
+          $nextElement.children('a:first').focus();
+          e.preventDefault();
         },
             prevSibling = function prevSibling() {
           $prevElement.children('a:first').focus();
@@ -15031,7 +14847,7 @@ DropdownMenu.defaults = {
 exports.DropdownMenu = DropdownMenu;
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15438,7 +15254,7 @@ Equalizer.defaults = {
 exports.Equalizer = Equalizer;
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15710,329 +15526,7 @@ Interchange.SPECIAL_QUERIES = {
 exports.Interchange = Interchange;
 
 /***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Magellan = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _foundationUtil = __webpack_require__(1);
-
-var _foundation = __webpack_require__(2);
-
-var _foundation2 = __webpack_require__(10);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/**
- * Magellan module.
- * @module foundation.magellan
- * @requires foundation.smoothScroll
- */
-
-var Magellan = function (_Plugin) {
-  _inherits(Magellan, _Plugin);
-
-  function Magellan() {
-    _classCallCheck(this, Magellan);
-
-    return _possibleConstructorReturn(this, (Magellan.__proto__ || Object.getPrototypeOf(Magellan)).apply(this, arguments));
-  }
-
-  _createClass(Magellan, [{
-    key: '_setup',
-
-    /**
-     * Creates a new instance of Magellan.
-     * @class
-     * @name Magellan
-     * @fires Magellan#init
-     * @param {Object} element - jQuery object to add the trigger to.
-     * @param {Object} options - Overrides to the default plugin settings.
-     */
-    value: function _setup(element, options) {
-      this.$element = element;
-      this.options = _jquery2.default.extend({}, Magellan.defaults, this.$element.data(), options);
-      this.className = 'Magellan'; // ie9 back compat
-
-      this._init();
-      this.calcPoints();
-    }
-
-    /**
-     * Initializes the Magellan plugin and calls functions to get equalizer functioning on load.
-     * @private
-     */
-
-  }, {
-    key: '_init',
-    value: function _init() {
-      var id = this.$element[0].id || (0, _foundationUtil.GetYoDigits)(6, 'magellan');
-      var _this = this;
-      this.$targets = (0, _jquery2.default)('[data-magellan-target]');
-      this.$links = this.$element.find('a');
-      this.$element.attr({
-        'data-resize': id,
-        'data-scroll': id,
-        'id': id
-      });
-      this.$active = (0, _jquery2.default)();
-      this.scrollPos = parseInt(window.pageYOffset, 10);
-
-      this._events();
-    }
-
-    /**
-     * Calculates an array of pixel values that are the demarcation lines between locations on the page.
-     * Can be invoked if new elements are added or the size of a location changes.
-     * @function
-     */
-
-  }, {
-    key: 'calcPoints',
-    value: function calcPoints() {
-      var _this = this,
-          body = document.body,
-          html = document.documentElement;
-
-      this.points = [];
-      this.winHeight = Math.round(Math.max(window.innerHeight, html.clientHeight));
-      this.docHeight = Math.round(Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight));
-
-      this.$targets.each(function () {
-        var $tar = (0, _jquery2.default)(this),
-            pt = Math.round($tar.offset().top - _this.options.threshold);
-        $tar.targetPoint = pt;
-        _this.points.push(pt);
-      });
-    }
-
-    /**
-     * Initializes events for Magellan.
-     * @private
-     */
-
-  }, {
-    key: '_events',
-    value: function _events() {
-      var _this = this,
-          $body = (0, _jquery2.default)('html, body'),
-          opts = {
-        duration: _this.options.animationDuration,
-        easing: _this.options.animationEasing
-      };
-      (0, _jquery2.default)(window).one('load', function () {
-        if (_this.options.deepLinking) {
-          if (location.hash) {
-            _this.scrollToLoc(location.hash);
-          }
-        }
-        _this.calcPoints();
-        _this._updateActive();
-      });
-
-      this.$element.on({
-        'resizeme.zf.trigger': this.reflow.bind(this),
-        'scrollme.zf.trigger': this._updateActive.bind(this)
-      }).on('click.zf.magellan', 'a[href^="#"]', function (e) {
-        e.preventDefault();
-        var arrival = this.getAttribute('href');
-        _this.scrollToLoc(arrival);
-      });
-
-      this._deepLinkScroll = function (e) {
-        if (_this.options.deepLinking) {
-          _this.scrollToLoc(window.location.hash);
-        }
-      };
-
-      (0, _jquery2.default)(window).on('popstate', this._deepLinkScroll);
-    }
-
-    /**
-     * Function to scroll to a given location on the page.
-     * @param {String} loc - a properly formatted jQuery id selector. Example: '#foo'
-     * @function
-     */
-
-  }, {
-    key: 'scrollToLoc',
-    value: function scrollToLoc(loc) {
-      this._inTransition = true;
-      var _this = this;
-
-      var options = {
-        animationEasing: this.options.animationEasing,
-        animationDuration: this.options.animationDuration,
-        threshold: this.options.threshold,
-        offset: this.options.offset
-      };
-
-      _foundation2.SmoothScroll.scrollToLoc(loc, options, function () {
-        _this._inTransition = false;
-        _this._updateActive();
-      });
-    }
-
-    /**
-     * Calls necessary functions to update Magellan upon DOM change
-     * @function
-     */
-
-  }, {
-    key: 'reflow',
-    value: function reflow() {
-      this.calcPoints();
-      this._updateActive();
-    }
-
-    /**
-     * Updates the visibility of an active location link, and updates the url hash for the page, if deepLinking enabled.
-     * @private
-     * @function
-     * @fires Magellan#update
-     */
-
-  }, {
-    key: '_updateActive',
-    value: function _updateActive() /*evt, elem, scrollPos*/{
-      if (this._inTransition) {
-        return;
-      }
-      var winPos = /*scrollPos ||*/parseInt(window.pageYOffset, 10),
-          curIdx;
-
-      if (winPos + this.winHeight === this.docHeight) {
-        curIdx = this.points.length - 1;
-      } else if (winPos < this.points[0]) {
-        curIdx = undefined;
-      } else {
-        var isDown = this.scrollPos < winPos,
-            _this = this,
-            curVisible = this.points.filter(function (p, i) {
-          return isDown ? p - _this.options.offset <= winPos : p - _this.options.offset - _this.options.threshold <= winPos;
-        });
-        curIdx = curVisible.length ? curVisible.length - 1 : 0;
-      }
-
-      this.$active.removeClass(this.options.activeClass);
-      this.$active = this.$links.filter('[href="#' + this.$targets.eq(curIdx).data('magellan-target') + '"]').addClass(this.options.activeClass);
-
-      if (this.options.deepLinking) {
-        var hash = "";
-        if (curIdx != undefined) {
-          hash = this.$active[0].getAttribute('href');
-        }
-        if (hash !== window.location.hash) {
-          if (window.history.pushState) {
-            window.history.pushState(null, null, hash);
-          } else {
-            window.location.hash = hash;
-          }
-        }
-      }
-
-      this.scrollPos = winPos;
-      /**
-       * Fires when magellan is finished updating to the new active element.
-       * @event Magellan#update
-       */
-      this.$element.trigger('update.zf.magellan', [this.$active]);
-    }
-
-    /**
-     * Destroys an instance of Magellan and resets the url of the window.
-     * @function
-     */
-
-  }, {
-    key: '_destroy',
-    value: function _destroy() {
-      this.$element.off('.zf.trigger .zf.magellan').find('.' + this.options.activeClass).removeClass(this.options.activeClass);
-
-      if (this.options.deepLinking) {
-        var hash = this.$active[0].getAttribute('href');
-        window.location.hash.replace(hash, '');
-      }
-      (0, _jquery2.default)(window).off('popstate', this._deepLinkScroll);
-    }
-  }]);
-
-  return Magellan;
-}(_foundation.Plugin);
-
-/**
- * Default settings for plugin
- */
-
-
-Magellan.defaults = {
-  /**
-   * Amount of time, in ms, the animated scrolling should take between locations.
-   * @option
-   * @type {number}
-   * @default 500
-   */
-  animationDuration: 500,
-  /**
-   * Animation style to use when scrolling between locations. Can be `'swing'` or `'linear'`.
-   * @option
-   * @type {string}
-   * @default 'linear'
-   * @see {@link https://api.jquery.com/animate|Jquery animate}
-   */
-  animationEasing: 'linear',
-  /**
-   * Number of pixels to use as a marker for location changes.
-   * @option
-   * @type {number}
-   * @default 50
-   */
-  threshold: 50,
-  /**
-   * Class applied to the active locations link on the magellan container.
-   * @option
-   * @type {string}
-   * @default 'is-active'
-   */
-  activeClass: 'is-active',
-  /**
-   * Allows the script to manipulate the url of the current page, and if supported, alter the history.
-   * @option
-   * @type {boolean}
-   * @default false
-   */
-  deepLinking: false,
-  /**
-   * Number of pixels to offset the scroll of the page on item click if using a sticky nav bar.
-   * @option
-   * @type {number}
-   * @default 0
-   */
-  offset: 0
-};
-
-exports.Magellan = Magellan;
-
-/***/ }),
-/* 23 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16057,7 +15551,7 @@ var _foundation = __webpack_require__(2);
 
 var _foundation2 = __webpack_require__(9);
 
-var _foundation3 = __webpack_require__(11);
+var _foundation3 = __webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16328,7 +15822,7 @@ ResponsiveAccordionTabs.defaults = {};
 exports.ResponsiveAccordionTabs = ResponsiveAccordionTabs;
 
 /***/ }),
-/* 24 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16351,11 +15845,11 @@ var _foundationUtil2 = __webpack_require__(1);
 
 var _foundation = __webpack_require__(2);
 
-var _foundation2 = __webpack_require__(19);
+var _foundation2 = __webpack_require__(18);
 
-var _foundation3 = __webpack_require__(18);
+var _foundation3 = __webpack_require__(17);
 
-var _foundation4 = __webpack_require__(16);
+var _foundation4 = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16537,7 +16031,7 @@ ResponsiveMenu.defaults = {};
 exports.ResponsiveMenu = ResponsiveMenu;
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16745,7 +16239,190 @@ ResponsiveToggle.defaults = {
 exports.ResponsiveToggle = ResponsiveToggle;
 
 /***/ }),
-/* 26 */
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.SmoothScroll = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _foundationUtil = __webpack_require__(1);
+
+var _foundation = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * SmoothScroll module.
+ * @module foundation.smooth-scroll
+ */
+var SmoothScroll = function (_Plugin) {
+    _inherits(SmoothScroll, _Plugin);
+
+    function SmoothScroll() {
+        _classCallCheck(this, SmoothScroll);
+
+        return _possibleConstructorReturn(this, (SmoothScroll.__proto__ || Object.getPrototypeOf(SmoothScroll)).apply(this, arguments));
+    }
+
+    _createClass(SmoothScroll, [{
+        key: '_setup',
+
+        /**
+         * Creates a new instance of SmoothScroll.
+         * @class
+         * @name SmoothScroll
+         * @fires SmoothScroll#init
+         * @param {Object} element - jQuery object to add the trigger to.
+         * @param {Object} options - Overrides to the default plugin settings.
+         */
+        value: function _setup(element, options) {
+            this.$element = element;
+            this.options = _jquery2.default.extend({}, SmoothScroll.defaults, this.$element.data(), options);
+            this.className = 'SmoothScroll'; // ie9 back compat
+
+            this._init();
+        }
+
+        /**
+         * Initialize the SmoothScroll plugin
+         * @private
+         */
+
+    }, {
+        key: '_init',
+        value: function _init() {
+            var id = this.$element[0].id || (0, _foundationUtil.GetYoDigits)(6, 'smooth-scroll');
+            var _this = this;
+            this.$element.attr({
+                'id': id
+            });
+
+            this._events();
+        }
+
+        /**
+         * Initializes events for SmoothScroll.
+         * @private
+         */
+
+    }, {
+        key: '_events',
+        value: function _events() {
+            var _this = this;
+
+            // click handler function.
+            var handleLinkClick = function handleLinkClick(e) {
+                // exit function if the event source isn't coming from an anchor with href attribute starts with '#'
+                if (!(0, _jquery2.default)(this).is('a[href^="#"]')) {
+                    return false;
+                }
+
+                var arrival = this.getAttribute('href');
+
+                _this._inTransition = true;
+
+                SmoothScroll.scrollToLoc(arrival, _this.options, function () {
+                    _this._inTransition = false;
+                });
+
+                e.preventDefault();
+            };
+
+            this.$element.on('click.zf.smoothScroll', handleLinkClick);
+            this.$element.on('click.zf.smoothScroll', 'a[href^="#"]', handleLinkClick);
+        }
+
+        /**
+         * Function to scroll to a given location on the page.
+         * @param {String} loc - A properly formatted jQuery id selector. Example: '#foo'
+         * @param {Object} options - The options to use.
+         * @param {Function} callback - The callback function.
+         * @static
+         * @function
+         */
+
+    }], [{
+        key: 'scrollToLoc',
+        value: function scrollToLoc(loc) {
+            var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : SmoothScroll.defaults;
+            var callback = arguments[2];
+
+            // Do nothing if target does not exist to prevent errors
+            if (!(0, _jquery2.default)(loc).length) {
+                return false;
+            }
+
+            var scrollPos = Math.round((0, _jquery2.default)(loc).offset().top - options.threshold / 2 - options.offset);
+
+            (0, _jquery2.default)('html, body').stop(true).animate({ scrollTop: scrollPos }, options.animationDuration, options.animationEasing, function () {
+                if (callback && typeof callback == "function") {
+                    callback();
+                }
+            });
+        }
+    }]);
+
+    return SmoothScroll;
+}(_foundation.Plugin);
+
+/**
+ * Default settings for plugin.
+ */
+
+
+SmoothScroll.defaults = {
+    /**
+     * Amount of time, in ms, the animated scrolling should take between locations.
+     * @option
+     * @type {number}
+     * @default 500
+     */
+    animationDuration: 500,
+    /**
+     * Animation style to use when scrolling between locations. Can be `'swing'` or `'linear'`.
+     * @option
+     * @type {string}
+     * @default 'linear'
+     * @see {@link https://api.jquery.com/animate|Jquery animate}
+     */
+    animationEasing: 'linear',
+    /**
+     * Number of pixels to use as a marker for location changes.
+     * @option
+     * @type {number}
+     * @default 50
+     */
+    threshold: 50,
+    /**
+     * Number of pixels to offset the scroll of the page on item click if using a sticky nav bar.
+     * @option
+     * @type {number}
+     * @default 0
+     */
+    offset: 0
+};
+
+exports.SmoothScroll = SmoothScroll;
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16766,7 +16443,7 @@ var _foundationUtil = __webpack_require__(5);
 
 var _foundation = __webpack_require__(2);
 
-var _foundationUtil2 = __webpack_require__(12);
+var _foundationUtil2 = __webpack_require__(11);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16947,7 +16624,7 @@ Toggler.defaults = {
 exports.Toggler = Toggler;
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17013,7 +16690,7 @@ function Timer(elem, options, cb) {
 exports.Timer = Timer;
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17189,7 +16866,7 @@ Touch.init = function ($) {
 exports.Touch = Touch;
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17577,10 +17254,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 	);
 });
 ;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)(module)))
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17590,7 +17267,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _foundation = __webpack_require__(17);
+var _foundation = __webpack_require__(16);
 
 var _foundationUtil = __webpack_require__(1);
 
@@ -17606,33 +17283,31 @@ var _foundationUtil6 = __webpack_require__(5);
 
 var _foundationUtil7 = __webpack_require__(6);
 
-var _foundationUtil8 = __webpack_require__(27);
+var _foundationUtil8 = __webpack_require__(26);
 
-var _foundationUtil9 = __webpack_require__(28);
+var _foundationUtil9 = __webpack_require__(27);
 
-var _foundationUtil10 = __webpack_require__(12);
+var _foundationUtil10 = __webpack_require__(11);
 
-var _foundation2 = __webpack_require__(15);
+var _foundation2 = __webpack_require__(14);
 
 var _foundation3 = __webpack_require__(9);
 
-var _foundation4 = __webpack_require__(20);
+var _foundation4 = __webpack_require__(19);
 
-var _foundation5 = __webpack_require__(21);
+var _foundation5 = __webpack_require__(20);
 
 var _foundation6 = __webpack_require__(22);
 
-var _foundation7 = __webpack_require__(24);
+var _foundation7 = __webpack_require__(23);
 
-var _foundation8 = __webpack_require__(25);
+var _foundation8 = __webpack_require__(24);
 
 var _foundation9 = __webpack_require__(10);
 
-var _foundation10 = __webpack_require__(11);
+var _foundation10 = __webpack_require__(25);
 
-var _foundation11 = __webpack_require__(26);
-
-var _foundation12 = __webpack_require__(23);
+var _foundation11 = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17641,8 +17316,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import { Reveal } from 'foundation-sites/js/foundation.reveal';
 // import { Slider } from 'foundation-sites/js/foundation.slider';
 
+// import { Magellan } from 'foundation-sites/js/foundation.magellan';
 // import { OffCanvas } from 'foundation-sites/js/foundation.offcanvas';
 // import { Orbit } from 'foundation-sites/js/foundation.orbit';
+
+// import { AccordionMenu } from 'foundation-sites/js/foundation.accordionMenu';
+// import { Drilldown } from 'foundation-sites/js/foundation.drilldown';
+// import { Dropdown } from 'foundation-sites/js/foundation.dropdown';
+// import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 _foundation.Foundation.addToJquery(_jquery2.default);
 
 // Add Foundation Utils to Foundation global namespace for backwards
@@ -17651,11 +17332,6 @@ _foundation.Foundation.addToJquery(_jquery2.default);
 // import { Tooltip } from 'foundation-sites/js/foundation.tooltip';
 
 // import { Sticky } from 'foundation-sites/js/foundation.sticky';
-
-// import { AccordionMenu } from 'foundation-sites/js/foundation.accordionMenu';
-// import { Drilldown } from 'foundation-sites/js/foundation.drilldown';
-// import { Dropdown } from 'foundation-sites/js/foundation.dropdown';
-// import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 _foundation.Foundation.rtl = _foundationUtil.rtl;
 _foundation.Foundation.GetYoDigits = _foundationUtil.GetYoDigits;
 _foundation.Foundation.transitionend = _foundationUtil.transitionend;
@@ -17692,39 +17368,39 @@ _foundation.Foundation.plugin(_foundation4.Equalizer, 'Equalizer');
 
 _foundation.Foundation.plugin(_foundation5.Interchange, 'Interchange');
 
-_foundation.Foundation.plugin(_foundation6.Magellan, 'Magellan');
+// Foundation.plugin(Magellan, 'Magellan');
 
 // Foundation.plugin(OffCanvas, 'OffCanvas');
 
 // Foundation.plugin(Orbit, 'Orbit');
 
-_foundation.Foundation.plugin(_foundation7.ResponsiveMenu, 'ResponsiveMenu');
+_foundation.Foundation.plugin(_foundation6.ResponsiveMenu, 'ResponsiveMenu');
 
-_foundation.Foundation.plugin(_foundation8.ResponsiveToggle, 'ResponsiveToggle');
+_foundation.Foundation.plugin(_foundation7.ResponsiveToggle, 'ResponsiveToggle');
 
 // Foundation.plugin(Reveal, 'Reveal');
 
 // Foundation.plugin(Slider, 'Slider');
 
-_foundation.Foundation.plugin(_foundation9.SmoothScroll, 'SmoothScroll');
+_foundation.Foundation.plugin(_foundation8.SmoothScroll, 'SmoothScroll');
 
 // Foundation.plugin(Sticky, 'Sticky');
 
-_foundation.Foundation.plugin(_foundation10.Tabs, 'Tabs');
+_foundation.Foundation.plugin(_foundation9.Tabs, 'Tabs');
 
-_foundation.Foundation.plugin(_foundation11.Toggler, 'Toggler');
+_foundation.Foundation.plugin(_foundation10.Toggler, 'Toggler');
 
 // Foundation.plugin(Tooltip, 'Tooltip');
 
-_foundation.Foundation.plugin(_foundation12.ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
+_foundation.Foundation.plugin(_foundation11.ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
 module.exports = _foundation.Foundation;
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(14);
+module.exports = __webpack_require__(13);
 
 
 /***/ })
