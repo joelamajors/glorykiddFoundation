@@ -54,11 +54,14 @@
   margin-bottom: 0;
   margin-top: 2em;
   opacity: 1;
+}
 
-  &::before {
-    content: none;
-  }
+.accordion-title::before {
+  content: none;
+}
 
+.is-active > .accordion-title::before {
+  content: none;
 }
 
 .accordion-item {
@@ -91,7 +94,6 @@
 }
 
 .tabs-panel {
-  transition: opacity 1s ease-in-out;
 
   h4 {
     padding-top: .5em;
