@@ -44,6 +44,7 @@ body {
 }
 
 .glorygrid {
+  @include xy-grid;
   justify-content: center;
 }
 
