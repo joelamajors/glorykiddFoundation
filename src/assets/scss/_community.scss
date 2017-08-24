@@ -4,7 +4,8 @@
 }
 
 .community-links {
-  margin: 1em 0;
+  margin: 2em;
+  text-align: center;
 
   a {
     color: $color-gk-callout;
@@ -13,6 +14,14 @@
     :hover {
       color: $color-glorykidd-gold;
     }
+  }
+
+  i {
+    background-color: $color-slightly-offwhite-translucent;
+    border-radius: 50%;
+    height: 2em;
+    padding: .5em;
+    width: 2em;
   }
 
   .fa {
