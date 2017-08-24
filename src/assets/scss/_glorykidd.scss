@@ -43,7 +43,12 @@ body {
 }
 
 .glorygrid-x {
-  @include xy-grid(horizontal,true);
+  @include xy-grid(horizontal, true);
+  justify-content: center;
+}
+
+.glorygrid-y {
+  @include xy-grid(vertical, true);
   justify-content: center;
 }
 
@@ -55,10 +60,8 @@ body {
 }
 
 .horizontal-bar {
-  clear: both;
   margin: auto;
   text-align: center;
-  width: 80%;
 
   h3 {
     margin-bottom: 1em;

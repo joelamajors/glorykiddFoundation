@@ -1,9 +1,11 @@
 .web-callout-index {
+  @include callout($white);
   margin-top: 3em;
   padding-top: 2em;
 }
 
 .web-callout-card {
+  @include callout($white);
   margin-top: .5em;
 
   h4 {
@@ -42,6 +44,7 @@
 }
 
 .web-services-callout {
+  @include callout($white);
   border: 1px solid $color-gk-callout;
   border-radius: .5em;
 
