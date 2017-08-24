@@ -48,6 +48,12 @@
   }
 }
 
+.accordion-content {
+  display: table;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .accordion-title {
   @extend .tabs-title;
 
@@ -94,7 +100,6 @@
 }
 
 .tabs-panel {
-
   h4 {
     padding-top: .5em;
   }
@@ -102,4 +107,7 @@
 
 .tabs-reviews {
   margin-bottom: 2em;
+  padding-top: 1em;
 }
+
+
