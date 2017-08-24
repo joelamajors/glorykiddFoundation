@@ -49,17 +49,11 @@ $consulting-container-color: $color-gray-555;
 }
 
 .index-containers {
-  align-content: center;
   border-radius: 1em;
-  display: table;
-  margin: .5em;
-  padding: .5em;
-  vertical-align: middle;
-}
-
-.index-containers-grid {
-  display: table-cell;
-  vertical-align: middle;
+  height: 100vh;
+  margin: 0 .5em;
+  max-height: 1600px;
+  padding: 0 .5em;
 }
 
 .index-containers-title {
@@ -91,8 +85,6 @@ $consulting-container-color: $color-gray-555;
 }
 
 .solution-containers {
-  align-content: center;
-  display: block;
   padding: .25em;
 }
 
