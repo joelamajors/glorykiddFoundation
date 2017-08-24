@@ -1,7 +1,7 @@
 .consulting-callout {
+  @include callout($white);
   border: 1px solid $black;
   border-radius: .5em;
-  margin: 1em;
 
   img {
     margin-bottom: .25em;

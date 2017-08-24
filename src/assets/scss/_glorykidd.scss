@@ -53,8 +53,10 @@ body {
 }
 
 .gk-cta-button {
+  @include button;
   background-color: $color-glorykidd-gold;
   color: $white;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
 }

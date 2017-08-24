@@ -1,4 +1,5 @@
 .software-callout {
+  @include callout($white);
   border: 1px solid $black;
   border-radius: .5em;
   margin: 1em;
@@ -27,7 +28,6 @@
 
 .software-responsive-images-callout {
   background-color: $glorykidd-gold-trans;
-  display: table;
 }
 
 .software-responsive-images {
