@@ -16,7 +16,6 @@ $footer-color: rgba(255, 255, 255, .8);
 $glorykidd-gold-trans: $color-glorykidd-gold;
 $color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
 $color-varitech-red: #da2727;
-
 $glory-gradient: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
 $gk-gradient: linear-gradient(to right, $color-glorykidd-gold, $color-gk-callout);
 $gk-gradient-angle-body: linear-gradient(45deg, $color-glorykidd-gold, $color-gk-callout 35%, $white 100%);
@@ -43,8 +42,8 @@ body {
   height: 1em;
 }
 
-.glorygrid {
-  @include xy-grid;
+.glorygrid-x {
+  @include xy-grid(horizontal,true);
   justify-content: center;
 }
 

@@ -6,7 +6,7 @@
 
 @include foundation-global-styles;
 // @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 //
 @include foundation-xy-grid-classes;
 @include foundation-typography;
@@ -44,7 +44,7 @@
 // @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
+// @include foundation-float-classes;
 @include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
