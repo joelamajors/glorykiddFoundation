@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
-import lazyload from 'jquery-lazyload';
 
 window.$ = $;
 
@@ -10,7 +9,3 @@ window.$ = $;
 import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
-
-// $("img.lazy").lazyload({
-//     effect : "fadeIn"
-// });
