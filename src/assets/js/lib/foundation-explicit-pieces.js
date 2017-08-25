@@ -63,11 +63,8 @@ Foundation.plugin(Abide, 'Abide');
 Foundation.plugin(Accordion, 'Accordion');
 
 // Foundation.plugin(AccordionMenu, 'AccordionMenu');
-
 // Foundation.plugin(Drilldown, 'Drilldown');
-
 // Foundation.plugin(Dropdown, 'Dropdown');
-
 // Foundation.plugin(DropdownMenu, 'DropdownMenu');
 
 Foundation.plugin(Equalizer, 'Equalizer');
@@ -75,9 +72,7 @@ Foundation.plugin(Equalizer, 'Equalizer');
 Foundation.plugin(Interchange, 'Interchange');
 
 // Foundation.plugin(Magellan, 'Magellan');
-
 // Foundation.plugin(OffCanvas, 'OffCanvas');
-
 // Foundation.plugin(Orbit, 'Orbit');
 
 Foundation.plugin(ResponsiveMenu, 'ResponsiveMenu');
@@ -85,7 +80,6 @@ Foundation.plugin(ResponsiveMenu, 'ResponsiveMenu');
 Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 
 // Foundation.plugin(Reveal, 'Reveal');
-
 // Foundation.plugin(Slider, 'Slider');
 
 Foundation.plugin(SmoothScroll, 'SmoothScroll');

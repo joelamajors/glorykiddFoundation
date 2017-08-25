@@ -17357,11 +17357,8 @@ _foundation.Foundation.plugin(_foundation2.Abide, 'Abide');
 _foundation.Foundation.plugin(_foundation3.Accordion, 'Accordion');
 
 // Foundation.plugin(AccordionMenu, 'AccordionMenu');
-
 // Foundation.plugin(Drilldown, 'Drilldown');
-
 // Foundation.plugin(Dropdown, 'Dropdown');
-
 // Foundation.plugin(DropdownMenu, 'DropdownMenu');
 
 _foundation.Foundation.plugin(_foundation4.Equalizer, 'Equalizer');
@@ -17369,9 +17366,7 @@ _foundation.Foundation.plugin(_foundation4.Equalizer, 'Equalizer');
 _foundation.Foundation.plugin(_foundation5.Interchange, 'Interchange');
 
 // Foundation.plugin(Magellan, 'Magellan');
-
 // Foundation.plugin(OffCanvas, 'OffCanvas');
-
 // Foundation.plugin(Orbit, 'Orbit');
 
 _foundation.Foundation.plugin(_foundation6.ResponsiveMenu, 'ResponsiveMenu');
@@ -17379,7 +17374,6 @@ _foundation.Foundation.plugin(_foundation6.ResponsiveMenu, 'ResponsiveMenu');
 _foundation.Foundation.plugin(_foundation7.ResponsiveToggle, 'ResponsiveToggle');
 
 // Foundation.plugin(Reveal, 'Reveal');
-
 // Foundation.plugin(Slider, 'Slider');
 
 _foundation.Foundation.plugin(_foundation8.SmoothScroll, 'SmoothScroll');
