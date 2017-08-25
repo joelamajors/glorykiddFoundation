@@ -48,16 +48,22 @@
   border: 1px solid $color-gk-callout;
   border-radius: .5em;
 
-  img {
-    margin-bottom: .25em;
-    max-height: 4em;
-  }
-
   h4 {
     text-align: center;
   }
 
   p {
     padding: .25em;
+  }
+}
+
+.web-services-callout-img {
+  align-items: center;
+  margin-bottom: .25em;
+  text-align: center;
+
+  img {
+    margin-bottom: .25em;
+    height: 7em;
   }
 }
