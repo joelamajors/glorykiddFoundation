@@ -16,6 +16,7 @@
   img {
     margin-bottom: 1em;
     max-height: 9em;
+    opacity: .8;
   }
 
   p {
@@ -59,16 +60,23 @@
 .web-services-callout-icon {
   align-items: center;
   margin-bottom: .25em;
+  opacity: .7;
   text-align: center;
 
   i {
-    color: $color-glorykidd-gold;
     font-size: 7em;
     outline: 1px;
-  }
 
-  img {
-    height: 7em;
-    margin-bottom: .25em;
+    &.fa-globe,
+    &.fa-share-square-o,
+    &.fa-search-plus {
+      color: $color-glorykidd-gold;
+    }
+
+    &.fa-cogs,
+    &.fa-users,
+    &.fa-wrench {
+      color: $color-gk-callout;
+    }
   }
 }

@@ -56,9 +56,14 @@ body {
   @include button;
   background-color: $color-glorykidd-gold;
   color: $white;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-gk-callout;
+  }
 }
 
 .horizontal-bar {
@@ -82,5 +87,6 @@ body {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 3em;
   font-weight: lighter;
+  margin-bottom: .5em;
   text-align: center;
 }

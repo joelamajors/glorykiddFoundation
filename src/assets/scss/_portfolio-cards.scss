@@ -57,7 +57,12 @@
 }
 
 .portfolio-grid-button {
+  background-color: $color-gk-callout;
   margin-top: 2em;
+
+  &:hover {
+    background-color: $color-glorykidd-gold;
+  }
 }
 
 .portfolio-tabs-title {
@@ -86,4 +91,21 @@
   margin-left: 15px;
   max-width: 40%;
   transition: box-shadow 200ms ease-out;
+}
+
+.varitech {
+  h4 {
+    text-decoration: underline;
+  }
+
+  @include breakpoint(medium) {
+    padding-left: .5em;
+    padding-right: .5em;
+
+    h4,
+    p {
+      text-align: center;
+      text-decoration: none;
+    }
+  }
 }
