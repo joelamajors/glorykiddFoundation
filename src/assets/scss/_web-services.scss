@@ -1,5 +1,6 @@
 .web-callout-index {
   @include callout($white);
+  font-size: 110%;
   margin-top: 3em;
   padding-top: 2em;
 }
@@ -27,7 +28,7 @@
 .web-plans-price {
   font-size: 1.5em;
   margin-bottom: .5em;
-  padding: 1em;
+  padding: .5em 1em 1em;
   text-align: center;
 }
 
