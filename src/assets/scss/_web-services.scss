@@ -46,7 +46,6 @@
 .web-services-callout {
   @include callout($white);
   border: 1px solid $color-gk-callout;
-  border-radius: .5em;
 
   h4 {
     text-align: center;
@@ -57,13 +56,19 @@
   }
 }
 
-.web-services-callout-img {
+.web-services-callout-icon {
   align-items: center;
   margin-bottom: .25em;
   text-align: center;
 
+  i {
+    color: $color-glorykidd-gold;
+    font-size: 7em;
+    outline: 1px;
+  }
+
   img {
-    margin-bottom: .25em;
     height: 7em;
+    margin-bottom: .25em;
   }
 }
