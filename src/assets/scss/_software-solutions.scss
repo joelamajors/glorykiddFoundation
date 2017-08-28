@@ -1,13 +1,11 @@
-.software-callout {
-  @include callout($white);
-  border: 1px solid $black;
-  border-radius: .5em;
-  margin: 1em;
+.software-solutions-container {
+  background-color: $color-slightly-offwhite-translucent;
+}
 
-  img {
-    margin-bottom: .25em;
-    max-height: 4em;
-  }
+.software-callout {
+  @include callout(transparent);
+  border: 0;
+  margin: 2em 0 3em;
 
   h4 {
     text-align: center;
@@ -28,6 +26,8 @@
 
 .software-responsive-images-callout {
   background-color: $glorykidd-gold-trans;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .software-responsive-images {
