@@ -1,12 +1,24 @@
+.consulting-callout-container {
+  background-color: $color-slightly-offwhite-translucent;
+  padding: 2em;
+}
+
 .consulting-callout {
+  @include callout(transparent);
+  border: 0;
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    padding: .25em;
+  }
+}
+
+.consulting-specialties-callout {
   @include callout($white);
   border: 1px solid $black;
-  border-radius: .5em;
-
-  img {
-    margin-bottom: .25em;
-    max-height: 4em;
-  }
 
   h4 {
     text-align: center;
