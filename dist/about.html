@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0078c4">
-    <title>GloryKidd Technologies LLC</title>
+    <title>GloryKidd Technologies</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Julius+Sans+One" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
@@ -69,7 +69,7 @@
     
       <div class="meet-team-container">
         <div class="meet-team-container-title">Our team</div>
-        <p class="meet-team-contact-card-blurb">Meet the powerhouse behind the masterpiece</p>
+        <p class="meet-team-contact-card-blurb">The powerhouse behind your masterpiece</p>
     
         <div class="glorygrid-x grid-margin-x large-up-3 medium-up-2 small-up-1">
     
@@ -137,10 +137,9 @@
       </div>
     </div>
     
-    
-    <div class="grid-container">
+    <div class="grid-container fluid mission-statement-container">
       <div class="glorygrid-x">
-        <div class="cell small-11 medium-8 large-7 mission-statement-container">
+        <div class="cell small-11 medium-8 large-7 ">
           <p class="mission-statement-title">Mission Statement</p>
           <p class="mission-statement-body">GloryKidd's mission is to leverage technology to help spread the Gospel. We will use our skills and talents to this end, and learn new skills to further push the envelope whenever possible. We will continue to provide the highest standard of excellence to all clients, helping them to achieve their goals. Overall, GloryKidd will provide the type and style of service that will reflect God in all that we do and say.</p>
         </div>
@@ -148,64 +147,70 @@
     </div>
     
     <div class="grid-container grid-container-padded" id="contact">
+    
       <div class="contact-form-container glorygrid-x grid-margin-x">
-        <div class="cell small-11 medium-6">
-    
-          <h3 class="contact-form-title">Contact Us</h3>
-    
-          <div class="glorygrid-x">
-            
-            <a href="http://www.meetme.so/glorykiddtech" target="_blank" rel="noopener" class="cell small-11 large-8 contact-calendar-phone">
-              <div class="grid-margin-x glorygrid-x">
-                <div class="cell contact-calendar-phone-blurb small-6">
-                  <p>Schedule a consultation</p>
-                </div>
-                <div class="cell small-6 contact-calendar-fa ">
-                  <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-                </div>
-              </div>
-            </a>
-    
-            <a href="tel:+1-502-709-9110" class="cell small-11 large-8 contact-calendar-phone">
-              <div class="grid-margin-x glorygrid-x">   
-                <div class="contact-calendar-phone-blurb cell small-6">
-                  <p>Call us<br>+1 (502) 709-9110</p>
-                </div>
-                <div class="cell small-6 contact-phone-fa">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                </div>
-              </div>
-            </a>
-    
+        <div class="cell small-10">
+          <div class="contact-form-title">
+            <h3>Contact Us</h3>
           </div>
-    
-          <div class="grid-x contact-form-title-container">
-            <h3 class="contact-form-title cell small-10">
-              Drop us a line
-            </h3>
-            <div class="contact-form-paper-plane cell small-offset-1 small-1">
-              <i class="fa fa-paper-plane" aria-hidden="true"></i>
-            </div>
-          </div>
-    
-          <form action="process.php" method="POST" >
-            <label>Your Name</label>
-            <input name="ContactName" type="text" placeholder="Enter Your Name" />
-            <label>Phone Number</label>
-            <input name="ContactPhone" type="text" placeholder="Contact Number" />
-            <label>Email Address</label>
-            <input name="ContactEmail" type="text" placeholder="Contact Email" />
-            <label>How Can We Help?</label>
-            <textarea name="ContactMessage" rows="5" placeholder="Description of the Project"></textarea>
-            <div class="callout reviews">
-              <div class="g-recaptcha" id="html_element"></div>
-              <p><br /><button type="submit" class="success button">Send Email</button></p>
-            </div>
-          </form>
-    
         </div>
       </div>
+    
+      <div class="glorygrid-x">
+    
+        <div class="cell small-8 medium-4 large-3 contact-calendar-phone">
+          <a href="http://www.meetme.so/glorykiddtech" target="_blank" rel="noopener">
+            <div class="glorygrid-x" >
+              <div class="cell small-12 contact-calendar-phone-blurb">
+                <p>Schedule a<br>consultation</p>
+              </div>
+              <div class="cell small-12 contact-calendar-fa">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="cell small-8 medium-4 large-3 contact-calendar-phone">
+          <a href="tel:+1-502-709-9110" >
+            <div class="glorygrid-x" >
+              <div class="cell small-12 contact-calendar-phone-blurb">
+                <p>Call us<br>+1 (502) 709-9110</p>
+              </div>
+              <div class="cell small-12 contact-phone-fa">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+      </div>
+    
+      <div class="glorygrid-x contact-form-title-container">
+        <div class="cell small-10 contact-form-title">
+          <h3>
+            Drop us a line <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </h3>
+        </div>
+    
+        <form action="process.php" class="cell small-10 medium-8" method="POST" >
+          <label>Your Name</label>
+          <input name="ContactName" type="text" placeholder="Enter Your Name" />
+          <label>Phone Number</label>
+          <input name="ContactPhone" type="text" placeholder="Contact Number" />
+          <label>Email Address</label>
+          <input name="ContactEmail" type="text" placeholder="Contact Email" />
+          <label>How Can We Help?</label>
+          <textarea name="ContactMessage" rows="5" placeholder="Description of the Project"></textarea>
+          <div class="callout reviews">
+            <div class="g-recaptcha" id="html_element"></div>
+            <p><br /><button type="submit" class="success button">Send Email</button></p>
+          </div>
+        </form>
+      </div>
+    
     </div>
+    
     <div class="glorygrid-x">
       <a href="/privacy.html" class="cell small-8 medium-6 large-5 contact-form-privacy-policy">
         <p>For complete details about what information we collect and how we use this information, please refer to our Privacy Policy

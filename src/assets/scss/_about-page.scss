@@ -4,8 +4,16 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
   background-color: $white;
   border-radius: 1em;
   color: $black;
-  margin: 1em 0;
+  min-height: 10em;
+  margin: 1em;
   padding: .5em;
+  min-width: 10em;
+
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 .contact-form-title-container {
@@ -22,8 +30,12 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .contact-form-title {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 2em;
+  text-align: center;
+  
+  h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2em;
+  }
 }
 
 .contact-form-privacy-policy {
@@ -47,14 +59,17 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 .contact-phone-fa {
   color: $black;
   font-size: 3em;
-  padding-left: .5em;
-  text-align: left;
+  text-align: center;
 }
 
 .contact-calendar-phone-blurb {
   font-size: 1.1em;
   line-height: 1;
-  text-align: right;
+  text-align: center;
+}
+
+.meet-team-container {
+  margin-bottom: 4em;
 }
 
 .meet-team-container-title {
@@ -64,7 +79,6 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 
 .meet-team-contact-card {
   background-color: $white;
-  border-radius: .5em;
   margin: 1em;
   min-height: 135px;
   width: 100%;
@@ -81,8 +95,7 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .meet-team-contact-card-title {
-  background: $meet-teem-gradient;
-  border-radius: .5em .5em 0 0;
+  background-color: $color-gk-callout;
   color: $white;
   padding: .5em;
 
@@ -93,7 +106,7 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 
 .mission-statement-container {
   background: $color-slightly-offwhite-translucent;
-  margin: 2em;
+  margin: 4em;
   padding: 2em;
 }
 
