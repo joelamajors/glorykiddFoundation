@@ -32,8 +32,13 @@ $consulting-container-color: $color-gray-555;
 }
 
 .gk-index-logo {
-  margin: 2em 1em 0;
-  max-height: 30em;
+  margin-bottom: .5em;
+  margin-top: 3em;
+
+  @include breakpoint(large) {
+    margin-bottom: 3.5em;
+    margin-top: 5em;
+  }
 }
 
 .gk-index-callouts {
@@ -79,7 +84,7 @@ $consulting-container-color: $color-gray-555;
 .index-containers-blurb {
   background-color: $white;
   border: 1px solid $black;
-  border-radius: 1em;
+  border-radius: .1em;
   color: $black;
   padding: .5em;
 }
