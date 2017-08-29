@@ -1,6 +1,51 @@
+.bbb-a-plus {
+  margin: 1em 0;
+  max-height: 4em;
+}
+
+.community-links {
+  margin: 2em;
+  text-align: center;
+
+  a {
+    color: $color-gk-callout;
+    font-size: 1.2em;
+
+    :hover {
+      color: $color-glorykidd-gold;
+    }
+  }
+
+  i {
+    background-color: $color-slightly-offwhite-translucent;
+    border-radius: 50%;
+    height: 2em;
+    padding: .5em;
+    width: 2em;
+  }
+
+  .fa {
+    font-size: 2em;
+  }
+}
+
+.community-links-div {
+  @include xy-cell(4);
+
+  @include breakpoint(medium) {
+    @include xy-cell(3);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(2);
+  }
+}
+
 .glorykidd-footer {
+  @include xy-grid-container;
+
   background-color: transparent;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   margin-top: 5em;
   padding: .5em;
 }
@@ -12,4 +57,6 @@
   line-height: 1;
   padding: 5px;
   text-align: center;
+
+  @include xy-cell(auto);  
 }
