@@ -121,4 +121,12 @@
   padding-top: 1em;
 }
 
+.varitech-tab-cell {
+  @include xy-cell(10);
 
+  @include breakpoint(medium) {
+    @include xy-cell(4);
+  }
+
+  text-align: center;
+}

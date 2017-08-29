@@ -57,6 +57,16 @@
 }
 
 .portfolio-grid-button {
+  @include xy-cell(11);
+
+  @include breakpoint(medium) {
+    @include xy-cell(9);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(6);
+  }
+
   background-color: $color-gk-callout;
   margin-top: 2em;
 
