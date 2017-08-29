@@ -1,6 +1,16 @@
 $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-gk-callout 15%, $white 135%);
 
 .contact-calendar-phone {
+  @include xy-cell(8);
+
+  @include breakpoint(medium) {
+    @include xy-cell(4);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(3);
+  }
+
   background-color: $white;
   border-radius: 1em;
   color: $black;
@@ -14,11 +24,15 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
   }
 }
 
-.contact-form-title-container {
+.contact-us-container {
+  @include xy-grid-container;
+  justify-content: center;
   margin-top: 2em;
 }
 
 .contact-form-container {
+  @include xy-grid;
+  justify-content: center;
   padding-top: 2em;
 }
 
@@ -28,8 +42,9 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .contact-form-title {
+  @include xy-cell(12);
   text-align: center;
-  
+
   h3 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2em;
@@ -37,6 +52,16 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .contact-form-privacy-policy {
+  @include xy-cell(8);
+
+  @include breakpoint(medium) {
+    @include xy-cell(6);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(5);
+  }
+
   background-color: $color-marshland-gray;
   color: $white;
   margin-bottom: 2em;
@@ -55,12 +80,16 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 
 .contact-calendar-fa,
 .contact-phone-fa {
+  @include xy-cell(12);
+
   color: $black;
   font-size: 3em;
   text-align: center;
 }
 
 .contact-calendar-phone-blurb {
+  @include xy-cell(12);
+
   font-size: 1.1em;
   line-height: 1;
   text-align: center;
@@ -103,9 +132,23 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .mission-statement-container {
+  @include xy-grid-container;
+
   background: $color-slightly-offwhite-translucent;
   margin: 4em;
   padding: 2em;
+}
+
+.mission-statement-div {
+  @include xy-cell(11);
+
+  @include breakpoint(medium) {
+    @include xy-cell(8);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(7);
+  }
 }
 
 .mission-statement-title {
