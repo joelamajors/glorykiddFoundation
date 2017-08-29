@@ -4,29 +4,11 @@
 }
 
 .community-links {
-  margin: 2em;
+  @include xy-grid;
+
+  justify-content: center;
+  margin: 2em 0;
   text-align: center;
-
-  a {
-    color: $color-gk-callout;
-    font-size: 1.2em;
-
-    :hover {
-      color: $color-glorykidd-gold;
-    }
-  }
-
-  i {
-    background-color: $color-slightly-offwhite-translucent;
-    border-radius: 50%;
-    height: 2em;
-    padding: .5em;
-    width: 2em;
-  }
-
-  .fa {
-    font-size: 2em;
-  }
 }
 
 .community-links-div {
@@ -38,6 +20,29 @@
 
   @include breakpoint(large) {
     @include xy-cell(2);
+  }
+
+  a {
+    color: $color-gk-callout;
+    font-size: 1.2em;
+    justify-content: left;
+
+    :hover {
+      color: $color-glorykidd-gold;
+    }
+  }
+
+  i {
+    background-color: $color-slightly-offwhite-translucent;
+    border-radius: 50%;
+    height: 2em;
+    padding-top: .5em;
+    width: 2em;
+  }
+
+  .fa {
+    font-size: 2em;
+    text-align: center;
   }
 }
 
@@ -51,12 +56,12 @@
 }
 
 .glorykidd-text {
+  @include xy-cell(auto);
+
   color: inherit;
   font-size: 80%;
   font-weight: bold;
   line-height: 1;
   padding: 5px;
   text-align: center;
-
-  @include xy-cell(auto);  
 }
