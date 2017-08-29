@@ -1,30 +1,3 @@
-.software-solutions-container {
-  background-color: $color-slightly-offwhite-translucent;
-  padding: 2em;
-}
-
-.software-callout {
-  @include callout(transparent);
-  border: 0;
-  margin-bottom: 3em;
-
-  h4 {
-    text-align: center;
-  }
-
-  p {
-    padding: .25em;
-  }
-}
-
-.software-development-container {
-  background-image: url('../../assets/img/software-responsive/programming-640.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 2em;
-  padding: 1.5em 0;
-}
-
 .software-responsive-images-callout {
   background-color: $glorykidd-gold-trans;
   margin-bottom: 2em;

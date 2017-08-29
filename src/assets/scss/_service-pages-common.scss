@@ -1,0 +1,48 @@
+.service-pages-container {
+  background-color: $color-slightly-offwhite-translucent;
+  padding: 2em;
+}
+
+.service-pages-callout {
+  @include callout(transparent);
+  border: 0;
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    padding: .25em;
+  }
+}
+
+.service-pages-callout-white {
+  @include callout($white);
+  border: 1px solid $color-gk-callout;
+
+  h4 {
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 1em;
+    max-height: 9em;
+    opacity: .8;
+  }
+
+  p {
+    padding: .25em;
+  }
+}
+
+.service-pages-callout-icon {
+  align-items: center;
+  margin-bottom: .25em;
+  opacity: .7;
+  text-align: center;
+
+  i {
+    font-size: 7em;
+    outline: 1px;
+  }
+}

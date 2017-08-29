@@ -1,31 +1,6 @@
-.web-callout-container {
-  background-color: $color-slightly-offwhite-translucent;
-}
-
 .web-callout-index {
   font-size: 110%;
   margin-top: 3em;
-  padding-top: 2em;
-}
-
-.web-callout-card {
-  @include callout($white);
-  margin-top: .5em;
-
-  h4 {
-    color: $color-tarawera;
-    text-align: center;
-  }
-
-  img {
-    margin-bottom: 1em;
-    max-height: 9em;
-    opacity: .8;
-  }
-
-  p {
-    color: $black;
-  }
 }
 
 .web-plans-price {
@@ -45,42 +20,5 @@
   img {
     margin-right: .5em;
     max-height: 4em;
-  }
-}
-
-.web-services-callout {
-  @include callout($white);
-  border: 1px solid $color-gk-callout;
-
-  h4 {
-    text-align: center;
-  }
-
-  p {
-    padding: .25em;
-  }
-}
-
-.web-services-callout-icon {
-  align-items: center;
-  margin-bottom: .25em;
-  opacity: .7;
-  text-align: center;
-
-  i {
-    font-size: 7em;
-    outline: 1px;
-
-    &.fa-globe,
-    &.fa-share-square-o,
-    &.fa-search-plus {
-      color: $color-glorykidd-gold;
-    }
-
-    &.fa-cogs,
-    &.fa-users,
-    &.fa-wrench {
-      color: $color-gk-callout;
-    }
   }
 }
