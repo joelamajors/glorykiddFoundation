@@ -80,7 +80,15 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 
 .contact-calendar-fa,
 .contact-phone-fa {
-  @include xy-cell(8);
+  @include xy-cell(12);
+
+  @include breakpoint(medium) {
+    @include xy-cell(10);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(8);
+  }
 
   background-color: $color-glorykidd-gold;
   border-radius: 4em;
