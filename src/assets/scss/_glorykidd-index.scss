@@ -10,6 +10,7 @@ $consulting-container-color: $color-gray-555;
 
 .gk-index-button-title {
   color: $white;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 2em;
   font-weight: bold;
   line-height: 1;
@@ -105,6 +106,7 @@ $consulting-container-color: $color-gray-555;
   @include xy-cell(11);
 
   color: $black;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 1.25em;
   font-weight: bolder;
   line-height: 1;
