@@ -1,26 +1,18 @@
+// global stuff
 $black: #000;
-$color-gk-callout: #0078c4;
-$color-tory-blue: #116ca8;
-$color-tarawera: #0a4063;
-$white: #fff;
 $color-chartreuse-yellow: #d7df01;
-$color-glorykidd-gold: #fba637;
 $color-gallery-gray: #ebebeb;
-$color-marshland-gray: rgba(10, 10, 10, .25);
-$color-slightly-offwhite: #fefefe;
+$color-gk-callout: #0078c4;
+$color-glorykidd-gold: #fba637;
 $color-gray-555: #555;
-$color-rolling-stone-gray: #707578;
 $color-gray4: rgba(10, 10, 10, .2);
+$color-marshland-gray: rgba(10, 10, 10, .25);
+$color-rolling-stone-gray: #707578;
+$color-slightly-offwhite: #fefefe;
+$color-tarawera: #0a4063;
 $color-thumbnail: rgba(33, 153, 232, .5);
-$footer-color: rgba(255, 255, 255, .8);
-$glorykidd-gold-trans: $color-glorykidd-gold;
-$color-slightly-offwhite-translucent: rgba(254, 254, 254, .8);
-$color-varitech-red: #da2727;
-$glory-gradient: linear-gradient(to right, $color-glorykidd-gold 50%, $color-gk-callout 50%);
-$gk-gradient: linear-gradient(to right, $color-glorykidd-gold, $color-gk-callout);
-$gk-gradient-angle-body: linear-gradient(45deg, $color-glorykidd-gold, $color-gk-callout 35%, $white 100%);
-$gk-gradient-angle: linear-gradient(50deg, $color-glorykidd-gold, $color-gk-callout 15%, $white 175%);
-$gk-gradient-reverse: linear-gradient(to left, $color-glorykidd-gold, $color-gk-callout);
+$color-tory-blue: #116ca8;
+$white: #fff;
 
 body {
   background: $gk-gradient-angle-body;
@@ -66,8 +58,17 @@ body {
   }
 }
 
-.horizontal-bar {
+.horizontal-line-title {
+  clear: both;
   margin: auto;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 80%;
+}
+
+
+// FOOTER
+.glorykidd-footer {
   text-align: center;
 
   h3 {

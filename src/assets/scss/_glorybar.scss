@@ -1,8 +1,55 @@
 .glorybar {
-  margin-bottom: 1em;
-  margin-top: 2em;
+  background: $color-gk-callout;
 }
 
-.glorybar-blurb {
-  text-align: center;
+.circle {
+  background: $white;
+  border-radius: 0 0 50%;
+  height: 100%;
+  position: relative;
+}
+
+.imagelogo {
+  display: flex;
+  max-height: 14em;
+  padding-top: .15%;
+  position: relative;
+  top: 50%;
+}
+
+.imagelogo-small {
+  float: none;
+  margin: 0;
+  padding: 2em 4em 1em;
+  vertical-align: middle;
+}
+
+.glorybar-lead {
+  color: $white;
+  font-size: 1em;
+  text-align: justify;
+
+  &:first-child::first-letter {
+    color: $color-chartreuse-yellow;
+    float: left;
+    font-family: Georgia;
+    font-size: 4em;
+    line-height: .5em;
+    padding-left: .05em;
+    padding-right: .05em;
+    padding-top: .1em;
+  }
+}
+
+.glorybanner {
+  list-style: none;
+  margin: 0;
+  padding-top: 1em;
+}
+
+.lead2 {
+  color: $color-rolling-stone-gray;
+  font-size: 85%;
+  line-height: 1.4;
+  text-align: justify;
 }
