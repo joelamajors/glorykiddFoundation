@@ -14,27 +14,48 @@ $color-thumbnail: rgba(33, 153, 232, .5);
 $color-tory-blue: #116ca8;
 $white: #fff;
 
-.glorygrid {
+body {
+  background: $gk-gradient-angle-body;
+  background-size: 100% 100%;
+}
+
+.body-gradient {
+  background: $gk-gradient-angle-body;
+  background-size: 100% 100%;
+}
+
+.fullscreen {
+  height: 90vh;
+  max-height: 1600px;
+}
+
+.glory-gradient {
+  background: $glory-gradient;
+  height: 1em;
+}
+
+.glorygrid-x {
+  @include xy-grid(horizontal, true);
   justify-content: center;
 }
 
-.contactcard {
-  min-height: 135px;
-  width: 100%;
-
-  img {
-    float: right;
-    margin-top: 0;
-    padding-left: 15px;
-  }
+.glorygrid-y {
+  @include xy-grid(vertical, true);
+  justify-content: center;
 }
 
-.glorykidd-text {
-  color: inherit;
-  font-size: 80%;
+.gk-cta-button {
+  @include button;
+  background-color: $color-glorykidd-gold;
+  color: $white;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5em;
   font-weight: bold;
-  line-height: 1;
-  padding: 5px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-gk-callout;
+  }
 }
 
 .horizontal-line-title {
@@ -49,4 +70,8 @@ $white: #fff;
 // FOOTER
 .glorykidd-footer {
   text-align: center;
+
+  h3 {
+    margin-bottom: 1em;
+  }
 }

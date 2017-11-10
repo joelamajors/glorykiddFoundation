@@ -1,0 +1,171 @@
+$meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-gk-callout 15%, $white 135%);
+
+.contact-calendar-phone {
+  @include xy-cell(8);
+
+  @include breakpoint(medium) {
+    @include xy-cell(4);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(3);
+  }
+
+  background-color: $white;
+  border-radius: 1em;
+  color: $black;
+  margin: 1em;
+  padding: .5em;
+
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.contact-us-container {
+  @include xy-grid-container;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.contact-form-container {
+  @include xy-grid;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-form-paper-plane {
+  align-items: center;
+  font-size: 2em;
+}
+
+.contact-form-title {
+  @include xy-cell(12);
+  text-align: center;
+
+  h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2em;
+  }
+}
+
+.contact-form-privacy-policy {
+  @include xy-cell(8);
+
+  @include breakpoint(medium) {
+    @include xy-cell(6);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(5);
+  }
+
+  background-color: $color-marshland-gray;
+  color: $white;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  opacity: .8;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    opacity: 1;
+  }
+}
+
+.contact-calendar-fa,
+.contact-phone-fa {
+  @include xy-cell(12);
+
+  @include breakpoint(medium) {
+    @include xy-cell(10);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(8);
+  }
+
+  background-color: $color-glorykidd-gold;
+  border-radius: 4em;
+  color: $white;
+  font-size: 3em;
+  text-align: center;
+}
+
+.contact-calendar-phone-blurb {
+  @include xy-cell(12);
+
+  font-size: 1.1em;
+  line-height: 1;
+  text-align: center;
+}
+
+.meet-team-container {
+  margin-bottom: 4em;
+}
+
+.meet-team-container-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2em;
+}
+
+.meet-team-contact-card {
+  background-color: $white;
+  margin: 1em;
+  min-height: 135px;
+  width: 100%;
+
+  img {
+    float: right;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}
+
+.meet-team-contact-card-blurb {
+  padding: .5em;
+}
+
+.meet-team-contact-card-title {
+  background-color: $color-gk-callout;
+  color: $white;
+  padding: .5em;
+
+  h5 {
+    font-family: 'Julius Sans One', sans-serif;
+  }
+}
+
+.mission-statement-container {
+  @include xy-grid-container;
+
+  background: $color-slightly-offwhite-translucent;
+  margin: 4em;
+  padding: 2em;
+}
+
+.mission-statement-div {
+  @include xy-cell(11);
+
+  @include breakpoint(medium) {
+    @include xy-cell(8);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(7);
+  }
+}
+
+.mission-statement-title {
+  @extend .meet-team-container-title;
+}
+
+.mission-statement-body {
+  font-size: 1.1em;
+  text-align: justify;
+}

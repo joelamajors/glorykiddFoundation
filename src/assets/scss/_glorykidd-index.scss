@@ -1,0 +1,145 @@
+$software-container-color: $color-marshland-gray;
+$web-container-color: $color-rolling-stone-gray;
+$consulting-container-color: $color-gray-555;
+
+.gk-index-button {
+  background-color: $color-gk-callout;
+  height: 5em;
+  padding: .5em;
+}
+
+.gk-index-button-title {
+  color: $white;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gk-index-button-subtitle {
+  font-size: 1.5em;
+  line-height: 1;
+  padding-top: .5em;
+}
+
+.gk-index-callouts {
+  align-self: center;
+  color: $black;
+  margin-bottom: 1.5em;
+  text-align: center;
+  text-decoration: none;
+
+  @include xy-cell(12);
+
+  @include breakpoint(medium) {
+    @include xy-cell(5);
+  }
+
+  &.software {
+    @include breakpoint(medium) {
+      @include xy-cell(7);
+    }
+
+    @include breakpoint(large) {
+      @include xy-cell(6);
+    }
+  }
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.gk-index-grid {
+  @include xy-grid;
+
+  justify-content: space-around;
+  padding-bottom: 4em;
+  padding-top: 3em;
+}
+
+.gk-index-logo {
+  margin-bottom: .5em;
+  margin-top: 3em;
+
+  @include xy-cell(9);
+
+  @include breakpoint(medium) {
+    @include xy-cell(6);
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: 3.5em;
+    margin-top: 5em;
+  }
+}
+
+.index-containers {
+  @include xy-cell(shrink);
+
+  height: 100vh;
+  max-height: 1600px;
+
+  @include breakpoint (medium) {
+    margin: 0 .5em;
+    padding: 0 .5em;
+  }
+}
+
+.index-containers-title {
+  @include xy-cell(8);
+
+  color: $white;
+  font-size: 3em;
+  font-weight: bolder;
+  line-height: 1;
+  padding-bottom: .1em;
+  padding-left: .1em;
+  text-transform: lowercase;
+}
+
+.index-containers-subtitle {
+  @include xy-cell(11);
+
+  color: $black;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.25em;
+  font-weight: bolder;
+  line-height: 1;
+  padding-left: .5em;
+  text-transform: uppercase;
+}
+
+.index-containers-blurb {
+  @include xy-cell(11);
+
+  @include breakpoint(medium) {
+    @include xy-cell(8);
+  }
+
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: .1em;
+  color: $black;
+  padding: .5em;
+}
+
+.solution-containers {
+  @include xy-grid-container;
+
+  padding: .25em;
+}
+
+.go-right-fa {
+
+  i {
+    color: $software-container-color;
+    font-size: 4em;
+    margin-top: .25em;
+    width: 1em;
+  }
+}

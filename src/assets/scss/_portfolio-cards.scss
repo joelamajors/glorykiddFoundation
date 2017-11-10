@@ -1,10 +1,83 @@
 .portfolio-cards {
+  background-color: $color-marshland-gray;
   color: $black;
+  margin-bottom: 2em;
+  opacity: .6;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    opacity: 1;
+    transition: opacity .2s ease-out;
+  }
+
+  button {
+    text-align: center;
+  }
 
   h5 {
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  img {
+    align-items: center;
+  }
+}
+
+.portfolio-cards-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5em;
+  padding-top: .25em;
+  text-align: center;
+}
+
+.portfolio-cards-grid {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.portfolio-cards-thumb {
+  padding-bottom: 1em;
+}
+
+.portfolio-down-arrow {
+  text-align: center;
+  vertical-align: bottom;
+
+  i {
+    color: $white;
+    font-size: 3em;
+    width: 1em;
+  }
+}
+
+.portfolio-grid-button {
+  @include xy-cell(11);
+
+  @include breakpoint(medium) {
+    @include xy-cell(9);
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(6);
+  }
+
+  background-color: $color-gk-callout;
+  margin-top: 2em;
+
+  &:hover {
+    background-color: $color-glorykidd-gold;
+  }
+}
+
+.portfolio-tabs-title {
+  @extend .portfolio-cards-title;
+  font-size: 2.5em;
 }
 
 .thumbnail-desc {
@@ -30,9 +103,19 @@
   transition: box-shadow 200ms ease-out;
 }
 
-.thumbnail {
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 6px 1px $color-thumbnail;
+.varitech {
+  h4 {
+    text-decoration: underline;
+  }
+
+  @include breakpoint(medium) {
+    padding-left: .5em;
+    padding-right: .5em;
+
+    h4,
+    p {
+      text-align: center;
+      text-decoration: none;
+    }
   }
 }
