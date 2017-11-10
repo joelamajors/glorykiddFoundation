@@ -1,27 +1,19 @@
-.menu2 {
-  font-size: 80%;
-  margin-bottom: 10px;
-}
-
-.menu2-text {
-  color: inherit;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  padding-top: 5px;
-}
-
-[data-whatinput="mouse"] .menu2 > li {
-  outline: 0;
-}
-
 .title-bar {
-  background-color: $color-gk-callout;
+  background-color: transparent;
+  border-radius: 0 0 2em 2em;
+
+  li {
+    font-size: 1.3em;
+  }
 }
 
 .top-bar {
-  background-color: $color-slightly-offwhite;
+  background-color: transparent;
   padding-bottom: 10px;
+
+  ul {
+    background-color: transparent;
+  }
 
   li {
     font-size: 1.3em;
@@ -30,25 +22,5 @@
   input {
     margin-right: 1rem;
     width: 200px;
-  }
-
-  ul {
-    background-color: $color-slightly-offwhite;
-  }
-}
-
-.top-bar2 {
-  background-color: $color-slightly-offwhite;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  ul {
-    background-color: $color-slightly-offwhite;
-  }
-
-  li {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0;
   }
 }
