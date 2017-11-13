@@ -79,7 +79,6 @@ $consulting-container-color: $color-gray-555;
 }
 
 .go-right-fa {
-
   i {
     color: $software-container-color;
     font-size: 4em;
@@ -89,15 +88,9 @@ $consulting-container-color: $color-gray-555;
 }
 
 .index-containers {
-  @include xy-cell(shrink);
-
+  @extend %glorygrid-y;
   height: 100vh;
   max-height: 1600px;
-
-  @include breakpoint (medium) {
-    margin: 0 .5em;
-    padding: 0 .5em;
-  }
 }
 
 .index-containers-title {
@@ -136,9 +129,4 @@ $consulting-container-color: $color-gray-555;
   @include breakpoint(medium) {
     @include xy-cell(8);
   }
-}
-
-.solution-containers {
-  @include xy-grid-container;
-  padding: .25em;
 }
