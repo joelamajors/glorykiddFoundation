@@ -42,11 +42,13 @@ body {
   height: 1em;
 }
 
+%glorygrid-x,
 .glorygrid-x {
   @include xy-grid(horizontal, true);
   justify-content: center;
 }
 
+%glorygrid-y,
 .glorygrid-y {
   @include xy-grid(vertical, true);
   justify-content: center;
