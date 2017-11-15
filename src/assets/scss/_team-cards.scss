@@ -25,44 +25,6 @@ $card-team-profile-text-color: $body-font-color;
   }
 }
 
-.card-team-profile-content {
-  position: relative;
-
-  &::before {
-    border-color: transparent transparent transparent $card-team-profile-bg;
-    border-style: solid;
-    border-width: rem-calc(55) 0 0 rem-calc(500);
-    content: '';
-    height: 0;
-    left: rem-calc(-30);
-    position: absolute;
-    top: rem-calc(-55);
-    width: 0;
-    z-index: 0;
-  }
-}
-
-.card-team-profile-actions {
-  @include card-divider;
-  background: $card-team-profile-bg;
-  display: flex;
-}
-
-.card-team-profile-img {
-  background-color: $color-gk-callout;
-  max-width: 100%;
-  padding-top: 1em;
-  transition: all .25s ease;
-}
-
-.card-team-profile-blank {
-  background-color: $color-gk-callout;
-  height: 7em;
-  max-width: 100%;
-  padding-top: 1em;
-  transition: all .25s ease;
-}
-
 .card-team-profile-avatar {
   bottom: 100%;
   left: 1rem;
@@ -72,45 +34,71 @@ $card-team-profile-text-color: $body-font-color;
 
   img {
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba($black, .3);
+    box-shadow: 1px 1px 7px rgba($black, .9);
   }
+}
+
+.card-team-profile-blank {
+  background-color: $color-gk-callout;
+  height: 3.5em;
+  max-width: 100%;
+  padding-top: 1em;
+  transition: all .25s ease;
+}
+
+.card-team-profile-content {
+  position: relative;
+
+  &::before {
+    border-color: transparent transparent transparent $card-team-profile-bg;
+    border-style: solid;
+    border-width: rem-calc(55) 0 0 rem-calc(500);
+    content: '';
+    height: 0;
+    left: rem-calc(0);
+    position: absolute;
+    top: rem-calc(-40);
+    width: 0;
+    z-index: 0;
+  }
+}
+
+.card-team-profile-img {
+  background-color: $color-gk-callout;
+  max-width: 100%;
+  padding-top: 1em;
+  transition: all .25s ease;
+}
+
+.card-team-profile-info {
+  font-size: 1em;
+  letter-spacing: 1px;
+  opacity: .8;
+  padding: .5em;
+}
+
+.card-team-profile-header {
+  border-bottom: .25em solid $dark-gray;
+  padding-left: 1em;
 }
 
 .card-team-profile-name {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 0;
+  padding-top: .75em;
 }
 
-.card-team-profile-status {
-  border-bottom: .25em solid $color-slightly-offwhite;
+.card-team-profile-title {
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: .5em;
   text-transform: uppercase;
-  padding-left: 1em;
-}
-
-.card-team-profile-button {
-  flex: 1 0 0;
-  margin-bottom: 0;
-
-  + .card-team-profile-button {
-    margin-left: 1rem;
-  }
-}
-
-.card-team-profile-info {
-  font-size: .875rem;
-  letter-spacing: 1px;
-  opacity: .8;
 }
 
 .team-callout {
   @extend %glorygrid-x;
 
-  // background-color: $color-gk-callout;
-  border: .1em solid rgba($black, .5);
   margin-bottom: 1em;
   margin-top: 1em;
   padding-top: 2em;
