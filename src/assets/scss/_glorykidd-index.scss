@@ -27,13 +27,13 @@ $consulting-container-color: $color-gray-555;
 }
 
 .gk-index-callouts {
+  @include xy-cell(12);
+
   align-self: center;
   color: $black;
   margin-bottom: 1.5em;
   text-align: center;
   text-decoration: none;
-
-  @include xy-cell(12);
 
   @include breakpoint(medium) {
     @include xy-cell(5);
@@ -63,10 +63,10 @@ $consulting-container-color: $color-gray-555;
 }
 
 .gk-index-logo {
+  @include xy-cell(9);
+
   margin-bottom: .5em;
   margin-top: 3em;
-
-  @include xy-cell(9);
 
   @include breakpoint(medium) {
     @include xy-cell(6);
@@ -78,16 +78,19 @@ $consulting-container-color: $color-gray-555;
   }
 }
 
-.index-containers {
-  @include xy-cell(shrink);
+.go-right-fa {
+  i {
+    color: $software-container-color;
+    font-size: 4em;
+    margin-top: .25em;
+    width: 1em;
+  }
+}
 
+.index-containers {
+  @extend %glorygrid-y;
   height: 100vh;
   max-height: 1600px;
-
-  @include breakpoint (medium) {
-    margin: 0 .5em;
-    padding: 0 .5em;
-  }
 }
 
 .index-containers-title {
@@ -117,29 +120,13 @@ $consulting-container-color: $color-gray-555;
 .index-containers-blurb {
   @include xy-cell(11);
 
-  @include breakpoint(medium) {
-    @include xy-cell(8);
-  }
-
   background-color: $white;
   border: 1px solid $black;
   border-radius: .1em;
   color: $black;
   padding: .5em;
-}
 
-.solution-containers {
-  @include xy-grid-container;
-
-  padding: .25em;
-}
-
-.go-right-fa {
-
-  i {
-    color: $software-container-color;
-    font-size: 4em;
-    margin-top: .25em;
-    width: 1em;
+  @include breakpoint(medium) {
+    @include xy-cell(8);
   }
 }

@@ -48,6 +48,7 @@ body {
   justify-content: center;
 }
 
+%glorygrid-y,
 .glorygrid-y {
   @include xy-grid(vertical, true);
   justify-content: center;
