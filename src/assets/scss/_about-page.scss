@@ -106,6 +106,7 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .meet-team-container {
+  @include xy-grid-container;
   margin-bottom: 4em;
 }
 
