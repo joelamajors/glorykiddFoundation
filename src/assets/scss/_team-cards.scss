@@ -56,7 +56,7 @@ $card-team-profile-text-color: $body-font-color;
 }
 
 .card-team-profile-blank {
-  background-color: $color-gk-callout;
+  background-color: transparent;
   height: 7em;
   max-width: 100%;
   padding-top: 1em;
@@ -83,7 +83,7 @@ $card-team-profile-text-color: $body-font-color;
 }
 
 .card-team-profile-status {
-  border-bottom: .25em solid $periago-lime;
+  border-bottom: .25em solid $color-slightly-offwhite;
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: .5em;
@@ -107,6 +107,8 @@ $card-team-profile-text-color: $body-font-color;
 }
 
 .team-callout {
+  @extend %glorygrid-x;
+
   background-color: $color-gk-callout;
   border: .1em solid rgba($black, .5);
   margin-bottom: 1em;
