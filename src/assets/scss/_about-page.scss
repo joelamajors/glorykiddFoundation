@@ -98,20 +98,21 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .contact-calendar-phone-blurb {
-  @include xy-cell(12);
-
   font-size: 1.1em;
   line-height: 1;
   text-align: center;
 }
 
 .meet-team-container {
+  @include xy-grid-container;
   margin-bottom: 4em;
 }
 
 .meet-team-container-title {
+  @include xy-cell(12);
   font-family: 'Julius Sans One', sans-serif;
   font-size: 2em;
+  text-align: center;
 }
 
 .meet-team-contact-card {
@@ -128,7 +129,9 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
 }
 
 .meet-team-contact-card-blurb {
+  @include xy-cell(12);
   padding: .5em;
+  text-align: center;
 }
 
 .meet-team-contact-card-title {
