@@ -4,7 +4,8 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
   @include xy-cell(8);
 
   background-color: $white;
-  border-radius: 1em;
+
+  box-shadow: -5px 20px 17px rgba($black, .3);
   color: $black;
   margin: 1em;
   padding: .5em;
@@ -27,6 +28,12 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
   @include xy-grid-container;
   justify-content: center;
   margin-top: 2em;
+
+  input,
+  textarea,
+  button {
+    box-shadow: -5px 20px 17px rgba($black, .3);
+  }
 }
 
 .contact-form-container {
@@ -107,6 +114,7 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
   margin-bottom: 4em;
 }
 
+.mission-statement-title,
 .meet-team-container-title {
   @include xy-cell(12);
   font-family: 'Julius Sans One', sans-serif;
@@ -161,10 +169,6 @@ $meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-g
   @include breakpoint(large) {
     @include xy-cell(7);
   }
-}
-
-.mission-statement-title {
-  @extend .meet-team-container-title;
 }
 
 .mission-statement-body {
