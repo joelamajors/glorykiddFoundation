@@ -48,7 +48,7 @@
   position: relative;
 
   &::before {
-    border-color: transparent transparent transparent $color-gk-callout;
+    border-color: transparent transparent transparent $gk-callout;
     border-style: solid;
     border-width: rem-calc(50) 0 0 rem-calc(500);
     content: '';
@@ -75,8 +75,8 @@
 }
 
 .card-team-profile-header {
-  background-color: $color-gk-callout;
-  border-bottom: .25em solid $color-glorykidd-gold;
+  background-color: $gk-callout;
+  border-bottom: .25em solid $gk-accent;
   color: $white;
   padding-left: 1em;
 }

@@ -67,11 +67,11 @@
     @include xy-cell(6);
   }
 
-  background-color: $color-gk-callout;
+  background-color: $gk-callout;
   margin-top: 2em;
 
   &:hover {
-    background-color: $color-glorykidd-gold;
+    background-color: $gk-accent;
   }
 }
 
@@ -93,7 +93,7 @@
 .thumbnail-small-right {
   border: solid 4px $color-slightly-offwhite;
   border-radius: 0;
-  box-shadow: 0 0 0 1px $color-gray4;
+  box-shadow: 0 0 0 1px $color-marshland-gray;
   display: inline-block;
   float: right;
   line-height: 0;

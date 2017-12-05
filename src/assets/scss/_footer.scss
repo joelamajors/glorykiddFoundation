@@ -23,12 +23,12 @@
   }
 
   a {
-    color: $color-gk-callout;
+    color: $gk-callout;
     font-size: 1.2em;
     justify-content: left;
 
     :hover {
-      color: $color-glorykidd-gold;
+      color: $gk-accent;
     }
   }
 

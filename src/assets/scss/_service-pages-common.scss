@@ -19,7 +19,7 @@
 
 .quotation-callouts {
   @include xy-grid;
-  background-color: $color-gray4;
+  background-color: $color-marshland-gray;
   justify-content: center;
   margin-bottom: 1em;
   margin-top: .5em;
@@ -47,7 +47,7 @@
 
 .service-pages-callout-white {
   @include callout($white);
-  border: 1px solid $color-gk-callout;
+  border: 1px solid $gk-callout;
 
   h4 {
     text-align: center;
@@ -86,7 +86,7 @@
 
 .software-responsive-images-callout {
   @include xy-grid;
-  background-color: $color-glorykidd-gold;
+  background-color: $gk-accent;
   justify-content: center;
   margin-bottom: 2em;
   margin-top: 2em;

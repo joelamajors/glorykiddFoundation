@@ -32,7 +32,7 @@ body {
 
 .gk-cta-button {
   @include button;
-  background-color: $color-glorykidd-gold;
+  background-color: $gk-accent;
   color: $white;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5em;
@@ -40,7 +40,7 @@ body {
   text-transform: uppercase;
 
   &:hover {
-    background-color: $color-gk-callout;
+    background-color: $gk-callout;
   }
 }
 

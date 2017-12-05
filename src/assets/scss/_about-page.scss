@@ -85,7 +85,7 @@
 .contact-phone-fa {
   @include xy-cell(12);
 
-  background-color: $color-glorykidd-gold;
+  background-color: $gk-accent;
   border-radius: .1em;
   color: $white;
   font-size: 3em;
@@ -139,7 +139,7 @@
 }
 
 .meet-team-contact-card-title {
-  background-color: $color-gk-callout;
+  background-color: $gk-callout;
   color: $white;
   padding: .5em;
 
