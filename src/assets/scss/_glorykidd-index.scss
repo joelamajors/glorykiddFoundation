@@ -1,6 +1,7 @@
 .gk-index-button {
   background-color: $gk-callout;
   height: 5em;
+  min-width: 230px;
   padding: .5em;
 }
 
@@ -27,7 +28,7 @@
 
   align-self: center;
   color: $black;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   text-align: center;
   text-decoration: none;
 
