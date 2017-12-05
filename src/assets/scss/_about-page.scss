@@ -57,7 +57,7 @@
 .contact-form-privacy-policy {
   @include xy-cell(8);
 
-  background-color: $color-marshland-gray;
+  background-color: $secondary-font-color;
   color: $white;
   margin-bottom: 2em;
   margin-top: 1em;
@@ -151,7 +151,7 @@
 .mission-statement-container {
   @include xy-grid-container;
 
-  background: $color-slightly-offwhite-translucent;
+  background: $containers-background;
   margin: 4em;
   padding: 2em;
 }

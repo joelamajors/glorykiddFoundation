@@ -12,14 +12,14 @@
 }
 
 .reviews-quotation-marks {
-  color: $color-marshland-gray;
+  color: $secondary-font-color;
   height: 2em;
   opacity: .2;
 }
 
 .quotation-callouts {
   @include xy-grid;
-  background-color: $color-marshland-gray;
+  background-color: $secondary-font-color;
   justify-content: center;
   margin-bottom: 1em;
   margin-top: .5em;
@@ -28,7 +28,7 @@
 }
 
 .service-pages-container {
-  background-color: $color-slightly-offwhite-translucent;
+  background-color: $containers-background;
   padding: 2em;
 }
 

@@ -1,5 +1,5 @@
 .portfolio-cards {
-  background-color: $color-marshland-gray;
+  background-color: $secondary-font-color;
   color: $black;
   margin-bottom: 2em;
   opacity: .6;
@@ -87,19 +87,6 @@
   margin-top: 1rem;
   max-width: 100%;
   text-align: justify;
-  transition: box-shadow 200ms ease-out;
-}
-
-.thumbnail-small-right {
-  border: solid 4px $color-slightly-offwhite;
-  border-radius: 0;
-  box-shadow: 0 0 0 1px $color-marshland-gray;
-  display: inline-block;
-  float: right;
-  line-height: 0;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  max-width: 40%;
   transition: box-shadow 200ms ease-out;
 }
 

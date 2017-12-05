@@ -13,11 +13,6 @@ body {
   max-height: 1600px;
 }
 
-.glory-gradient {
-  background: $glory-gradient;
-  height: 1em;
-}
-
 %glorygrid-x,
 .glorygrid-x {
   @include xy-grid(horizontal, true);

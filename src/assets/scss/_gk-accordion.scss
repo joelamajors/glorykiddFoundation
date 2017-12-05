@@ -13,7 +13,7 @@
 }
 
 .tabs-title {
-  background-color: $color-marshland-gray;
+  background-color: $secondary-font-color;
   border: 0;
   color: $black;
   display: content-block;
@@ -82,7 +82,7 @@
     &:focus,
     &:hover,
     &[aria-selected='true'] {
-      background-color: $color-marshland-gray;
+      background-color: $secondary-font-color;
       opacity: 1;
       outline-color: none;
       outline-style: none;
