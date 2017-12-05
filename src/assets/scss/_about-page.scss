@@ -1,10 +1,7 @@
-$meet-teem-gradient: linear-gradient(50deg, $color-glorykidd-gold -30%, $color-gk-callout 15%, $white 135%);
-
 .contact-calendar-phone {
   @include xy-cell(8);
 
   background-color: $white;
-
   box-shadow: -5px 20px 17px rgba($black, .3);
   color: $black;
   margin: 1em;

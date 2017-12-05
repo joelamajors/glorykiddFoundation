@@ -1,6 +1,3 @@
-$card-team-profile-bg: $card-background;
-$card-team-profile-text-color: $body-font-color;
-
 .card-team-profile {
   @include card-container(transparent, $card-team-profile-text-color, 1rem, $global-radius);
   border-bottom: .5em solid $dark-gray;
