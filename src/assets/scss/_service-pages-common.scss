@@ -86,15 +86,16 @@
 
 .software-responsive-images-callout {
   @include xy-grid;
+  background-color: $color-glorykidd-gold;
   justify-content: center;
-
-  background-color: $glorykidd-gold-trans;
   margin-bottom: 2em;
   margin-top: 2em;
 }
 
 .software-responsive-images {
   @include xy-cell(10);
+
+  margin: 1em;
 
   @include breakpoint(medium) {
     @include xy-cell(6);
@@ -103,15 +104,13 @@
   @include breakpoint(large) {
     @include xy-cell(4);
   }
-
-  margin: 1em;
 }
 
 .web-callout-banner {
   @include xy-grid;
-  justify-content: center;
 
   font-size: 110%;
+  justify-content: center;
   margin-top: 3em;
 }
 
