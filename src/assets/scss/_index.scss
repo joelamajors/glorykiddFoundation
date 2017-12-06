@@ -39,7 +39,6 @@
 
 .index-callouts {
   @include xy-cell(12);
-
   align-self: center;
   color: $black;
   margin-bottom: 2em;
@@ -69,11 +68,18 @@
   @extend %glorygrid-y;
   height: 90vh;
   max-height: 1600px;
+
+  @include breakpoint(medium) {
+    height: 80vh;
+  }
+
+  @include breakpoint(large) {
+    height: 70vh;
+  }
 }
 
 .index-containers-title {
   @include xy-cell(8);
-
   color: $white;
   font-size: 3em;
   font-weight: bolder;
@@ -85,7 +91,6 @@
 
 .index-containers-subtitle {
   @include xy-cell(11);
-
   color: $black;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.25em;
@@ -97,7 +102,6 @@
 
 .index-containers-blurb {
   @include xy-cell(11);
-
   background-color: $white;
   border: 1px solid $black;
   border-radius: .1em;
@@ -111,7 +115,6 @@
 
 .index-grid {
   @include xy-grid;
-
   justify-content: space-around;
   padding-bottom: 4em;
   padding-top: 3em;
