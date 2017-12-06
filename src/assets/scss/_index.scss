@@ -1,11 +1,25 @@
-.gk-index-button {
+.go-right-fa {
+  i {
+    color: $secondary-font-color;
+    font-size: 4em;
+    margin-top: .25em;
+    width: 1em;
+  }
+}
+
+.index-banner {
+  background-color: $index-containers-background;
+  padding-bottom: 2em;
+}
+
+.index-button {
   background-color: $gk-callout;
   height: 5em;
   min-width: 230px;
   padding: .5em;
 }
 
-.gk-index-button-title {
+.index-button-title {
   color: $white;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 2em;
@@ -17,13 +31,13 @@
   transform: translateY(-50%);
 }
 
-.gk-index-button-subtitle {
+.index-button-subtitle {
   font-size: 1.5em;
   line-height: 1;
   padding-top: .5em;
 }
 
-.gk-index-callouts {
+.index-callouts {
   @include xy-cell(12);
 
   align-self: center;
@@ -48,38 +62,6 @@
 
   &:hover {
     color: $black;
-  }
-}
-
-.gk-index-grid {
-  @include xy-grid;
-
-  justify-content: space-around;
-  padding-bottom: 4em;
-  padding-top: 3em;
-}
-
-.gk-index-logo {
-  @include xy-cell(10);
-  margin-bottom: $index-image-bottom-margin;
-
-  @include breakpoint(medium) {
-    @include xy-cell(9);
-    margin-bottom: $index-image-bottom-margin * 2;
-  }
-
-  @include breakpoint(large) {
-    @include xy-cell(8);
-    margin-bottom: $index-image-bottom-margin * 3.5;
-  }
-}
-
-.go-right-fa {
-  i {
-    color: $secondary-font-color;
-    font-size: 4em;
-    margin-top: .25em;
-    width: 1em;
   }
 }
 
@@ -124,5 +106,29 @@
 
   @include breakpoint(medium) {
     @include xy-cell(8);
+  }
+}
+
+.index-grid {
+  @include xy-grid;
+
+  justify-content: space-around;
+  padding-bottom: 4em;
+  padding-top: 3em;
+}
+
+.index-logo {
+  @include xy-cell(10);
+  margin-bottom: $index-image-bottom-margin;
+  margin-top: $index-image-bottom-margin;
+
+  @include breakpoint(medium) {
+    @include xy-cell(9);
+    margin-bottom: $index-image-bottom-margin * 2;
+  }
+
+  @include breakpoint(large) {
+    @include xy-cell(8);
+    margin-bottom: $index-image-bottom-margin * 3.5;
   }
 }
