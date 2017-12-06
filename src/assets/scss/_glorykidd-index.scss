@@ -60,17 +60,16 @@
 }
 
 .gk-index-logo {
-  @include xy-cell(9);
-
+  @include xy-cell(10);
   margin-bottom: $index-image-bottom-margin;
 
   @include breakpoint(medium) {
-    @include xy-cell(7);
+    @include xy-cell(9);
     margin-bottom: $index-image-bottom-margin * 2;
   }
 
   @include breakpoint(large) {
-    @include xy-cell(6);
+    @include xy-cell(8);
     margin-bottom: $index-image-bottom-margin * 3.5;
   }
 }
