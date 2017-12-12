@@ -28,7 +28,7 @@
 }
 
 .portfolio-cards-title {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: $secondary-header-font-family;
   font-size: 1.5em;
   padding-top: .25em;
   text-align: center;
@@ -59,6 +59,9 @@
 .portfolio-grid-button {
   @include xy-cell(11);
 
+  background-color: $gk-callout;
+  margin-top: 2em;
+
   @include breakpoint(medium) {
     @include xy-cell(9);
   }
@@ -66,9 +69,6 @@
   @include breakpoint(large) {
     @include xy-cell(6);
   }
-
-  background-color: $gk-callout;
-  margin-top: 2em;
 
   &:hover {
     background-color: $gk-accent;
@@ -91,10 +91,6 @@
 }
 
 .varitech {
-  h4 {
-    text-decoration: underline;
-  }
-
   @include breakpoint(medium) {
     padding-left: .5em;
     padding-right: .5em;
@@ -104,5 +100,9 @@
       text-align: center;
       text-decoration: none;
     }
+  }
+
+  h4 {
+    text-decoration: underline;
   }
 }

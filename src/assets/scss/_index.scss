@@ -21,7 +21,7 @@
 
 .index-button-title {
   color: $white;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: $secondary-header-font-family;
   font-size: 2em;
   font-weight: bold;
   line-height: 1;
@@ -74,7 +74,7 @@
   }
 
   @include breakpoint(large) {
-    height: 70vh;
+    height: 90vh;
   }
 }
 
@@ -92,7 +92,7 @@
 .index-containers-subtitle {
   @include xy-cell(11);
   color: $black;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: $secondary-header-font-family;
   font-size: 1.25em;
   font-weight: bolder;
   line-height: 1;
@@ -127,11 +127,11 @@
 
   @include breakpoint(medium) {
     @include xy-cell(9);
-    margin-bottom: $index-image-bottom-margin * 2;
+    margin-bottom: $index-image-bottom-margin * 1.5;
   }
 
   @include breakpoint(large) {
     @include xy-cell(8);
-    margin-bottom: $index-image-bottom-margin * 3.5;
+    margin-bottom: $index-image-bottom-margin * 2;
   }
 }

@@ -1,9 +1,11 @@
-.service-pages-reviews {
-  @include xy-cell(11);
-
-  h5 {
-    font-style: italic;
-  }
+.quotation-callouts {
+  @include xy-grid;
+  background-color: $secondary-font-color;
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-top: .5em;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 .reviews-blurb {
@@ -15,16 +17,6 @@
   color: $secondary-font-color;
   height: 2em;
   opacity: .2;
-}
-
-.quotation-callouts {
-  @include xy-grid;
-  background-color: $secondary-font-color;
-  justify-content: center;
-  margin-bottom: 1em;
-  margin-top: .5em;
-  padding-bottom: 1em;
-  padding-top: 1em;
 }
 
 .service-pages-container {
@@ -77,19 +69,19 @@
 }
 
 .services-page-headers {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: $secondary-header-font-family;
   font-size: 3em;
   font-weight: lighter;
   margin-bottom: .5em;
   text-align: center;
 }
 
-.software-responsive-images-callout {
-  @include xy-grid;
-  background-color: $gk-accent;
-  justify-content: center;
-  margin-bottom: 2em;
-  margin-top: 2em;
+.service-pages-reviews {
+  @include xy-cell(11);
+
+  h5 {
+    font-style: italic;
+  }
 }
 
 .software-responsive-images {
@@ -104,6 +96,14 @@
   @include breakpoint(large) {
     @include xy-cell(4);
   }
+}
+
+.software-responsive-images-callout {
+  @include xy-grid;
+  background-color: $gk-accent;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .web-callout-banner {

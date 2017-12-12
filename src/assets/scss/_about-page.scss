@@ -21,18 +21,6 @@
   }
 }
 
-.contact-us-container {
-  @include xy-grid-container;
-  justify-content: center;
-  margin-top: 2em;
-
-  input,
-  textarea,
-  button {
-    box-shadow: -5px 20px 17px rgba($black, .3);
-  }
-}
-
 .contact-form-container {
   @include xy-grid;
   justify-content: center;
@@ -49,7 +37,7 @@
   text-align: center;
 
   h3 {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: $secondary-header-font-family;
     font-size: 2em;
   }
 }
@@ -106,15 +94,27 @@
   text-align: center;
 }
 
+.contact-us-container {
+  @include xy-grid-container;
+  justify-content: center;
+  margin-top: 2em;
+
+  input,
+  textarea,
+  button {
+    box-shadow: -5px 20px 17px rgba($black, .3);
+  }
+}
+
 .meet-team-container {
   @include xy-grid-container;
   margin-bottom: 4em;
 }
 
-.mission-statement-title,
-.meet-team-container-title {
+.meet-team-container-title,
+.mission-statement-title {
   @include xy-cell(12);
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: $secondary-header-font-family;
   font-size: 2em;
   text-align: center;
 }
@@ -144,7 +144,7 @@
   padding: .5em;
 
   h5 {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: $secondary-header-font-family;
   }
 }
 

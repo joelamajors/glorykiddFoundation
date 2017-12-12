@@ -122,13 +122,13 @@
 }
 
 .varitech-tab-cell {
+  text-align: center;
+
   @include xy-cell(10);
 
   @include breakpoint(medium) {
     @include xy-cell(4);
   }
-
-  text-align: center;
 
   h4 {
     text-decoration: underline;

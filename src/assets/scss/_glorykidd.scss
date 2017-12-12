@@ -25,7 +25,7 @@ body {
   @include button;
   background-color: $gk-accent;
   color: $white;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: $secondary-header-font-family;
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
