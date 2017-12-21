@@ -48,7 +48,7 @@
   img {
     margin-bottom: 1em;
     max-height: 9em;
-    opacity: .8;
+    // opacity: .8;
   }
 
   p {
@@ -57,14 +57,12 @@
 }
 
 .service-pages-callout-icon {
-  align-items: center;
   margin-bottom: .25em;
   opacity: .7;
   text-align: center;
 
   i {
     font-size: 7em;
-    outline: 1px;
   }
 }
 
@@ -82,28 +80,6 @@
   h5 {
     font-style: italic;
   }
-}
-
-.software-responsive-images {
-  @include xy-cell(10);
-
-  margin: 1em;
-
-  @include breakpoint(medium) {
-    @include xy-cell(6);
-  }
-
-  @include breakpoint(large) {
-    @include xy-cell(4);
-  }
-}
-
-.software-responsive-images-callout {
-  @include xy-grid;
-  background-color: $gk-accent;
-  justify-content: center;
-  margin-bottom: 2em;
-  margin-top: 2em;
 }
 
 .web-callout-banner {
