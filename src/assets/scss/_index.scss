@@ -133,5 +133,6 @@
   @include breakpoint(large) {
     @include xy-cell(8);
     margin-bottom: $index-image-bottom-margin * 2;
+    max-width: 1200px;
   }
 }
